@@ -1,0 +1,8 @@
+
+<template name="location-icon">
+
+	<view class="location-icon-warp">
+		<image src="/static/images/home/location_icon.png" class="location-icon"></image>
+	</view>
+	
+</template>

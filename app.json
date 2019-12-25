@@ -16,40 +16,40 @@
     "list":[
       {
         "pagePath":"pages/index/index",
-        "iconPath":"static/tabBarrIcon/home.png",
-        "selectedIconPath":"static/tabBarrIcon/homeactive.png",
+        "iconPath":"static/images/tabBarrIcon/home.png",
+        "selectedIconPath":"static/images/tabBarrIcon/homeactive.png",
         "color":"#555",
         "selectedColor":"#39ac69",
         "text":"首页"
       },
       {
         "pagePath": "pages/find/find",
-        "iconPath": "static/tabBarrIcon/find.png",
-        "selectedIconPath": "static/tabBarrIcon/findactive.png",
+        "iconPath": "static/images/tabBarrIcon/find.png",
+        "selectedIconPath": "static/images/tabBarrIcon/findactive.png",
         "color": "#555",
         "selectedColor": "#39ac69",
         "text": "发现"
       },
       {
         "pagePath": "pages/shoppingCart/shoppingCart",
-        "iconPath": "static/tabBarrIcon/shopcart.png",
-        "selectedIconPath": "static/tabBarrIcon/shopcartactive.png",
+        "iconPath": "static/images/tabBarrIcon/shopcart.png",
+        "selectedIconPath": "static/images/tabBarrIcon/shopcartactive.png",
         "color": "#555",
         "selectedColor": "#39ac69",
         "text": "购物车"
       },
       {
         "pagePath": "pages/order/order",
-        "iconPath": "static/tabBarrIcon/order.png",
-        "selectedIconPath": "static/tabBarrIcon/orderactive.png",
+        "iconPath": "static/images/tabBarrIcon/order.png",
+        "selectedIconPath": "static/images/tabBarrIcon/orderactive.png",
         "color": "#555",
         "selectedColor": "#39ac69",
         "text": "订单"
       },
       {
         "pagePath": "pages/mine/mine",
-        "iconPath": "static/tabBarrIcon/mine.png",
-        "selectedIconPath": "static/tabBarrIcon/mineactive.png",
+        "iconPath": "static/images/tabBarrIcon/mine.png",
+        "selectedIconPath": "static/images/tabBarrIcon/mineactive.png",
         "color": "#555",
         "selectedColor": "#39ac69",
         "text": "我的"

@@ -1,0 +1,8 @@
+.location-icon{
+	width:28rpx;
+	height:33rpx;
+	margin-top: 4rpx;
+}
+.location-icon-warp{
+	display: inline-block;
+}

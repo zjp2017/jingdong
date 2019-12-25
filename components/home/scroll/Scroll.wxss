@@ -1,0 +1,14 @@
+/* components/home/scroll/Scroll.wxss */
+.home-scroll-warp{
+	height: 315rpx;
+	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/108870/29/1938/15080/5e0233d3Eed60c7b5/0c9484a4cad0af57.jpg');
+	background-size: 100% 100%;
+}
+.scroll-item{
+	width: 151rpx;
+	height: 155rpx;
+	border: 1px solid orange;
+}
+.home-scroll-box{	
+	display: flex;
+}

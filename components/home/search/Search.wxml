@@ -1,0 +1,7 @@
+<!--components/home/search/search.wxml-->
+<view class="search-warp-box">	
+	<view class="search-warp">
+		<image src="../../../static/images/home/search_icon.png" class="search-icon"></image>
+	    <text class="search-input">搜索附近的商家商品</text>
+	</view>
+</view>

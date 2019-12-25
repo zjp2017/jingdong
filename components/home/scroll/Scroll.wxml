@@ -1,0 +1,16 @@
+<!--components/home/scroll/Scroll.wxml-->
+<view class="home-scroll-warp">
+
+	<scroll-view class="home-scroll-box" scroll-x="true"> 
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+		<view class="scroll-item">1</view>
+	</scroll-view>
+</view>

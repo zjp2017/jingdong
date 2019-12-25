@@ -1,0 +1,21 @@
+/* components/home/loactionHeader/LocationHeader.wxss */
+@import '../../../templates/home/location.wxss'
+.header-location-warp{
+	padding: 0 24rpx;
+	box-sizing: content-box;
+	display: flex;
+}
+.location-title{
+	color: #fff;
+	font-weight: bold;
+	height: 36rpx;
+	line-height: 36rpx;
+	font-size: 30rpx;
+	margin-left: 6rpx;
+	margin-top: 2rpx;
+}
+.down-awg{
+	width: 40rpx;
+	height: 32rpx;
+	margin-top: 6rpx;
+}

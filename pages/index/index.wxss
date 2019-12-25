@@ -1,21 +1,24 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.home-header{
+	height:200rpx;
+	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/96417/23/8188/14668/5e023426Ec2404fec/0d48fd7370486aed.jpg');
+	background-size: 100% 100%;
+	padding-top: 26rpx;
+	box-sizing: border-box;
+	position: relative;
+}
+/* .home-header-search-box{
+	height: 390rpx;
+	background: url('');
+	background-size: 100% 100%;
+} */
+.fixed-banner-box-img{
+	width: 100%;
+	height: auto;
+}
+.search-component{
+	position: absolute;
+	left: 0;
+	top: 60rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}

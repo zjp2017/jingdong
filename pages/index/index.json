@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+	  "header-com":"/components/home/loactionHeader/LocationHeader",
+	  "search-com":"/components/home/search/Search",
+	  "scroll-com":"/components/home/scroll/Scroll"
+  },
   "navigationBarTitleText":"京东到家"
 }
