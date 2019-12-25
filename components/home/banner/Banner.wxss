@@ -1,0 +1,13 @@
+/* components/home/banner/Banner.wxss */
+.swiper-item-img{
+	width: 100%;
+	height: 185rpx;
+	border-radius: 10rpx;
+}
+swiper, swiper-item{
+	height: 185rpx;
+	border-radius: 10rpx;
+}
+.banner-box{
+	padding: 0 20rpx;
+}

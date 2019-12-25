@@ -1,16 +1,9 @@
 <!--components/home/scroll/Scroll.wxml-->
 <view class="home-scroll-warp">
-
-	<scroll-view class="home-scroll-box" scroll-x="true"> 
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-		<view class="scroll-item">1</view>
-	</scroll-view>
+	<view class="home-scroll-box" > 
+		<view class="scroll-item" wx:for="{{12}}">
+			<image class="scroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92966/20/8115/14663/5e023298E41d34779/451d7690bcb643ad.png" ></image>
+			<view class="scroll-item-text">医药健康</view>
+		</view>
+	</view>
 </view>

@@ -2,7 +2,9 @@
   "usingComponents": {
 	  "header-com":"/components/home/loactionHeader/LocationHeader",
 	  "search-com":"/components/home/search/Search",
-	  "scroll-com":"/components/home/scroll/Scroll"
+	  "scroll-com":"/components/home/scroll/Scroll",
+	  "banner-com":"/components/home/banner/Banner"
   },
-  "navigationBarTitleText":"京东到家"
+  "navigationBarTitleText":"京东到家",
+  "enablePullDownRefresh":true
 }

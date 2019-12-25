@@ -3,12 +3,26 @@
 	height: 315rpx;
 	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/108870/29/1938/15080/5e0233d3Eed60c7b5/0c9484a4cad0af57.jpg');
 	background-size: 100% 100%;
+	overflow-x: scroll;
 }
 .scroll-item{
-	width: 151rpx;
+	width: 150rpx;
 	height: 155rpx;
-	border: 1px solid orange;
+	display: inline-block;
+	float: left;
 }
 .home-scroll-box{	
-	display: flex;
+	overflow: hidden;
+	width: 900rpx;
+	height: 315rpx;
+}
+.scroll-item-img{
+	width: 78rpx;
+	height: 78rpx;
+	margin-left: 36rpx;
+}
+.scroll-item-text{
+	font-size: 22rpx;
+	margin-top: 10rpx;
+	text-align: center;
 }

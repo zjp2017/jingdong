@@ -1,0 +1,20 @@
+<!--components/home/banner/Banner.wxml-->
+<view class="banner-box">
+	<swiper indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#39ac69" autoplay="true" circular="true" >
+		<swiper-item>
+			<image mode="widthFix" class="swiper-item-img" src="https://img30.360buyimg.com/jddjadvertise/jfs/t1/88959/30/8111/83086/5e01c7bbE6a1df350/2c22a6bfdf5aa0b6.jpg"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" class="swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/95614/24/6196/165575/5df223c1E5d02514b/4bab60f205713a07.png"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" class="swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102896/39/7470/81638/5dfc72f8Eb2d59f34/cbf0048ded845208.png"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" class="swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/90607/36/3454/113174/5de0cf91E308270d3/9a81aab4f93f7c01.png"></image>
+		</swiper-item>
+		<swiper-item>
+			<image mode="widthFix" class="swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/96761/8/7530/103780/5dfca518E0184bcb2/3b21076efe17daa3.png"></image>
+		</swiper-item>
+	</swiper>
+</view>

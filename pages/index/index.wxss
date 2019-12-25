@@ -7,18 +7,22 @@
 	box-sizing: border-box;
 	position: relative;
 }
-/* .home-header-search-box{
-	height: 390rpx;
-	background: url('');
-	background-size: 100% 100%;
-} */
 .fixed-banner-box-img{
 	width: 100%;
 	height: auto;
+	display: block;
 }
 .search-component{
 	position: absolute;
 	left: 0;
 	top: 60rpx;
 }
+.new-person-welfare{
+	padding: 0 36rpx;
+}
+.new-person-welfare-img{
+	width: 100%;
+}
+
+
 
