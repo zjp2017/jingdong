@@ -1,0 +1,138 @@
+/* components/home/itemlist/ItemList.wxss */
+.list-warp{
+	min-height: 277rpx;
+	display: flex;
+	box-sizing: border-box;
+}
+.item-left{
+	width: 120rpx;
+	margin-top: 36rpx;
+}
+.item-right{
+	width: 588rpx;
+	margin-top: 36rpx;
+	border-bottom: 1rpx solid #f0f0f0;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+}
+.item-left-logo{
+	width: 121rpx;
+	height: 121rpx;
+}
+.store-content-right{
+	display: flex;
+}
+.store-content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15rpx;
+}
+.store-name{
+	font-size: 32rpx;
+	font-weight: bold;
+}
+.store-content-left{
+	display: flex;
+}
+.score-num{
+	font-size:25rpx;
+	color: #ffa14e;
+	margin-top: 3rpx;
+}
+.sale-num{
+	font-size:28rpx;
+	color: #666;
+	margin-left: 14rpx;
+}
+.store-content-right-time, .store-content-right-range, .store-content-right-Division{
+	font-size:28rpx;
+	color: #666;
+}
+.store-content-right-Division{
+	margin:0 5rpx;
+}
+.store-content-info-left{
+	display: flex;
+}
+.store-content-info{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rpx;
+}
+.store-send-condition, .store-send-free{
+	font-size:28rpx;
+	color: #666;
+}
+.store-send-brand{
+	width: 98rpx;
+	height: 31rpx;
+	border: 1rpx solid rgb(76, 156, 255);
+	color: rgb(76, 156, 255);
+	font-size: 23rpx;
+	text-align: center;
+	line-height: 31rpx;
+	border-radius: 0 10rpx 0 10rpx;
+}
+.coupon-box{
+	height: 32rpx;
+	overflow: hidden;
+}
+.coupon-item{
+	height: 30rpx;
+	border-radius: 0 13rpx 0 13rpx;
+	text-align: center;
+	padding: 0 8rpx;
+	line-height: 30rpx;
+	color: rgb(255, 87, 87);
+	float: left;
+	border: 1rpx solid #ffdddd;
+	font-size: 20rpx;
+	margin: 5rpx 5rpx;
+}
+.coupon-warp{
+	margin-top: 15rpx;
+	position: relative;
+}
+.coupon-box-icon{
+	position: absolute;
+	right: 10rpx;
+	top: -5rpx;
+	width: 38rpx;
+	height: 40rpx;
+}
+.gift-warp{
+	height: 32rpx;
+	display: flex;
+	margin-top: 20rpx;
+}
+.gift-warp-main{
+	float: left;
+	display: flex;
+	height: 32rpx;
+	margin-top: 8rpx;
+}
+.gift-warp-title{
+	height: 30rpx;
+	border: 1rpx solid #ffdddd;
+	text-align: center;
+	padding: 0 18rpx;
+	line-height: 30rpx;
+	color: #fff;
+	font-size: 20rpx;
+	border-radius:  13rpx 0 13rpx 0;
+	min-width: 45rpx;
+	background: linear-gradient(135deg, rgb(255, 125, 125) 0%, rgb(255, 81, 56) 100%);
+}
+.gift-warp-title.reduce{
+	background: linear-gradient(135deg, rgb(85, 216, 94) 0%, rgb(72, 193, 81) 100%);
+}
+.gift-warp-title.postage{
+	background: linear-gradient(135deg, rgb(76, 156, 255) 0%, rgb(36, 134, 255) 100%);
+}
+.gift-warp-content{
+	color: #666;
+	font-size: 20rpx;
+	margin-left: 15rpx;
+	height: 30rpx;
+	line-height: 32rpx;
+}

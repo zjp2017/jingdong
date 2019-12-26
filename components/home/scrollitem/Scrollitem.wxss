@@ -1,0 +1,63 @@
+/* components/home/scrollitem/Scrollitem.wxss */
+.scroll-box-item{
+	display: inline-block;
+	background: #f7f7f7;
+	width: 211rpx;
+	padding-bottom: 20rpx;
+	border-radius: 10rpx;
+}
+.scroll-box-item-top-img{
+	width: 211rpx;
+	height: 209rpx;	
+}
+.item-top-tips{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 122rpx;
+	height: 30rpx;
+	border-radius: 0 10rpx 0 10rpx;
+	background: rgb(255, 125, 125);
+	color: #fff;
+	font-size: 20rpx;
+	text-align: center;
+}
+.scroll-box-item-top{
+	width: 211rpx;
+	height: 209rpx;
+	position: relative;
+}
+.scroll-box-item-logo{
+	height: 48rpx;
+	width: 48rpx;
+	position: absolute;
+	left: 10rpx;
+	top: 10rpx;
+	
+}
+.scroll-box-item-bottom-title{
+	height: 64rpx;
+	font-size: 23rpx;
+	color: #000;
+	overflow: hidden;
+}
+.scroll-box-item-bottom-content{
+	display: flex;
+	height: 53rpx;
+	justify-content: space-between;
+	margin-top: 5rpx;
+}
+.scroll-box-item-bottom-right-img{
+	width: 53rpx;
+	height: 53rpx;
+}
+.scroll-discount-price{
+	font-size: 25rpx;
+	color: rgb(255, 87, 87);
+	font-weight: bold;
+}
+.scroll-origin-price{
+	font-size: 20rpx;
+	color: rgb(153, 153, 153);
+	text-decoration: line-through;
+}

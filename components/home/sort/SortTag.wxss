@@ -1,0 +1,33 @@
+/* components/home/sort/SortTag.wxss */
+.sort-tag-left{
+	display: flex;
+	float: left;
+}
+.sort-tag{
+	height: 50rpx;
+	margin-top: 50rpx;
+}
+.sort-tag-left-text{
+	font-size: 27rpx;
+	color: #000;
+	
+}
+.showMta{
+	margin: 0 16rpx;
+}
+.sort-tag-left-text.active{
+	color: #47b34f;
+}
+.sort-tag-screen-icon{
+	width: 28rpx;
+	height: 30rpx;
+	margin-top: 5rpx;
+}
+.sort-tag-right{
+	float: right;
+	display: flex;
+}
+.sort-tag-right-title{
+	font-size: 27rpx;
+	color: #000;
+}

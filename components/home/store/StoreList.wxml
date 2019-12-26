@@ -1,0 +1,10 @@
+<!--components/home/store/StoreList.wxml-->
+<view class="store-list-warp">
+	<view class="store-list-title">附近店铺</view>
+	<!-- 排序 -->
+	<sort-tag></sort-tag>
+	<!-- 筛选条件 -->
+	<selectcondition-com></selectcondition-com>
+	<!-- 店铺列表 -->
+	<itemlist-com></itemlist-com>
+</view>

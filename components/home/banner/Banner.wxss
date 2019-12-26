@@ -4,10 +4,13 @@
 	height: 185rpx;
 	border-radius: 10rpx;
 }
-swiper, swiper-item{
+.swiper-box, .swiper-item{
 	height: 185rpx;
 	border-radius: 10rpx;
 }
 .banner-box{
 	padding: 0 20rpx;
+}
+.buy-scroll-warp{
+	white-space: nowrap;
 }

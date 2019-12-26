@@ -1,0 +1,29 @@
+/* components/home/limitbuy/Limitbuy.wxss */
+.limit-buy-warp{
+	height: 483rpx;
+	padding: 0 20rpx;
+}
+.limit-buy-title-box{
+	height: 50rpx;
+	margin-top: 35rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.limit-buy-title{
+	font-size: 40rpx;
+	color: #000000;
+	font-weight: bold;
+}
+.limit-buy-more{
+	display: flex;
+}
+.limit-buy-more-text{
+	display: block;
+	color: #333;
+}
+.right-awg{
+	height: 37rpx;
+	width: 30rpx;
+	margin-top: 5rpx;
+	flex: 1;
+}

@@ -1,0 +1,30 @@
+/* components/home/selectcondition/Selectcondition.wxss */
+.selectcondition-warp, .selectcondition-warp-box{
+	height: 64rpx;
+}
+.selectcondition-warp-box{
+	display: flex;
+}
+.selectcondition-item{
+	height:64rpx;
+	width: 169rpx;
+	margin: 0 5rpx;
+	display: flex;
+	text-align: center;
+	line-height: 64rpx;
+	border-radius: 10rpx;
+	background: #f8f8f8;
+	color: #333;
+	font-size: 26rpx;
+}
+.selectcondition-item-title{
+	flex: 1;
+}
+.down-awg-t{
+	width: 38rpx;
+	height: 40rpx;
+	margin-top: 13rpx;
+}
+.down-awg-t-title{
+	text-align: right!important;
+}

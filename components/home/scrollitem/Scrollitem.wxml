@@ -1,0 +1,20 @@
+<!--components/home/scrollitem/Scrollitem.wxml-->
+<view class="scroll-box-item">
+	<view class="scroll-box-item-top">
+		<image class="scroll-box-item-top-img" src="https://img30.360buyimg.com/n6/jfs/t1/58244/12/15329/158755/5dc418aaE4329f78c/e79ef148416261aa.jpg"></image>
+		<view class="item-top-tips">秒杀3.97折</view>
+		<image src="https://img30.360buyimg.com/vendersettle/jfs/t1/28439/30/9372/12503/5c7e4be9E765cc841/d1f3e78254d4488f.png" class="scroll-box-item-logo"></image>
+	</view>
+	<view class="scroll-box-item-bottom">
+		<view class="scroll-box-item-bottom-title">盛月源 澳洲雪花肥牛 400g</view>
+		<view class="scroll-box-item-bottom-content">
+			<view class="scroll-box-item-bottom-left">
+				<view class="scroll-discount-price">￥10</view>
+				<view class="scroll-origin-price">￥42.9</view>
+			</view>
+			<view class="scroll-box-item-bottom-right">
+				<image class="scroll-box-item-bottom-right-img" src="https://static-o2o.360buyimg.com/daojia/react/images/seckillQiang.3882994a.png"></image>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,16 @@
+/* components/home/buyscroll/Buyscroll.wxss */
+.buy-scroll-box{
+	height: 345rpx;
+	margin-top: 24rpx;
+}
+.buy-scroll-warp{
+	white-space: nowrap;
+}
+.buy-scroll-warp-style{
+	margin: 0 10rpx;
+}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
