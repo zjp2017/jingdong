@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "buyscroll-com":"/components/home/buyscroll/Buyscroll"
+  }
+}

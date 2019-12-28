@@ -1,0 +1,10 @@
+<!--components/home/sort/SortTag.wxml-->
+<view class="sort-tag">
+	<view class="sort-tag-left">
+		<view wx:for="{{sortList}}" class="sort-tag-left-text {{index>0?'showMta':''}}" wx:key="index">{{item.title}}</view>
+	</view>
+	<view class="sort-tag-right">
+		<view class="sort-tag-right-title">筛选</view>
+		<image class="sort-tag-screen-icon" src="../../../static/images/home/screen_con.png"></image>
+	</view>
+</view>

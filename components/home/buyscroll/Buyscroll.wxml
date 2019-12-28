@@ -1,0 +1,11 @@
+<!--components/home/buyscroll/Buyscroll.wxml-->
+<view class="buy-scroll-box">
+	<scroll-view scroll-x="true" class="buy-scroll-warp">
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+	</scroll-view>
+	
+</view>

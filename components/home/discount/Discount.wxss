@@ -1,0 +1,58 @@
+/* components/home/discount/Discount.wxss */
+.discount-cover{
+	height: 630rpx;
+	margin-top: 20rpx;
+}
+.discount-header, .discount-bottom{
+	display: flex;
+}
+.discount-title{
+	height: 99rpx;
+	line-height: 99rpx;
+	font-size: 40rpx;
+	font-weight: bold;
+	margin-left: 10rpx;
+}
+.discount-header{
+	height: 263rpx;
+}
+.discount-header-img{
+	flex: 1;
+	height: 263rpx;
+	margin: 0 10rpx;
+	border-radius: 10rpx;
+}
+.discount-bottom{
+	height: 245rpx;
+	display: flex;
+	margin-top: 40rpx;
+}
+.discount-bottom-item{
+	flex: 1;
+	height: 245rpx;
+}
+.discount-bottom-item-title{
+	font-size: 25rpx;
+	color: #ff5757;
+	text-align: center;
+	line-height: 30rpx;
+}
+.discount-bottom-item-desc{
+	font-size: 20rpx;
+	color: #000000;
+	text-align: center;
+	line-height: 20rpx;
+	margin-top: 16rpx;
+}
+.discount-bottom-item-img{
+	height: 120rpx;
+	text-align: center;
+	margin-top: 16rpx;
+}
+.discount-bottom-item-png{
+	width: 121rpx;
+	height: 120rpx;
+}
+.discount-cover{
+	padding: 0 18rpx;
+}

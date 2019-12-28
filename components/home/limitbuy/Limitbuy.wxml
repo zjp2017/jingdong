@@ -1,0 +1,13 @@
+<!--components/home/limitbuy/Limitbuy.wxml-->
+<view class="limit-buy-warp">
+	<view class="limit-buy-title-box">
+		<view class="limit-buy-title">限时抢购</view>
+		<view class="limit-buy-more">
+			<text class="limit-buy-more-text" >更多</text>
+			<image class="right-awg" src="../../../static/images/home/right_awg.png"></image>
+		</view>
+	</view>
+	<buyscroll-com>
+		
+	</buyscroll-com>
+</view>

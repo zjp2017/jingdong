@@ -9,17 +9,26 @@
 			<search-com class="search-component"></search-com>
 		</view>
 		<!-- 2.固定banner图部分 -->
-		<view class="fixed-banner-box">
+		<!-- <view class="fixed-banner-box">
 			<image mode="widthFix" lazy-load="true" class="fixed-banner-box-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/105168/21/7663/133072/5dff1fbeEb3cc0c51/68b8ec2241714b4c.gif"></image>
-		</view>
+		</view> -->
 		<!-- 3.中间滑动部分 -->
-		<scroll-com></scroll-com>
+		<!-- <scroll-com></scroll-com> -->
 		<!-- 4.新人专享福利 -->
-		<view class="new-person-welfare">
+		<!-- <view class="new-person-welfare">
 			<image class="new-person-welfare-img" mode="widthFix" src="https://imgcps.jd.com/djmarketing/img_717923/img_716748/img_716653/NC4z/NC40/NC44/77-lMS45/77-lMQ/77-lMS4z/77-lMTU/56uL5Y2z6aKG5Y-W/t-5ca3472c2612abcf54f614a2/bef47f04.png"></image>
-		</view>
-		<!-- 5.banner -->
+		</view> -->
+		<!-- 5.banner列表 -->
+		<!-- <banner-com></banner-com> -->
+		<!-- 6.优惠专区 -->
+		<!-- <discount-com></discount-com> -->
+		<!-- 7.限时抢购 -->
+		<!-- <limitbuy-com></limitbuy-com> -->
+		<!-- 8.中间banner -->
 		<banner-com></banner-com>
+		<!-- 9.附近店铺 -->
+		<store-com></store-com>
+		
 	</view>
 
   

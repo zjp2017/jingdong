@@ -3,7 +3,12 @@
 	  "header-com":"/components/home/loactionHeader/LocationHeader",
 	  "search-com":"/components/home/search/Search",
 	  "scroll-com":"/components/home/scroll/Scroll",
-	  "banner-com":"/components/home/banner/Banner"
+	  "banner-com":"/components/home/banner/Banner",
+	  "discount-com":"/components/home/discount/Discount",
+	  "limitbuy-com":"/components/home/limitbuy/Limitbuy",
+	  "store-com":"/components/home/store/StoreList"
+	 
+		
   },
   "navigationBarTitleText":"京东到家",
   "enablePullDownRefresh":true

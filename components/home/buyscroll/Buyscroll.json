@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "scrollitem-com":"/components/home/scrollitem/Scrollitem"
+  }
+}
