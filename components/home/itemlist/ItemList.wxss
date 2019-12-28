@@ -135,4 +135,7 @@
 	margin-left: 15rpx;
 	height: 30rpx;
 	line-height: 32rpx;
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
 }
