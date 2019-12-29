@@ -1,0 +1,27 @@
+/* components/mine/Header.wxss */
+.mine-header{
+	background: url('https://static-o2o.360buyimg.com/daojia/user//images/my_bgnew.png');
+	background-size: 100% 100%;
+	height: 299rpx;
+	overflow: hidden;
+}
+.mine-header-box{
+	height: 134rpx;
+	display: flex;
+	margin-top: 100rpx;
+}
+.mine-header-img{
+	width: 134rpx;
+	height: 134rpx;
+	border-radius: 50%;
+}
+.mine-header-text{
+	width: 159rpx;
+	height: 65rpx;
+	background: #6ac577;
+	font-size: 26rpx;
+	text-align: center;
+	line-height: 65rpx;
+	color: #fff;
+	margin: 37rpx 0 0 18rpx;
+}

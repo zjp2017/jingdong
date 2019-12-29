@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "attention-com":"/components/find/attention/Attention"
+  }
 }

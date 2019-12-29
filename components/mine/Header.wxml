@@ -1,0 +1,7 @@
+<!--components/mine/Header.wxml-->
+<view class="mine-header">
+	<div class="mine-header-box">
+		<image class="mine-header-img" src="https://storage.360buyimg.com/i.imageUpload/6a645f3532373862313563386335613031353538313638373836313232_big.jpg"></image>
+		<view class="mine-header-text">登录/注册</view>
+	</div>
+</view>

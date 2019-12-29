@@ -4,7 +4,8 @@
     "pages/find/find",
     "pages/mine/mine",
     "pages/order/order",
-    "pages/shoppingCart/shoppingCart"
+    "pages/shoppingCart/shoppingCart",
+    "pages/childpages/attention/attention"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,15 +13,15 @@
     "navigationBarTitleText": "仿京东到家",
     "navigationBarTextStyle": "white"
   },
-  "tabBar":{
-    "list":[
+  "tabBar": {
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "iconPath":"static/images/tabBarrIcon/home.png",
-        "selectedIconPath":"static/images/tabBarrIcon/homeactive.png",
-        "color":"#555",
-        "selectedColor":"#39ac69",
-        "text":"首页"
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabBarrIcon/home.png",
+        "selectedIconPath": "static/images/tabBarrIcon/homeactive.png",
+        "color": "#555",
+        "selectedColor": "#39ac69",
+        "text": "首页"
       },
       {
         "pagePath": "pages/find/find",

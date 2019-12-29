@@ -1,4 +1,4 @@
 <!--pages/find/find.wxml-->
 <view class="discover">
-	
+  <attention-com ></attention-com >
 </view>

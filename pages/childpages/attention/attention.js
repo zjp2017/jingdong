@@ -1,11 +1,11 @@
-// pages/mine/mine.js
+// pages/childpages/attention/attention.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-	cardList:[{}]
+
   },
 
   /**

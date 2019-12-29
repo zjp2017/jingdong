@@ -1,1 +1,38 @@
 /* pages/mine/mine.wxss */
+
+.card-list{
+	height: 142rpx;
+	display: flex;
+	border-bottom: 1rpx solid #f4f4f4;
+}
+.card-list-item{
+	flex: 1;
+}
+.card-list-item-num{
+	text-align: center;
+	font-size: 24rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	margin-top: 30rpx;
+}
+.card-list-item-title{
+	text-align: center;
+	font-size: 24rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+}
+.card-list-item-img{
+	width: 50rpx;
+	height: 50rpx;
+	margin-left: 50rpx;
+	margin-top: 15rpx;
+}
+.mine-swiper-warp{
+	display: flex;
+}
+.mine-swiper-warp, .mine-swiper-item, .mine-swiper-item-img{
+	height: 130rpx;
+}
+.mine-swiper-item-img{
+	width: 100%;
+}

@@ -1,2 +1,56 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view>
+	<mine-header></mine-header>
+	<view class="card-list">
+		<view class="card-list-item">
+			<image class="card-list-item-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAtCAYAAADsvzj/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFBRDQwMzYwNzRDRDExRTdCRENFQTlGRTJCQTc2MTk0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjFBRDQwMzYxNzRDRDExRTdCRENFQTlGRTJCQTc2MTk0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUFENDAzNUU3NENEMTFFN0JEQ0VBOUZFMkJBNzYxOTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUFENDAzNUY3NENEMTFFN0JEQ0VBOUZFMkJBNzYxOTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4YavcrAAACNklEQVR42tyau0vDUBjFT+rFBz7on6Cg6KIIPtBFEB+DWNHRQScnBVFBEdTJB6KD4ODSSXTWQZAqXQRBB3UWBP8GqQ4+uX7R+Eja2qa59ybXA4f7NSnJPfz63SQlBuccWDCqAKySO8ll+EvcRe1mdL8tQY5TNYstfmPweVTTh3NyGJkkcuK5Bkqu72hsYVSsZAwRHAqp6jCNK8z6OelGwVl3s7Q9EWwKzrqEaUzBVjONKaQJoiEFexCNKWRPJOAU3BEJMIW/iWhEITMRTSgkE9GUQmoiGlLwHkTU5OsiQMckUNEEFJTAi5hvFPqXgJ45iBJLOyGZvVDbKzTETxDVvdA1BdFivqxI5Y0SgvixIhWW2mfx9gwcTQNXu8ArfaF+CIisA3n5AnpE5nLqVGwGON2kEPh0nGpeBAysZh0k9H0SlXbqYgcgKB9+shyPeugRVRc1p74CmDRerM8uFQwiZk+YQR4tm3XbiIBVSzWRgTUKQDtOdj73t1OwwUVXQQw+bh1aZZBoInnl8qiQ7USqfHsh/DriT48cbvyTIJcHwP6y0CAGH6NDK352+K4b+ujmcQKobKbb+GKPQUZ9DJLLtjQjS1rfgxTExehPEAmBghckx1FdEBmBfCEigcLvMHKDSKagjohkCnKJKKQgl4hCCs57rYSQB6VstuVyzCxCkB5CH28PyH4a9Pp3bKrarmODD6OGdp6Rwzr0QgrdkVtD2ObX5isQ5D3yvUYU7sl75BbE+PW7AAMA8yflEEhfvYAAAAAASUVORK5CYII="></image>
+			<view class="card-list-item-title">
+				我的钱包
+			</view>
+		</view>
+		<view class="card-list-item">
+			<view class="card-list-item-num">
+				-
+			</view>
+			<view class="card-list-item-title">
+				红包
+			</view>
+		</view>
+		<view class="card-list-item">
+			<view class="card-list-item-num">
+				1000
+			</view>
+			<view class="card-list-item-title">
+				优惠券
+			</view>
+		</view>
+		<view class="card-list-item">
+			<view class="card-list-item-num">
+				-
+			</view>
+			<view class="card-list-item-title">
+				鲜豆
+			</view>
+		</view>
+		<view class="card-list-item">
+			<view class="card-list-item-num">
+				-
+			</view>
+			<view class="card-list-item-title">
+				白条
+			</view>
+		</view>
+	</view>
+	<!-- banner -->
+	<swiper autoplay="true" indicator-dots="true" class="mine-swiper-warp" indicator-color='#ededed' indicator-active-color="#39ac69">
+		<swiper-item class="mine-swiper-item">
+			<image mode="widthFix" class="mine-swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/72569/19/13524/27542/5dafc09eEd7d5c446/ff259d2ed863bbf2.png"></image>
+		</swiper-item>
+		<swiper-item class="mine-swiper-item">
+			<image mode="widthFix" class="mine-swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/73989/1/15583/53337/5dd23274Eb1d022ae/cba0fc716e226a4c.jpg"></image>
+		</swiper-item>
+		<swiper-item class="mine-swiper-item">
+			<image mode="widthFix" class="mine-swiper-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/104655/17/575/68364/5db01ae3Ee789b844/bf751fe2780a8e1b.jpg"></image>
+		</swiper-item>
+	</swiper>
+</view>

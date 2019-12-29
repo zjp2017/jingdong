@@ -4,3 +4,6 @@ page{
 	width: 100%;
 	background: #f8f8f8;
 }
+.discover{
+	padding: 0 18rpx;
+}

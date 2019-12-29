@@ -1,0 +1,81 @@
+/* components/find/goods/GoodsItem.wxss */
+.goods-item-img{
+	height: 218rpx;
+	width: 218rpx;
+	border-radius: 8rpx;
+	border: 1rpx solid #f8f8f8;	
+}
+.goods-item{
+	height: 218rpx;
+	width: 218rpx;
+	border: 1rpx solid #f8f8f8;	
+	border-radius: 8rpx;
+	position: relative;
+}
+.goods-item-discount, .goods-item-reduction, .goods-item-reduce{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 25rpx;
+	color: #fff;
+	border-radius: 8rpx 0 8rpx 0;
+	font-size: 20rpx;
+	line-height: 25rpx;
+	text-align: center;
+	padding: 5rpx 10rpx;
+}
+.goods-item-discount{
+	background: linear-gradient(135deg, rgb(255, 125, 125) 0%, rgb(255, 81, 56) 100%);
+}
+.goods-item-reduction{
+	background: linear-gradient(135deg, rgb(255, 200, 55) 0%, rgb(255, 150, 51) 100%);
+}
+.goods-item-reduce{
+	background: linear-gradient(135deg, rgb(85, 216, 94) 0%, rgb(72, 193, 81) 100%);
+}
+.goods-item-discount-price-box{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 53rpx;
+	border-radius: 0 0 8rpx 8rpx;
+	width: 218rpx;
+	box-sizing: border-box;
+	display: flex;
+	padding: 10rpx 0 0 10rpx;
+	background: hsla(0,0%,100%,.9);
+}
+.goods-item-discount-price{
+	color: #ff5757;
+	font-weight: bold;
+	font-size: 26rpx;
+}
+.goods-item-origin-price{
+	color: #999;
+	font-size: 20rpx;
+	text-decoration: line-through;
+	margin: 5rpx 0 0 5rpx;
+}
+.goods-item-origin-vip{
+	width: 62rpx;
+	height: 20rpx;
+	margin-left: 10rpx;
+}
+.goods-item-sale-out-box{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 112rpx;
+	height: 48rpx;
+	line-height: 48rpx;
+	text-align: center;
+	border-radius: 24rpx;
+	background: rgba(0,0,0,.3);
+	color: #fff;
+	font-size: 24rpx;
+	font-weight: bold;
+	
+}
