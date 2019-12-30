@@ -1,0 +1,12 @@
+<!--components/childpages/home/searchinput/SearchInput.wxml-->
+<view class="search-input-box">
+	<view class="search-input-warp">
+		<image class="search-icon" src="/static/images/home/search_icon.png" ></image>
+	</view>
+	<input type="text" placeholder="搜索附近的商品" class="search-input" bindinput="inputChange" value="{{searchContent}}" focus="true"/>
+	<view class="clearn-icon-warp">
+		<image class="clearn-icon" src="/static/images/home/clear_icon.png" wx:if="{{clearIconShow=='true'}}" catchtap="clearContent"></image>
+	</view>
+	<view class="search-btn">搜索</view>
+	
+</view>

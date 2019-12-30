@@ -85,6 +85,20 @@
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/home/search/search",
+					"pathName": "pages/childpages/home/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/home/search/search",
+					"pathName": "pages/childpages/home/search/search",
 					"scene": null
 				}
 			]

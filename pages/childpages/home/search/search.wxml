@@ -1,4 +1,4 @@
 <!--pages/childpages/home/search/search.wxml-->
 <view class="search-page">
-	zdas
+	<searchinput-com></searchinput-com>
 </view>
