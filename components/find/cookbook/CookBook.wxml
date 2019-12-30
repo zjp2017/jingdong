@@ -1,0 +1,17 @@
+<!--components/find/cookbook/CookBook.wxml-->
+<view class="cookbook-warp">
+	<!-- 搜索框 引入首页中的 -->
+	<search-com class="search-com"></search-com>
+	<!-- banner列表项 -->
+	<cookbookbanner-com class="cookbookbanner-com"></cookbookbanner-com>
+	<!--  -->
+	<view class="hot-cookbook">热门食谱</view>
+	<!-- 食谱卡片1 -->
+	<view class="cookbookbanner-lists">
+		<cookbookcard-com class="cookbookcard-com"></cookbookcard-com>
+		<cookbookcard-com class="cookbookcard-com"></cookbookcard-com>
+		<!-- 食谱列表1 -->
+		<cookbooklist-com class="cookbooklist-com"></cookbooklist-com>
+		<cookbooklist-com class="cookbooklist-com"></cookbooklist-com>
+	</view>
+</view>

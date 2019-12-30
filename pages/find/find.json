@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "attention-com":"/components/find/attention/Attention"
+    "attention-com":"/components/find/attention/Attention",
+    "cookbook-com":"/components/find/cookbook/CookBook",
+	"recommend-com":"/components/find/recommend/Recommend",
+	"fashion-com":"/components/find/fashion/Fashion",
+	"life-com":"/components/find/life/Life"
+	
   }
 }

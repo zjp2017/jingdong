@@ -1,0 +1,44 @@
+<!--components/find/cookbookbanner/CookBookBanner.wxml-->
+<view class="cookbookbanner-warp">
+	<!-- 1 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t27391/333/2051445968/8537/8d383650/5bf670a6N6f42fcb1.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">家常菜</view>
+	</view>
+	<!-- 2 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t29362/223/540488837/10506/aa38a3b0/5bf670a6N0d7ccb85.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">"肉类"</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	<!-- 3 -->
+	<view class="cookbookbanner-item">
+		<image class="cookbookbanner-item-img" src="https://img30.360buyimg.com/djtechportal/jfs/t26479/27/2065140247/9870/71f5917b/5bf670a5N104dc11b.png" lazy-load="true"></image>
+		<view class="cookbookbanner-item-title">水产海鲜</view>
+	</view>
+	
+</view>

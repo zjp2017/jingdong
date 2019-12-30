@@ -1,0 +1,49 @@
+/* components/find/cookbookcard/CookBookCard.wxss */
+.cookbookcard-warp{
+	height: 467rpx;
+	background: #fff;
+	border-radius: 12rpx;
+}
+.cookbookcard-img{
+	height: 318rpx;
+	border-radius: 12rpx 12rpx 0 0;
+	width: 100%;
+}
+.cookbookcard-user{
+	display: flex;
+	margin-top: 25rpx;
+	margin-left: 20rpx;
+	justify-content: space-between;
+}
+.cookbookcard-user-img{
+	width: 43rpx;
+	height: 43rpx;
+	border-radius: 50%;
+}
+.cookbookcard-title{
+	font-size: 31rpx;
+	margin-top: 20rpx;
+	text-indent: 20rpx;	
+	font-weight: bold;
+}
+.cookbookcard-user-name{
+	margin-left: 10rpx;
+	font-size: 23rpx;
+	color: #666;
+	margin-top: 5rpx;
+}
+.cookbookcard-user-left, .cookbookcard-user-right{
+	display: flex;
+}
+.cookbookcard-user-right{
+	margin-right: 15rpx;
+}
+.cookbookcard-user-icon{
+	width: 27rpx;
+	height: 24rpx;
+	margin-top: 6rpx;
+}
+.cookbookcard-user-look-num{
+	color: #666666;
+	font-size: 24rpx;
+}

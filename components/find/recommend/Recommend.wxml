@@ -1,0 +1,5 @@
+<!--components/find/recommend/Recommend.wxml-->
+<view>
+	<finditem-com></finditem-com>
+	
+</view>

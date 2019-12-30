@@ -1,0 +1,15 @@
+<!--components/find/cookbookcard/CookBookCard.wxml-->
+<view class="cookbookcard-warp">
+	<image mode="center" class="cookbookcard-img" src="https://i1.douguo.com//upload/caiku/e/7/7/600_e7ba62e7854856cd71f90fd92a650647.jpg"></image>
+	<view class="cookbookcard-title">回锅肉</view>
+	<view class="cookbookcard-user">
+		<view class="cookbookcard-user-left">
+			<image class="cookbookcard-user-img" src="https://tx1.douguo.com/upload/photo/9/f/c/70_u75781969739109090150.jpeg"></image>
+			<view class="cookbookcard-user-name">漂洋过来来看你</view>
+		</view>
+		<view class="cookbookcard-user-right">
+			<image class="cookbookcard-user-icon"  src="../../../static/images/find/overlook.png"></image>
+			<view class="cookbookcard-user-look-num">136340</view>
+		</view>
+	</view>
+</view>

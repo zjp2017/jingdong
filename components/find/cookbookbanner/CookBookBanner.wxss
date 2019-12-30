@@ -1,0 +1,32 @@
+/* components/find/cookbookbanner/CookBookBanner.wxss */
+.cookbookbanner-warp{
+	height: 362rpx;
+	background: #fff;
+	border-radius: 12rpx;
+	padding: 29rpx 29rpx 29rpx;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.cookbookbanner-item{
+	width: 90rpx;
+	height: 160rpx;
+	margin: 0 26rpx;
+}
+.cookbookbanner-item:nth-child(5n-4){
+	margin-left: 0;
+}
+.cookbookbanner-item:nth-child(5n){
+	margin-right: 0;
+}
+.cookbookbanner-item-img{
+	width: 89rpx;
+	height: 89rpx;
+	margin-top: 10rpx;
+}
+.cookbookbanner-item-title{
+	font-size: 23rpx;
+	text-align: center;
+	margin-top: 11rpx;
+}

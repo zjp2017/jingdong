@@ -1,13 +1,12 @@
 /* components/home/search/search.wxss */
 .search-warp{
 	text-align: center;
-	width: 700rpx;
+	/* width: 700rpx; */
 	height: 70rpx;
 	border-radius: 35rpx;
 	background: #fff;
 	display: flex;
 	justify-content: center;
-	
 }
 .search-icon{
 	height: 25rpx;
@@ -24,4 +23,5 @@
 .search-warp-box{
 	padding: 0 24rpx;
 	margin-top: 40rpx;
+	box-sizing: border-box;
 }

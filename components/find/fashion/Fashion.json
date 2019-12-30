@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "finditem-com":"/components/find/recommendandfahion/RecommendAndFahion"
+  }
+}

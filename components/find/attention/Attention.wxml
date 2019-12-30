@@ -30,6 +30,33 @@
 		<image  lazy-load="true" mode="widthFix" class="attention-item-product-img" src="https://img30.360buyimg.com/mobilecms//jfs/t1/95926/26/8608/156403/5e06f826E28ad29b5/320d67ade6161501.jpg"></image>
 	 </view>
 	 <!-- 2 -->
+	 <view class="attention-item">
+	 	<view class="attention-item-header">
+	 		<view class="a-item-header-left">
+	 			<image class="a-item-header-img" src="https://img30.360buyimg.com/vendersettle/s120x120_jfs/t1/110036/11/2197/59339/5e0467e8Efff449ab/224ff6d34bbadebf.png"></image>
+	 		</view>
+	 		<view class="a-item-header-right">
+	 			<view class="a-item-header-right-title">四季鲜果蔬-南小街会员店</view>
+	 			<view class="a-item-header-right-time">2019-12-25</view>
+	 		</view>
+	 	</view>
+	 	<view class="attention-item-desc">
+	 		圣诞狂欢，元旦小憩。挥手过往，尘埃落定。迎接新年，快乐无敌。放松心情，能量积蓄。共盼美好，祝福真切。闪亮人生，精彩同行。
+	 	</view>
+	 <!-- 以下二选一 -->
+	 	<!-- 1 -->
+	 	<view class="attention-item-list-box">
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 		<goods-com class="attention-item-list-item"></goods-com>
+	 	</view>
+	 	<!-- 2 -->
+	 	<image  lazy-load="true" mode="widthFix" class="attention-item-product-img" src="https://img30.360buyimg.com/mobilecms//jfs/t1/95926/26/8608/156403/5e06f826E28ad29b5/320d67ade6161501.jpg"></image>
+	  </view>
 
 
 </view>

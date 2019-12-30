@@ -1,0 +1,31 @@
+/* components/find/cookbook/CookBook.wxss */
+.cookbookbanner-com{
+	margin-top: 34rpx;
+	width: 100%;
+}
+.hot-cookbook{
+	font-size: 40rpx;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 40rpx;
+	width: 100%;
+	text-indent: 20rpx;
+	padding-bottom: 30rpx;
+}
+.cookbook-warp{
+	overflow: hidden;
+	border: 1rpx solid #ffffff;
+}
+.search-com{
+	height: 110rpx;
+	padding-bottom: 34rpx;
+}
+.cookbookcard-com{
+	margin-top: 20rpx;
+}
+.cookbookbanner-lists{	
+	overflow: hidden;
+}
+.cookbooklist-com{
+	margin-top: 20rpx;
+}

@@ -1,0 +1,86 @@
+/* components/find/recommendandfahion/RecommendAndFahion.wxss */
+.recommend-list-transversal{
+	height: 582rpx;
+	border-radius: 12rpx;
+	background: #fff;
+	overflow: hidden;
+	padding: 0 23rpx;
+	box-sizing: border-box;
+	margin-top: 10rpx;
+}
+.recommend-warp{
+	overflow: hidden;
+	margin-top: 20rpx;
+}
+.recommend-list-transversal-title{
+	height: 88rpx;
+	border-radius: 12rpx 12rpx 0 0;
+	margin-top: 30rpx;
+	font-weight: bold;
+	font-size: 33rpx;
+	overflow: hidden;
+}
+.recommend-list-transversal-introduce{
+	font-size: 28rpx;
+	color: #666;
+	margin-top: 20rpx;
+	overflow: hidden;
+	height: 43rpx;
+}
+.recommend-list-transversal-img{
+	width: 100%;
+	height: 300rpx;
+	margin-top: 30rpx;
+	border-radius: 12rpx;
+}
+.recommend-list-transversal-user{
+	display: flex;
+	margin-top: 10rpx;
+}
+.recommend-list-transversal-user-img{
+	width: 41rpx;
+	height: 41rpx;
+	border-radius: 50%;
+	margin-left: 10rpx;
+}
+.recommend-list-transversal-user-name{
+	font-size:24rpx;
+	color: #666;
+	margin-left: 10rpx;
+	margin-top: 5rpx;
+}
+
+.recommend-list-portrait{
+	display: flex;
+	height: 266rpx;
+	background: #fff;
+	border-radius: 12rpx;
+	margin-top: 10rpx;
+}
+.recommend-list-portrait-img{
+	width: 266rpx;
+	height: 266rpx;
+	border-radius: 12rpx 0 0 12rpx;
+}
+.recommend-list-portrait-right{
+	width: 449rpx;
+	height: 266rpx;
+	padding: 20rpx 10rpx 20rpx 20rpx;
+}
+.recommend-list-portrait-title{
+	height: 90rpx;
+	overflow: hidden;
+	font-size: 33rpx;
+	font-weight: bold;
+	margin-top: 10rpx;
+}
+.recommend-list-portrait-introduce{
+	height: 30rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 24rpx;
+	color: #666;
+	margin-top: 10rpx;
+	margin-bottom: 55rpx;
+}

@@ -3,6 +3,7 @@
 	background: #ffffff;
 	border-radius: 18rpx;
 	padding: 30rpx 20rpx;
+	margin-bottom: 20rpx;
 }
 .attention-item-header{
 	height: 82rpx;

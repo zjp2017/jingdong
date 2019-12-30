@@ -1,4 +1,12 @@
 <!--pages/find/find.wxml-->
 <view class="discover">
-  <attention-com ></attention-com >
+	<!-- 1.发现组件 -->
+  <!-- <attention-com ></attention-com > -->
+  <!-- 2.食谱组件 -->
+  <!-- <cookbook-com></cookbook-com> -->
+  <!-- 3.推荐 -->
+  <!-- <recommend-com></recommend-com> -->
+  <!--4. 时尚美妆 -->
+  <!-- <fashion-com></fashion-com> -->
+  <life-com></life-com>
 </view>

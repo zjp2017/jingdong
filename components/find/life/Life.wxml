@@ -1,0 +1,4 @@
+<!--components/find/life/Life.wxml-->
+<view>
+	<finditem-com></finditem-com>
+</view>

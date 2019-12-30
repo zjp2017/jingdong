@@ -5,7 +5,7 @@
     "pages/mine/mine",
     "pages/order/order",
     "pages/shoppingCart/shoppingCart",
-    "pages/childpages/attention/attention"
+    "pages/childpages/home/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

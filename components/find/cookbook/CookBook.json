@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+	   "search-com":"/components/home/search/Search",
+	   "cookbookbanner-com":"/components/find/cookbookbanner/CookBookBanner",
+	   "cookbookcard-com":"/components/find/cookbookcard/CookBookCard",
+	   "cookbooklist-com":"/components/find/cookbooklist/CookBookList"
+	   
+  }
+}
