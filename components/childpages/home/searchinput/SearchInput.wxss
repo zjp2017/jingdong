@@ -22,18 +22,15 @@
 	height: 60rpx;
 	position: relative;
 	background: #f4f4f4;
+	border-radius: 30rpx 0 0 30rpx;
 }
 .search-btn{
 	line-height: 60rpx;
 	font-size: 32rpx;
 	height: 60rpx;
 	margin-left: 18rpx;
-	
 }
 .clearn-icon{
-	/* position: absolute; */
-	/* right: 111rpx; */
-	/* top: 0; */
 	width: 60rpx;
 	height: 60rpx;
 	z-index: 1000;
@@ -42,4 +39,5 @@
 	width: 60rpx;
 	height: 60rpx;
 	background: #f4f4f4;
+	border-radius: 0 30rpx 30rpx 0;
 }

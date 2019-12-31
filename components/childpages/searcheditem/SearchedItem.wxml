@@ -1,0 +1,64 @@
+<!--components/childpages/searcheditem/SearchedItem.wxml-->
+<view class="searcheditem-warp">
+	<view class="searcheditem-box">
+		<!-- 1 -->
+		<view class="searcheditem-item">
+			<view class="searcheditem-item-left">
+				<image mode="widthFix" class="searcheditem-item-left-img" src="https://img30.360buyimg.com/n6//jfs/t1/54298/38/11012/632971/5d818db7Ecec44cc4/d8bd6b56eb17f7e4.png"></image>
+			</view>
+			<view class="searcheditem-item-right">
+				<view class="searcheditem-item-right-title">Member's Mark 德国进口 全脂牛奶（灭菌乳）纯牛奶 200ml*24盒 整箱装</view>
+				<view class="searcheditem-item-right-sale-score">
+					<view class="searcheditem-item-right-sale-num">月售74</view>
+					<view class="searcheditem-item-right-score">好评100%</view>
+				</view>
+				<view class="searcheditem-item-right-price">￥29.9</view>
+				<view class="searcheditem-item-right-discount-box">
+					<view class="searcheditem-item-right-discount">￥19.9</view>
+					<image class="searcheditem-item-right-vip" src="https://img30.360buyimg.com/mobilecms/jfs/t20686/164/1675043590/5045/91f83656/5b31d61cN8a5bff81.png"></image>
+				</view>
+			</view>
+		</view>
+		<!-- 2 -->
+		<view class="searcheditem-item">
+			<view class="searcheditem-item-left">
+				<image mode="widthFix" class="searcheditem-item-left-img" src="https://img30.360buyimg.com/n6//jfs/t1/54298/38/11012/632971/5d818db7Ecec44cc4/d8bd6b56eb17f7e4.png"></image>
+			</view>
+			<view class="searcheditem-item-right">
+				<view class="searcheditem-item-right-title">Member's Mark 德国进口 全脂牛奶（灭菌乳）纯牛奶 200ml*24盒 整箱装</view>
+				<view class="searcheditem-item-right-sale-score">
+					<view class="searcheditem-item-right-sale-num">月售74</view>
+					<view class="searcheditem-item-right-score">好评100%</view>
+				</view>
+				<view class="searcheditem-item-right-price">￥29.9</view>
+				<view class="searcheditem-item-right-discount-box">
+					<view class="searcheditem-item-right-discount">￥19.9</view>
+					<image class="searcheditem-item-right-vip" src="https://img30.360buyimg.com/mobilecms/jfs/t20686/164/1675043590/5045/91f83656/5b31d61cN8a5bff81.png"></image>
+				</view>
+			</view>
+		</view>
+		<!-- 2 -->
+		<view class="searcheditem-item">
+			<view class="searcheditem-item-left">
+				<image mode="widthFix" class="searcheditem-item-left-img" src="https://img30.360buyimg.com/n6//jfs/t1/54298/38/11012/632971/5d818db7Ecec44cc4/d8bd6b56eb17f7e4.png"></image>
+			</view>
+			<view class="searcheditem-item-right">
+				<view class="searcheditem-item-right-title">Member's Mark 德国进口 全脂牛奶（灭菌乳）纯牛奶 200ml*24盒 整箱装</view>
+				<view class="searcheditem-item-right-sale-score">
+					<view class="searcheditem-item-right-sale-num">月售74</view>
+					<view class="searcheditem-item-right-score">好评100%</view>
+				</view>
+				<view class="searcheditem-item-right-price">￥29.9</view>
+				<view class="searcheditem-item-right-discount-box">
+					<view class="searcheditem-item-right-discount">￥19.9</view>
+					<image class="searcheditem-item-right-vip" src="https://img30.360buyimg.com/mobilecms/jfs/t20686/164/1675043590/5045/91f83656/5b31d61cN8a5bff81.png"></image>
+				</view>
+			</view>
+		</view>
+		
+	</view>
+	<view class="look-more-shop-warp">
+		<view class="look-more-shop">查看更多21件商品</view>
+		<image class="look-more-shop-icon" src="../../../static/images/home/down_icon2.png"></image>
+	</view>
+</view>

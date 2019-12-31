@@ -1,0 +1,73 @@
+/* components/childpages/searcheditem/SearchedItem.wxss */
+.look-more-shop-warp{
+	height: 76rpx;
+	display: flex;
+	justify-content: center;
+}
+.look-more-shop{
+	height: 76rpx;
+	text-align: center;
+	line-height: 76rpx;
+	font-size: 27rpx;
+	color: #999999;
+}
+.look-more-shop-icon{
+	height: 40rpx;
+	width: 38rpx;
+	margin-top: 19rpx;
+}
+.searcheditem-item{
+	height: 187rpx;
+	margin-top: 20rpx;
+	display: flex;
+}
+.searcheditem-item-left{
+	height: 187rpx;
+	width: 115rpx;
+}
+.searcheditem-item-left-img{
+   width: 100%;
+}
+.searcheditem-item-right{
+	height: 187rpx;
+	margin-left: 30rpx;
+	width: 420rpx;
+}
+.searcheditem-item-right-title{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 38rpx;
+	font-size: 25rpx;
+	font-weight: bold;
+	color: #333333;
+}
+.searcheditem-item-right-sale-score{
+	display: flex;
+	font-size: 23rpx;
+	color: #999999;
+	margin-top: 20rpx;
+}
+.searcheditem-item-right-score{
+	margin-left: 17rpx;
+}
+.searcheditem-item-right-discount-box{
+	display: flex;
+}
+.searcheditem-item-right-price{
+	margin-top: 25rpx;
+	color: #ff5757;
+	font-size:27rpx ;
+	font-weight: bold;
+}
+.searcheditem-item-right-discount{
+	font-size: 25rpx;
+	color: #2f6edb;
+	font-weight: bold;
+}
+.searcheditem-item-right-vip{
+	width: 75rpx;
+	height: 23rpx;
+	margin-top: 5rpx;
+	margin-left: 5rpx;
+}

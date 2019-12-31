@@ -1,4 +1,45 @@
 <!--pages/childpages/home/search/search.wxml-->
 <view class="search-page">
+	<!-- 0.搜索框 -->
 	<searchinput-com></searchinput-com>
+	<!-- 1.搜索标签 -->
+	<!-- <view class="about-search">
+		<view class="about-search-title-box">
+			<image class="about-search-title-icon" src="/static/images/home/hot_icon.png"></image>
+			<view class="about-search-title">热门搜索</view>
+		</view>
+		<view class="search-content-warp">
+			<view class="search-content-list">牛奶</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+			<view class="search-content-list">儿童面条</view>
+		</view>
+		<view class="about-search-title-box">
+			<image class="about-search-title-icon" src="/static/images/home/history_icon.png"></image>
+			<view class="about-search-title">搜索历史</view>
+		</view>
+		<view class="search-content-warp">
+			<view class="search-content-list">牛奶</view>
+			<view class="search-content-list">巧克力</view>
+			<view class="search-content-list">手机</view>
+			<view class="search-content-list">大橙子</view>
+			<view class="search-content-list">苹果手机</view>
+			<view class="search-content-list">奥克斯空调</view>
+			
+		</view>
+	</view> -->
+	<!-- 2.搜索时的下拉列表 -->
+	<!-- <view class="search-item-warp">
+		<view class="search-item">手机</view>
+		<view class="search-item">手机中的战斗机</view>
+		<view class="search-item">苹果手机</view>
+		<view class="search-item">安卓手机</view>
+	</view> -->
+	<!-- 3.搜索到的商品列表 -->
+	<listcommodities-com></listcommodities-com>
 </view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "searcheditem-com":"/components/childpages/searcheditem/SearchedItem"
+  }
+}
