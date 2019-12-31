@@ -1,0 +1,45 @@
+/* components/childpages/home/searchinput/SearchInput.wxss */
+.search-icon{
+	position: absolute;
+	left: 13rpx;
+	top: 18rpx;
+	width: 25rpx;
+	height: 25rpx;
+}
+.search-input-box{
+	display: flex;
+	height: 60rpx;
+	margin: 23rpx 0 0 30rpx;
+	position: relative;
+}
+.search-input{
+	width: 496rpx;
+	height: 60rpx;
+	background: #f4f4f4;
+}
+.search-input-warp{
+	width: 53rpx;
+	height: 60rpx;
+	position: relative;
+	background: #f4f4f4;
+}
+.search-btn{
+	line-height: 60rpx;
+	font-size: 32rpx;
+	height: 60rpx;
+	margin-left: 18rpx;
+	
+}
+.clearn-icon{
+	/* position: absolute; */
+	/* right: 111rpx; */
+	/* top: 0; */
+	width: 60rpx;
+	height: 60rpx;
+	z-index: 1000;
+}
+.clearn-icon-warp{
+	width: 60rpx;
+	height: 60rpx;
+	background: #f4f4f4;
+}
