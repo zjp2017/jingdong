@@ -1,6 +1,8 @@
 {
   "usingComponents": {
 	  "searchinput-com":"/components/childpages/home/searchinput/SearchInput",
-	  "listcommodities-com":"/components/childpages/listcommodities/ListCommodities"
+	  "notsearched-com":"/components/childpages/notsearched/NotSearched",
+	  "searcheditem-com":"/components/childpages/searcheditem/SearchedItem",
+	  "itemlist-com":"/components/home/itemlist/ItemList"
   }
 }

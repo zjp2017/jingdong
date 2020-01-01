@@ -65,5 +65,7 @@
 			<view class="gift-warp-title">返礼</view>
 			<view class="gift-warp-content">买车厘子送由集蛋糕券，适用范围见券说明</view>
 		</view>
+		<!-- 插槽 插入不同的商品展示 -->
+		<slot name="shop-list-item"></slot>
 	</view>
 </view>

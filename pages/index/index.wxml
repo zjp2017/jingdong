@@ -15,9 +15,9 @@
 		<!-- 3.中间滑动部分 -->
 		<scroll-com></scroll-com>
 		<!-- 4.新人专享福利 -->
-		<view class="new-person-welfare">
+		<!-- <view class="new-person-welfare">
 			<image class="new-person-welfare-img" mode="widthFix" src="https://imgcps.jd.com/djmarketing/img_717923/img_716748/img_716653/NC4z/NC40/NC44/77-lMS45/77-lMQ/77-lMS4z/77-lMTU/56uL5Y2z6aKG5Y-W/t-5ca3472c2612abcf54f614a2/bef47f04.png"></image>
-		</view>
+		</view> -->
 		<!-- 5.banner列表 -->
 		<banner-com></banner-com>
 		<!-- 6.优惠专区 -->

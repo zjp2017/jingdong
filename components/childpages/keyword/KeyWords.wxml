@@ -1,0 +1,4 @@
+<!--components/childpages/keyword/KeyWords.wxml-->
+<view class="keywords">
+	<view class="keywords-item" wx:for="{{keyData}}" wx:key="index" data-index="{{item.id}}">{{item.title}}</view>
+</view>

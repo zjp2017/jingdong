@@ -1,0 +1,7 @@
+<!--components/childpages/scrollitemdetail/ScrollItemDetailInput.wxml-->
+<view class="search-warp-box">	
+	<view class="search-warp" bindtap="enterSearch">
+		<image src="../../../static/images/home/search_icon.png" class="search-icon"></image>
+	    <text class="search-input">{{searchContent}}</text>
+	</view>
+</view>

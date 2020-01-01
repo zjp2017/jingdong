@@ -1,0 +1,29 @@
+<!--components/childpages/notsearched/NotSearched.wxml-->
+<!-- 搜索时未找到相关内容的组件 -->
+<view class="notsearched">
+	<!-- 未找到相关的内容 -->
+	<view class="notsearched-warp">
+	    <view class="notsearched-tips-img-box">
+			<image class="notsearched-tips-img" src="/static/images/other/no_search_result_img.png"></image>
+		</view>
+		<view class="notsearched-tips-text">抱歉，未能找到您搜索的门店或商品</view>
+	</view>
+	<!-- 为你推荐相关内容 -->
+	<view class="recommend-warp">
+		<view class="recommend-warp-title">为你推荐</view>
+		<!-- 1 -->
+		<itemlist-com>
+			<!-- 在推荐搜索页面中的商品展示效果 -->
+			<view slot="shop-list-item" class="shop-list-item">
+				<horizontalgoods-com></horizontalgoods-com>
+			</view>
+		</itemlist-com>
+		<!-- 2 -->
+		<itemlist-com>
+			<!-- 在推荐搜索页面中的商品展示效果 -->
+			<view slot="shop-list-item" class="shop-list-item">
+				<horizontalgoods-com></horizontalgoods-com>	
+			</view>
+		</itemlist-com>
+	</view>
+</view>

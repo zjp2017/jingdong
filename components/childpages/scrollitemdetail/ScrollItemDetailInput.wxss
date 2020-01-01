@@ -1,0 +1,27 @@
+/* components/childpages/scrollitemdetail/ScrollItemDetailInput.wxss */
+.search-warp{
+	text-align: center;
+	/* width: 700rpx; */
+	height: 70rpx;
+	border-radius: 35rpx;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: center;
+}
+.search-icon{
+	height: 25rpx;
+	width: 25rpx;
+	margin-top: 24rpx;
+}
+.search-input{
+	color: #8f8f8f;
+	display: block;
+	font-size: 28rpx;
+	margin-left: 15rpx;
+	line-height: 70rpx;
+}
+.search-warp-box{
+	padding: 0 24rpx;
+	margin-top: 15rpx;
+	box-sizing: border-box;
+}

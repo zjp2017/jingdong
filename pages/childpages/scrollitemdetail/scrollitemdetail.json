@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+	"searchinput-com":"/components/childpages/scrollitemdetail/ScrollItemDetailInput",
+	"keyword-com":"/components/childpages/keyword/KeyWords",
+	 "banner-com":"/components/home/banner/Banner",
+	 "store-com":"/components/home/store/StoreList"
+  }
+}

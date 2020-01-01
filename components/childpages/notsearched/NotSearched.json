@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "itemlist-com":"/components/home/itemlist/ItemList",
+	  "horizontalgoods-com":"/components/horizontalgoods/HorizontalGoods"
+  }
+}

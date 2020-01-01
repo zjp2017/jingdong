@@ -3,6 +3,7 @@
   "usingComponents": {
 	  "sort-tag":"/components/home/sort/SortTag",
 	  "selectcondition-com":"/components/home/selectcondition/Selectcondition",
-	   "itemlist-com":"/components/home/itemlist/ItemList"
+	   "itemlist-com":"/components/home/itemlist/ItemList",
+	   "horizontalgoods-com":"/components/horizontalgoods/HorizontalGoods"
   }
 }

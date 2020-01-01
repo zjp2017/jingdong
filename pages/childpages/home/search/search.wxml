@@ -41,5 +41,10 @@
 		<view class="search-item">安卓手机</view>
 	</view> -->
 	<!-- 3.搜索到的商品列表 -->
-	<listcommodities-com></listcommodities-com>
+	<!-- <itemlist-com>
+		<searcheditem-com slot="shop-list-item"></searcheditem-com>
+	</itemlist-com> -->
+		
+	<!-- 没有搜索到 -->
+	<notsearched-com></notsearched-com>
 </view>

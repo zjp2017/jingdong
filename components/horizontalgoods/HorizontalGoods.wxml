@@ -1,0 +1,27 @@
+<!--components/horizontalgoods/HorizontalGoods.wxml-->
+<view class="horizontalgoods">
+	<view class="shop-list-box">
+		<view class="shop-list-box-item">
+			<view class="shop-list-box-item-img-warp"><image mode="widthFix" class="shop-list-box-item-img" src="https://img30.360buyimg.com/n6//jfs/t1/101421/11/6428/96696/5df36075E988c957e/38b841d1e86ae920.jpg"></image></view>
+			<view class="shop-list-box-item-price">￥32.9</view>
+			<view class="shop-list-box-item-desc-tips">2.888折</view>
+		</view>
+		<!-- 2 -->
+		<view class="shop-list-box-item">
+			<view class="shop-list-box-item-img-warp"><image mode="widthFix" class="shop-list-box-item-img" src="https://img30.360buyimg.com/n6//jfs/t1/101421/11/6428/96696/5df36075E988c957e/38b841d1e86ae920.jpg"></image></view>
+			<view class="shop-list-box-item-price">￥32.9</view>
+			<view class="shop-list-box-item-desc-tips">2.888折</view>
+		</view>
+		<!-- 3 -->
+		<view class="shop-list-box-item">
+			<view class="shop-list-box-item-img-warp"><image mode="widthFix" class="shop-list-box-item-img" src="https://img30.360buyimg.com/n6//jfs/t1/101421/11/6428/96696/5df36075E988c957e/38b841d1e86ae920.jpg"></image></view>
+			<view class="shop-list-box-item-price">￥32.9</view>
+		</view>
+		<!-- 4 -->
+		<view class="shop-list-box-item">
+			<view class="shop-list-box-item-img-warp"><image mode="widthFix" class="shop-list-box-item-img" src="https://img30.360buyimg.com/n6//jfs/t1/101421/11/6428/96696/5df36075E988c957e/38b841d1e86ae920.jpg"></image></view>
+			<view class="shop-list-box-item-price">￥32.9</view>
+		</view>
+		
+	</view>
+</view>
