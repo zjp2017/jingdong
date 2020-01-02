@@ -6,7 +6,14 @@
     "pages/order/order",
     "pages/shoppingCart/shoppingCart",
     "pages/childpages/home/search/search",
-    "pages/childpages/scrollitemdetail/scrollitemdetail"
+    "pages/childpages/scrollitemdetail/scrollitemdetail",
+    "pages/childpages/supermarket/supermarket",
+    "pages/childpages/foodmarket/foodmarket",
+    "pages/childpages/fruitshop/fruitshop",
+    "pages/childpages/flowersandplants/flowersandplants",
+    "pages/childpages/medicalhealth/medicalhealth",
+    "pages/childpages/homefashion/homefashion",
+    "pages/childpages/bakecake/bakecake"
   ],
   "window": {
     "backgroundTextStyle": "light",

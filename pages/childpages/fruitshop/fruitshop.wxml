@@ -1,0 +1,30 @@
+<!--pages/childpages/fruitshop/fruitshop.wxml-->
+<!-- 水果店页面 -->
+<view class="fruitshop">
+	<!-- 1.搜索框 -->
+	<searchinput-com></searchinput-com>
+	<!-- 2.关键字 -->
+	<keyword-com></keyword-com>
+	<!-- 3.bannerr -->
+	<view class="bannerr-img-warp">
+		<image  class="bannerr-img"  mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/87773/29/9120/218286/5e0b15a6Eeb0d810e/2121d7fd0a7091d1.png"></image>
+	</view>
+	<!-- 4.2行图标 -->
+	<view class="fruitshop-banner-warp">
+		<view class="fruitshop-banner-box">
+			<fruitshopbanner-com></fruitshopbanner-com>
+			<!-- 下方2个图片 -->
+			<view class="fruitshop-banner-images">
+				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
+				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+			</view>
+		</view>	
+	</view>
+	<view class="scrollitemdetail-content">
+		<!-- 2.附近店铺 -->
+		<view class="nearb-shops">
+			<store-com></store-com>
+		</view>
+	</view>
+</view>
+

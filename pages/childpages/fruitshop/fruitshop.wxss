@@ -1,0 +1,40 @@
+/* pages/childpages/fruitshop/fruitshop.wxss */
+.scrollitemdetail-content{
+	overflow: hidden;
+	background: #f6f6f6;
+}
+/*  */
+.nearb-shops{
+	border-radius: 26rpx;
+	margin-top: 20rpx;
+	background: #fff;
+	box-sizing: border-box;
+	padding-top: 26rpx;
+}
+/*  */
+.bannerr-img-warp{
+	height: 235rpx;
+}
+.bannerr-img{
+	width: 100%;
+}
+.fruitshop-banner-warp{
+	background: #f6f6f6;
+	overflow: hidden;
+}
+.fruitshop-banner-box{
+	margin-top: 22rpx;
+	border-radius: 26rpx;
+	background: #fff;
+	padding-bottom: 22rpx;
+}
+.fruitshop-banner-images{
+	display: flex;
+	justify-content: center;
+}
+.fruitshop-banner-left-img, .fruitshop-banner-right-img{
+	width: 349rpx;
+	height: 260rpx;
+	border-radius: 8rpx;
+	margin: 0 5px;
+}

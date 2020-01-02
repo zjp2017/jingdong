@@ -127,6 +127,27 @@
 					"id": -1,
 					"name": "pages/childpages/scrollitemdetail/scrollitemdetail",
 					"pathName": "pages/childpages/scrollitemdetail/scrollitemdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/foodmarket/foodmarket",
+					"pathName": "pages/childpages/foodmarket/foodmarket",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/fruitshop/fruitshop",
+					"pathName": "pages/childpages/fruitshop/fruitshop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/flowersandplants/flowersandplants",
+					"pathName": "pages/childpages/flowersandplants/flowersandplants",
 					"scene": null
 				}
 			]

@@ -1,0 +1,54 @@
+<!--pages/childpages/supermarket/supermarket.wxml-->
+<!-- 超市页面 -->
+<view class="supermarket">
+	<!-- 1.搜索框 -->
+	<searchinput-com></searchinput-com>
+	<!-- 2.关键字 -->
+	<keyword-com></keyword-com>
+	<!-- 3.bannerr -->
+	<!-- <banner-com></banner-com> -->
+	<view class="scrollitemdetail-content">
+		<!--1. 图标信息 -->
+		<view class="shopping-logo">
+			<view class="shopping-logo-item">
+				<view class="shopping-logo-item-left">
+					<view class="shopping-logo-item-left-title">抢20元劵</view>
+					<view class="shopping-logo-item-left-desction">买100减50</view>
+				</view>
+				<image class="shopping-logo-item-right" src="https://img30.360buyimg.com/mobilecms/jfs/t1/104766/31/9077/10568/5e0b7f2cEcaf49525/819122f696bf2b6d.jpg"></image>
+			</view>
+			<!-- 2 -->
+			<view class="shopping-logo-item">
+				<view class="shopping-logo-item-left">
+					<view class="shopping-logo-item-left-title">抢20元劵</view>
+					<view class="shopping-logo-item-left-desction">买100减50</view>
+				</view>
+				<image class="shopping-logo-item-right" src="https://img30.360buyimg.com/mobilecms/jfs/t1/104766/31/9077/10568/5e0b7f2cEcaf49525/819122f696bf2b6d.jpg"></image>
+			</view>
+			<!-- 3 -->
+			<view class="shopping-logo-item">
+				<view class="shopping-logo-item-left">
+					<view class="shopping-logo-item-left-title">品质美酒</view>
+					<view class="shopping-logo-item-left-desction">1小时送达</view>
+				</view>
+				<image class="shopping-logo-item-right" src="https://img30.360buyimg.com/mobilecms/jfs/t1/74292/11/11816/13302/5d920c18E1a827d18/8eabf3e53da450d0.png"></image>
+			</view>
+			<!-- 4 -->
+			<view class="shopping-logo-item">
+				
+			</view>
+			<!-- 3 -->
+			<view class="shopping-logo-item">
+				
+			</view>
+			<!-- 4 -->
+			<view class="shopping-logo-item">
+				
+			</view>
+		</view>
+		<!-- 2.附近店铺 -->
+		<view class="nearb-shops">
+			<store-com></store-com>
+		</view>
+	</view>
+</view>

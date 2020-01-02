@@ -1,0 +1,9 @@
+<template name="titleandicon">
+	<view class="limit-buy-title-box">
+		<view class="limit-buy-title">{{title}}</view>
+		<view class="limit-buy-more">
+			<text class="limit-buy-more-text" >更多</text>
+			<image class="right-awg" src="../../../static/images/home/right_awg.png"></image>
+		</view>
+	</view>
+</template>
