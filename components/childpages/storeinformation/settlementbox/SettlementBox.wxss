@@ -1,0 +1,77 @@
+/* components/childpages/storeinformation/settlementbox/SettlementBox.wxss */
+.settlementbox-warp{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 100rpx;
+	display: flex;
+	background: #fff;
+	border-top: 1px solid #f4f4f4;
+	width: 100%;
+	justify-content: space-between;
+}
+.settlementbox-left{
+	display: flex;
+	position: relative;
+}
+.settlementbox-left-icon{
+	width: 73rpx;
+	height: 73rpx;
+	margin: 13rpx 0 0 12rpx;
+}
+.settlementbox-left-icon-box{
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	background: #c8c8c8;
+	position: absolute;
+	top: -20rpx;
+	left: 20rpx;
+}
+.settlementbox-left-icon-box.active{
+	background: #00C820;
+}
+.settlementbox-tips{
+	font-size: 28rpx;
+	color: #c8c8c8;
+}
+.settlementbox-tips.active{
+	color: #ff3434;
+	font-weight: bold;
+	font-size: 30rpx;
+}
+.settlementbox-right{
+	width: 220rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	font-size: 28rpx;
+	color: #fff;
+	background: -webkit-linear-gradient(left,#aaa,#ccc);
+}
+.settlementbox-right.active{
+	background: linear-gradient(90deg,#00be34,#00cb1e);
+}
+.cart-num{
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 35rpx;
+	height: 35rpx;
+	line-height:35rpx;
+	font-size: 20rpx;
+	background: #ff3434;
+	color: #fff;
+	border-radius: 50%;
+}
+.settlementbox-tips-box{
+	margin: 27rpx 0 0 140rpx;
+	display: flex;
+}
+.reduced-price{
+	margin-left: 15rpx;
+	color: #999;
+	margin-top: 10rpx;
+	font-size: 20rpx;
+}

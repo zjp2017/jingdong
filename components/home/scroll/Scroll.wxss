@@ -4,6 +4,7 @@
 	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/108870/29/1938/15080/5e0233d3Eed60c7b5/0c9484a4cad0af57.jpg');
 	background-size: 100% 100%;
 	overflow-x: scroll;
+	padding-top: 20rpx;
 }
 .scroll-item{
 	width: 150rpx;

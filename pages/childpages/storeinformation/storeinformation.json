@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+	  "settlementbox-com":"/components/childpages/storeinformation/settlementbox/SettlementBox"
+  }
+}

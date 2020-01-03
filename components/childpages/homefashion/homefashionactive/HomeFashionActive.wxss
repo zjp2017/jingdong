@@ -1,0 +1,33 @@
+/* components/childpages/homefashion/homefashionactive/HomeFashionActive.wxss */
+.homefashionactive{
+	padding: 0 10rpx;
+}
+.homefashionactive-warp{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.homefashionactive-item{
+	width: 226rpx;
+	height: 250rpx;
+	background: #fbfbfb;
+	margin: 10rpx 9rpx;
+}
+.homefashionactive-item-img{
+	width: 120rpx;
+	height: 120rpx;
+	margin-left: 53rpx;
+	margin-top: 15rpx;
+}
+.homefashionactive-item-title{
+	color: #ff5757;
+	font-size: 27rpx;
+	margin-top: 27rpx;
+	text-align: center;
+}
+.homefashionactive-item-time{
+	color: #000;
+	font-size: 22rpx;
+	margin-top: 10rpx;
+	text-align: center;
+}

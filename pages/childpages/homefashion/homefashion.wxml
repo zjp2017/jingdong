@@ -1,2 +1,39 @@
 <!--pages/childpages/homefashion/homefashion.wxml-->
-<text>pages/childpages/homefashion/homefashion.wxml</text>
+<!-- 家具时尚页面 -->
+<import src="/templates/titleandicon/titleandicon.wxml"/>
+<view class="homefashion">
+	<!-- 1.搜索框 -->
+	<searchinput-com></searchinput-com>
+	<!-- 2.关键字 -->
+	<keyword-com></keyword-com>
+	<!-- 3.bannerr -->
+	<banner-com></banner-com>
+	<!-- 4.中间滚动部分 -->
+	<suepermarrketscroll-com></suepermarrketscroll-com>
+	<!-- 5.中间盒子部分 -->
+	<view class="medicalhealth-center-warp">
+		<view class="medicalhealth-center-box">
+			<view class="fruitshop-banner-images">
+				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
+				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+			</view>
+			<!-- 3列 -->
+			<homefashion-active-com></homefashion-active-com>
+			<!-- 4列 -->
+			<medicalhealth-active-com></medicalhealth-active-com>
+		</view>
+		
+	</view>
+	<!-- 6 主推爆款-->
+	<view class="home-flower">
+		<template is="titleandicon" data="{{title:'主推爆款'}}"></template>
+		<hotstyle-com></hotstyle-com>
+	</view>
+	<!-- 7.列表部分 -->
+	<view class="scrollitemdetail-content">
+		<!-- 2.附近店铺 -->
+		<view class="nearb-shops">
+			<store-com></store-com>
+		</view>
+	</view>
+</view>

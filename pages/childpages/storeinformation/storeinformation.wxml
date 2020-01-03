@@ -1,0 +1,8 @@
+<!--pages/childpages/storeinformation-warp/storeinformation.wxml-->
+<!-- 商家店铺页面 -->
+<view class="storeinformation-warp">
+	<view class="storeinformation-box">
+		<!-- 商家页面底部结算框 -->
+		<settlementbox-com></settlementbox-com>
+	</view>
+</view>

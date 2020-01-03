@@ -1,0 +1,21 @@
+<!--components/childpages/homefashion/homefashionactive/HomeFashionActive.wxml-->
+<view class="homefashionactive">
+	<view class="homefashionactive-warp">
+		<view class="homefashionactive-item">
+			<view class="homefashionactive-item-title">夜间送药</view>
+			<view class="homefashionactive-item-time">24H营业</view>
+			<image class="homefashionactive-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		<view class="homefashionactive-item">
+			<view class="homefashionactive-item-title">夜间送药</view>
+			<view class="homefashionactive-item-time">24H营业</view>
+			<image class="homefashionactive-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		<view class="homefashionactive-item">
+			<view class="homefashionactive-item-title">夜间送药</view>
+			<view class="homefashionactive-item-time">24H营业</view>
+			<image class="homefashionactive-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+
+	</view>
+</view>

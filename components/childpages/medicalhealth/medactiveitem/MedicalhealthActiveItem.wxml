@@ -1,0 +1,27 @@
+<!--components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem.wxml-->
+<view class="medicalhealth-active">
+	<view class="medicalhealth-active-warp">
+		<view class="medicalhealth-active-item">
+			<view class="medicalhealth-active-item-title">夜间送药</view>
+			<view class="medicalhealth-active-item-time">24H营业</view>
+			<image class="medicalhealth-active-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		<view class="medicalhealth-active-item">
+			<view class="medicalhealth-active-item-title">夜间送药</view>
+			<view class="medicalhealth-active-item-time">24H营业</view>
+			<image class="medicalhealth-active-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		<view class="medicalhealth-active-item">
+			<view class="medicalhealth-active-item-title">夜间送药</view>
+			<view class="medicalhealth-active-item-time">24H营业</view>
+			<image class="medicalhealth-active-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		<view class="medicalhealth-active-item">
+			<view class="medicalhealth-active-item-title">夜间送药</view>
+			<view class="medicalhealth-active-item-time">24H营业</view>
+			<image class="medicalhealth-active-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/92744/21/4615/26105/5de87f97Eb316e20c/c0a507da83f66ae4.png"></image>
+		</view>
+		
+		
+	</view>
+</view>

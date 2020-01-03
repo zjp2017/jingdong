@@ -1,0 +1,33 @@
+/* components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem.wxss */
+.medicalhealth-active{
+	padding: 0 10rpx;
+}
+.medicalhealth-active-warp{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.medicalhealth-active-item{
+	width: 168rpx;
+	height: 245rpx;
+	background: #fbfbfb;
+	margin: 10rpx 9rpx;
+}
+.medicalhealth-active-item-img{
+	width: 120rpx;
+	height: 120rpx;
+	margin-left: 24rpx;
+	margin-top: 15rpx;
+}
+.medicalhealth-active-item-title{
+	color: #ff5757;
+	font-size: 27rpx;
+	margin-top: 27rpx;
+	text-align: center;
+}
+.medicalhealth-active-item-time{
+	color: #000;
+	font-size: 22rpx;
+	margin-top: 10rpx;
+	text-align: center;
+}

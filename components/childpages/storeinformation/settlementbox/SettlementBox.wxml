@@ -1,0 +1,19 @@
+<!--components/childpages/storeinformation/settlementbox/SettlementBox.wxml-->
+<!-- 商家页面底部结算框 -->
+<view class="settlementbox">
+	<view class="settlementbox-warp">
+		<view class="settlementbox-left">
+			<view class="settlementbox-left-icon-box active">
+				<image class="settlementbox-left-icon" src="../../../../static/images/other/carts_icon.png"></image>
+				<view class="cart-num">99</view>
+			</view>
+			<view class="settlementbox-tips-box">
+				<view class="settlementbox-tips active">￥29.9</view>
+				<view class="reduced-price">已减99元</view>
+			</view>
+		</view>
+		<view class="settlementbox-right active">
+			去结算
+		</view>
+	</view>
+</view>

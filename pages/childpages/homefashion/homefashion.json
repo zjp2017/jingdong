@@ -1,3 +1,14 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+	  "searchinput-com":"/components/childpages/scrollitemdetail/ScrollItemDetailInput",
+	  "keyword-com":"/components/childpages/keyword/KeyWords",
+	  "store-com":"/components/home/store/StoreList",
+	  "banner-com":"/components/home/banner/Banner",
+	  "scroll-com":"/components/home/scroll/Scroll",
+	  "suepermarrketscroll-com":"/components/childpages/supermarket/suepermarrketscroll/SuepermarrketScroll",
+	  "medicalhealth-active-com":"/components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem",
+	  "homefashion-active-com":"/components/childpages/homefashion/homefashionactive/HomeFashionActive",
+	  "hotstyle-com":"/components/childpages/homefashion/hotstyle/HotStyle"
+	 
+  }
 }

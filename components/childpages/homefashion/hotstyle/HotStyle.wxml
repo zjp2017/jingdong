@@ -1,0 +1,37 @@
+<!--components/childpages/homefashion/hotstyle/HotStyle.wxml-->
+<!-- 主推爆款 -->
+<view class="hotstyle">
+	<view class="hotstyle-box">
+		<view class="hotstyle-item">
+			<image class="hotstyle-main-img" src="https://img30.360buyimg.com/n6/jfs/t1/104014/10/8324/33381/5e034244Ec18d51ac/7806c1f00d3bd66c.jpg"></image>
+			<view class="hotstyle-item-title">本命年内裤男士发财内裤盒装男士内裤结婚本命年红内裤男盒装平角 红色两条盒装发财 L</view>
+			<view class="hotstyle-item-price">￥92</view>
+			<view class="hotstyle-item-origin-price">￥192</view>
+			<image class="hotstyle-item-logo" src="https://img30.360buyimg.com/vendersettle/jfs/t1/107158/26/2175/45955/5e044e6fEab5e19b6/9fff5fe80624da2e.png"></image>
+		</view>
+		<!-- 2 -->
+		<view class="hotstyle-item">
+			<image class="hotstyle-main-img" src="https://img30.360buyimg.com/n6/jfs/t1/104014/10/8324/33381/5e034244Ec18d51ac/7806c1f00d3bd66c.jpg"></image>
+			<view class="hotstyle-item-title">本命年内裤男士发财内裤盒装男士内裤结婚本命年红内裤男盒装平角 红色两条盒装发财 L</view>
+			<view class="hotstyle-item-price">￥92</view>
+			<view class="hotstyle-item-origin-price">￥192</view>
+			<image class="hotstyle-item-logo" src="https://img30.360buyimg.com/vendersettle/jfs/t1/107158/26/2175/45955/5e044e6fEab5e19b6/9fff5fe80624da2e.png"></image>
+		</view>
+		<!-- 3 -->
+		<view class="hotstyle-item">
+			<image class="hotstyle-main-img" src="https://img30.360buyimg.com/n6/jfs/t1/104014/10/8324/33381/5e034244Ec18d51ac/7806c1f00d3bd66c.jpg"></image>
+			<view class="hotstyle-item-title">本命年内裤男士发财内裤盒装男士内裤结婚本命年红内裤男盒装平角 红色两条盒装发财 L</view>
+			<view class="hotstyle-item-price">￥92</view>
+			<view class="hotstyle-item-origin-price">￥192</view>
+			<image class="hotstyle-item-logo" src="https://img30.360buyimg.com/vendersettle/jfs/t1/107158/26/2175/45955/5e044e6fEab5e19b6/9fff5fe80624da2e.png"></image>
+		</view>
+		<!-- 3 -->
+		<view class="hotstyle-item">
+			<image class="hotstyle-main-img" src="https://img30.360buyimg.com/n6/jfs/t1/104014/10/8324/33381/5e034244Ec18d51ac/7806c1f00d3bd66c.jpg"></image>
+			<view class="hotstyle-item-title">本命年内裤男士发财内裤盒装男士内裤结婚本命年红内裤男盒装平角 红色两条盒装发财 L</view>
+			<view class="hotstyle-item-price">￥92</view>
+			<view class="hotstyle-item-origin-price">￥192</view>
+			<image class="hotstyle-item-logo" src="https://img30.360buyimg.com/vendersettle/jfs/t1/107158/26/2175/45955/5e044e6fEab5e19b6/9fff5fe80624da2e.png"></image>
+		</view>
+	</view>
+</view>

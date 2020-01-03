@@ -13,7 +13,9 @@
     "pages/childpages/flowersandplants/flowersandplants",
     "pages/childpages/medicalhealth/medicalhealth",
     "pages/childpages/homefashion/homefashion",
-    "pages/childpages/bakecake/bakecake"
+    "pages/childpages/bakecake/bakecake",
+    "pages/childpages/storeinformation/storeinformation",
+    "components/childpages/storeinformation/settlementbox/SettlementBox"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -148,6 +148,34 @@
 					"id": -1,
 					"name": "pages/childpages/flowersandplants/flowersandplants",
 					"pathName": "pages/childpages/flowersandplants/flowersandplants",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/medicalhealth/medicalhealth",
+					"pathName": "pages/childpages/medicalhealth/medicalhealth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/homefashion/homefashion",
+					"pathName": "pages/childpages/homefashion/homefashion",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/bakecake/bakecake",
+					"pathName": "pages/childpages/bakecake/bakecake",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/storeinformation/storeinformation",
+					"pathName": "pages/childpages/storeinformation/storeinformation",
 					"scene": null
 				}
 			]

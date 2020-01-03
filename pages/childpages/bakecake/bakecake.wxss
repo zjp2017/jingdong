@@ -1,1 +1,40 @@
 /* pages/childpages/bakecake/bakecake.wxss */
+
+.scrollitemdetail-content{
+	overflow: hidden;
+	background: #f6f6f6;
+}
+/*  */
+.nearb-shops{
+	border-radius: 26rpx;
+	margin-top: 20rpx;
+	background: #fff;
+	box-sizing: border-box;
+	padding-top: 26rpx;
+}
+/*  */
+::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+.fruitshop-banner-images{
+	display: flex;
+	justify-content: center;
+}
+.fruitshop-banner-left-img, .fruitshop-banner-right-img{
+	width: 349rpx;
+	height: 260rpx;
+	border-radius: 8rpx;
+	margin: 0 5px;
+}
+.medicalhealth-center-warp{
+	background: #f6f6f6;
+	padding: 25rpx 0;
+}
+.medicalhealth-center-box{
+	background: #fff;
+	padding: 25rpx 10px;
+	border-radius: 25rpx;
+}
+

@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+	  "searchinput-com":"/components/childpages/scrollitemdetail/ScrollItemDetailInput",
+	  "keyword-com":"/components/childpages/keyword/KeyWords",
+	  "store-com":"/components/home/store/StoreList",
+	  "banner-com":"/components/home/banner/Banner",
+	  "scroll-com":"/components/home/scroll/Scroll",
+	   "fruitshopbanner-com":"/components/childpages/fruitshop/fruitshopbanner/FruitShopBanner"
+  }
 }

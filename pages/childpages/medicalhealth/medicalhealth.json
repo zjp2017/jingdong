@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+	  "searchinput-com":"/components/childpages/scrollitemdetail/ScrollItemDetailInput",
+	  "keyword-com":"/components/childpages/keyword/KeyWords",
+	  "store-com":"/components/home/store/StoreList",
+	  "banner-com":"/components/home/banner/Banner",
+	   "medicalhealth-active-com":"/components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem"
+  }
 }

@@ -1,1 +1,65 @@
 /* pages/childpages/homefashion/homefashion.wxss */
+@import "/templates/titleandicon/titleandicon.wxss";
+.scrollitemdetail-content{
+	overflow: hidden;
+	background: #f6f6f6;
+}
+/*  */
+.nearb-shops{
+	border-radius: 26rpx;
+	margin-top: 20rpx;
+	background: #fff;
+	box-sizing: border-box;
+	padding-top: 26rpx;
+}
+/*  */
+.bannerr-img-warp{
+	height: 235rpx;
+}
+.bannerr-img{
+	width: 100%;
+}
+
+/*  */
+.specia-area{
+	background: #f6f6f6;
+}
+.flash-sale{
+	background:linear-gradient(rgb(225, 250, 236) 0%, rgb(246, 246, 246) 100%);
+	border-radius: 26rpx 26px;
+	padding: 0 19rpx;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 20rpx;
+	margin-top: 20rpx;
+}
+.greener-and-meat{
+	background:linear-gradient(rgb(225, 250, 236) 0%, rgb(246, 246, 246) 100%);
+	box-sizing: border-box;
+	padding: 0 19rpx;
+	overflow: hidden;
+	margin-top: 20rpx;
+}
+.home-flower{
+	background:linear-gradient(rgb(224, 229, 255) 0%, rgb(246, 246, 246) 100%);
+	box-sizing: border-box;
+	padding: 0 19rpx;
+	overflow: hidden;
+	margin-top: 20rpx;
+}
+/*  */
+::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+.fruitshop-banner-images{
+	display: flex;
+	justify-content: center;
+}
+.fruitshop-banner-left-img, .fruitshop-banner-right-img{
+	width: 349rpx;
+	height: 260rpx;
+	border-radius: 8rpx;
+	margin: 0 5px;
+}
