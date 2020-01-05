@@ -1,0 +1,54 @@
+/* components/childpages/storeinformation/headercoupontips/HeaderCouponTips.wxss */
+.headercoupontips-warp{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+}
+.headercoupontips-left-img{
+	height: 29rpx;
+	border-radius: 8rpx 0 8rpx 0;
+	line-height: 29rpx;
+	color: #fff;
+	text-align: center;
+	font-size: 20rpx;
+	padding: 0 8rpx;
+}
+.headercoupontips-left-img.postage{
+	background: linear-gradient(135deg, rgb(76, 156, 255) 0%, rgb(36, 134, 255) 100%);
+}
+.headercoupontips-left-img.gift{
+	background: linear-gradient(135deg, #ff7976 0%, #ff5844 100%);
+}
+.headercoupontips-left-img.reduce{
+	background: linear-gradient(135deg, rgb(85, 216, 94) 0%, rgb(72, 193, 81) 100%);
+}
+.headercoupontips-left-box{
+	display: flex;
+}
+.headercoupontips-left-text{
+	font-size: 22rpx;
+	margin-left: 15rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 30rpx;
+	width: 417rpx;	
+}
+.headercoupontips-right-text{
+	font-size: 22rpx;
+	width: 125rpx;	
+}
+.headercoupontips-right-box{
+	display: flex;
+	width: 145rpx;
+	height: 30rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.headercoupontips-right-icon{
+	width: 47rpx;
+	height: 33rpx;
+	margin-right: 10rpx;
+}

@@ -1,0 +1,64 @@
+/* components/childpages/storeinformation/shopheader/ShopHeader.wxss */
+.shop-header-box{
+	display: flex;
+	height: 138rpx;
+}
+.shop-header-logo{
+	width: 136rpx;
+	height: 136rpx;
+	border-radius: 32rpx 10rpx 32rpx 10rpx;
+}
+.shop-header-content-box{
+	width: 393rpx;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+}
+.shop-header-shop-name{
+	font-size: 36rpx;
+	color: #000000;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 46rpx;
+	display: inline-block;
+}
+.shop-header-send-dot{
+	display: inline-block;
+	width: 7rpx;
+	height: 7rpx;
+	background: #333;
+	border-radius: 50%;
+	opacity: 0.6;
+	margin: 0 5rpx 6rpx 5rpx;
+}
+.shop-header-send-cost{
+	display: inline-block;
+}
+.shop-header-send-cost{
+	margin-left: 10rpx;
+}
+.shop-header-send-infor{
+	display: flex;
+}
+.shop-header-content-box{
+	font-size: 22rpx;
+}
+.shop-header-warp{
+	width: 100%;
+	border-radius: 20rpx 20rpx 0 0;
+	position: absolute;
+	left: 20rpx;
+	top:-35rpx;
+}
+.header-vip-box{
+	width:170rpx;
+	height: 67rpx;
+	margin-top: 52rpx;
+}
+.header-vip-logo{
+	margin-left: 50rpx;
+	width: 124rpx;
+	height: 67rpx;
+	border-radius: 8rpx;
+}

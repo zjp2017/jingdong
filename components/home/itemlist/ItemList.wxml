@@ -1,5 +1,5 @@
 <!--components/home/itemlist/ItemList.wxml-->
-<view class="list-warp">
+<view class="list-warp" bindtap="enterStore">
 	<view class="item-left">
 		<image class="item-left-logo" src="https://img30.360buyimg.com/vendersettle/s120x120_jfs/t1/28439/30/9372/12503/5c7e4be9E765cc841/d1f3e78254d4488f.png"></image>
 	</view>
@@ -59,7 +59,7 @@
 			</view>
 			<!--  -->
 			
-			<image class="coupon-box-icon" src="{{direFlg==0?'../../../static/images/home/down_icon2.png':'../../../static/images/home/up_icon.png'}}" bind:tap="getMore"></image>
+			<image class="coupon-box-icon" src="{{direFlg==0?'../../../static/images/home/down_icon2.png':'../../../static/images/home/up_icon.png'}}" catchtap="getMore"></image>
 		</view>
 		<view class="gift-warp" wx:if="{{showGift}}">
 			<view class="gift-warp-title">返礼</view>

@@ -1,1 +1,54 @@
 /* pages/childpages/storeinformation/storeinformation.wxss */
+/*  */
+.storeinformation-header{
+	padding: 67rpx 0 0;
+	position: relative;
+	min-height: 168rpx;
+	background:linear-gradient(90deg,#87a8bc,#578faf,#87a8bc);
+	box-sizing: border-box;
+}
+
+.storeinformation-header-box{
+	min-height: 103rpx;
+	background: #fff;
+	border-radius: 20rpx 20rpx 0 0;
+	position: relative;
+}
+.coupon-warp{
+	min-height: 80rpx;
+	padding-top: 25rpx;
+	box-sizing: border-box;
+	background: #fff;
+}
+.retract-box{
+	display: flex;
+	justify-content: center;
+	height: 79rpx;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #c8c8c8;
+	background: #fff;
+}
+.retract-warp{
+	width: 103rpx;
+	height: 79rpx;
+	position: relative;
+}
+.retract-icon{
+	height: 35rpx;
+	width: 44rpx;
+	position: absolute;
+	left:  30rpx;
+	top: 0;
+}
+.retract-text{
+	position: absolute;
+	left:  0;
+	top: 30rpx;
+	font-size:26rpx;
+	color: #696969;
+	width: 100%;
+	text-align: center;
+}

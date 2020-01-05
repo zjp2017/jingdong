@@ -2,7 +2,28 @@
 <!-- 商家店铺页面 -->
 <view class="storeinformation-warp">
 	<view class="storeinformation-box">
+		
+		<view class="storeinformation-header">
+			<!-- 商家店铺头部log部分组件 -->
+			<view class="storeinformation-header-box">
+				<shop-header></shop-header>
+			</view>
+			<!-- 优惠券展示部分 -->
+		<view class="coupon-warp">
+			<!-- 部分优惠券 -->
+			<header-coupontips-com></header-coupontips-com>
+			<!-- 全部优惠券 -->
+			<allcoupontip-com></allcoupontip-com>
+		</view>
+		</view>
 		<!-- 商家页面底部结算框 -->
-		<settlementbox-com></settlementbox-com>
+		<!-- <settlementbox-com></settlementbox-com> -->
+		<!-- 点击收起固定栏 -->
+		<view class="retract-box">
+			<view class="retract-warp">
+				<image class="retract-icon" src="../../../static/images/home/up_icon.png"></image>
+				<view class="retract-text">点击收起</view>
+			</view>
+		</view>
 	</view>
 </view>

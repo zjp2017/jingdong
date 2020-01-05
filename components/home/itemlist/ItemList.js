@@ -28,6 +28,16 @@ Component({
 		let flg=this.data.direFlg==0?1:0;
 
 		this.setData({direFlg:flg,showGift:!this.data.showGift});
+	},
+	//进入商家页面
+	enterStore(e){
+		console.log(e);
+		wx.navigateTo({
+			url:'/pages/childpages/storeinformation/storeinformation?bsId=123345',
+			success:function(){
+				console.log('进入商家页面成功');
+			}
+		})
 	}
   }
 })

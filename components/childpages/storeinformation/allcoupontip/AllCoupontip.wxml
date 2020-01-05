@@ -1,0 +1,16 @@
+<!--components/childpages/storeinformation/allcoupontip/AllCoupontip.wxml-->
+<view class="allcoupontip">
+	<view class="allcoupontip-warp">
+		<view class="allcoupontip-title">店铺优惠</view>
+		<view class="allcoupontip-box">
+			<!-- 1 -->
+
+			<!-- 2 -->
+			<view class="allcoupontip-item" wx:for="{{itemData}}" wx:key="index">
+				<view class="headercoupontips-left-img reduce">运费</view>
+				<view class="headercoupontips-left-text">VIP尊享满89元减4元运费券(每月3张)</view>
+			</view>
+			
+		</view>
+	</view>
+</view>

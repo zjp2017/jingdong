@@ -1,0 +1,18 @@
+<!--components/childpages/storeinformation/shopheader/ShopHeader.wxml-->
+<!-- 商家店铺头部log部分组件 -->
+<view class="shop-header-warp">
+	<view class="shop-header-box">
+		<image class="shop-header-logo" src="https://img30.360buyimg.com/vendersettle/jfs/t1/91839/32/8424/125345/5e044b44Ee62b8362/fb5f1ffd7924b743.png"></image>
+		<view class="shop-header-content-box">
+			<view class="shop-header-shop-name">叮当快药(送药260药房)</view>
+			<view class="shop-header-send-infor">
+				<view class="shop-header-send-name">达达专送<view class="shop-header-send-dot"></view>60分钟</view>
+				<view class="shop-header-send-cost">基础运费¥5</view>
+			</view>
+			
+		</view>
+		<view class="header-vip-box">
+			<image class="header-vip-logo" src="https://img30.360buyimg.com/mobilecms/jfs/t1/81546/24/4550/32064/5d2c400bE942ca553/dac602f837996046.gif"></image>
+		</view>
+	</view>
+</view>

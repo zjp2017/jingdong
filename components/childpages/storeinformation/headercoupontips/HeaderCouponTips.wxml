@@ -1,0 +1,13 @@
+<!--components/childpages/storeinformation/headercoupontips/HeaderCouponTips.wxml-->
+<view class="headercoupontips">
+	<view class="headercoupontips-warp">
+		<view class="headercoupontips-left-box">
+			<view class="headercoupontips-left-img reduce">运费</view>
+			<view class="headercoupontips-left-text">VIP尊享满89元减4元运费券(每月3张)</view>
+		</view>
+		<view class="headercoupontips-right-box">
+			<view class="headercoupontips-right-text">31种优惠</view>
+			<image class="headercoupontips-right-icon" src="../../../../static/images/home/down_icon2.png"></image>
+		</view>
+	</view>
+</view>
