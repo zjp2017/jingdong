@@ -24,5 +24,12 @@
 			<view class="evaluate-label-item">好评 (5521)</view>
 			<view class="evaluate-label-item">好评 (5521)</view>
 		</view>
+		<!--  -->
+		<view class="select-box">
+			<radio class="select-btn"></radio>
+			<view class="select-title">只看有内容的评价</view>
+		</view>
+		<!--  -->
+		<EevaluateCenter-com></EevaluateCenter-com>
 	</view>
 </view>

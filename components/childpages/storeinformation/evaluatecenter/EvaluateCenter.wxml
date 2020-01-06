@@ -10,7 +10,13 @@
 				<view class="evaluatecenter-item-right-top">
 					<view class="evaluatecenter-item-right-top-left">
 						<view class="evaluatecenter-item-nickName">p***9</view>
-						<view class="evaluatecenter-item-score">4.5分</view>
+						<view class="evaluatecenter-item-score">
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/unscore_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/unscore_icon.png"></image>
+						</view>
 					</view>
 					<view class="evaluatecenter-item-right-top-right">
 						<view class="evaluatecenter-item-time">2020-01-05 17:29:48</view>
@@ -35,7 +41,13 @@
 				<view class="evaluatecenter-item-right-top">
 					<view class="evaluatecenter-item-right-top-left">
 						<view class="evaluatecenter-item-nickName">p***9</view>
-						<view class="evaluatecenter-item-score">4.5分</view>
+						<view class="evaluatecenter-item-score">
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/score_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/unscore_icon.png"></image>
+							<image class="evaluate-score-icon" src="../../../../static/images/other/unscore_icon.png"></image>
+						</view>
 					</view>
 					<view class="evaluatecenter-item-right-top-right">
 						<view class="evaluatecenter-item-time">2020-01-05 17:29:48</view>

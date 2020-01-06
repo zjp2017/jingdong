@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+	  "EevaluateCenter-com":"/components/childpages/storeinformation/evaluatecenter/EvaluateCenter"
+  }
 }
