@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+	  "notice-com":"/components/childpages/storeinformation/notice/Notice"
+  }
 }

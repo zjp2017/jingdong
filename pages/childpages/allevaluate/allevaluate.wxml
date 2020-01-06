@@ -1,0 +1,28 @@
+<!--pages/childpages/allevaluate/allevaluate.wxml-->
+<!-- 商家所有评价中心页面 -->
+<view class="allevaluate">
+	<view class="allevaluate-title">全部评价</view>
+	<view class="allevaluate-box">
+		<view class="evaluate-box">
+			<view class="evaluate-left">
+				<view class="evaluate-score-num">4.6</view>
+				<view class="evaluate-score-title">综合评分</view>
+			</view>
+			<view class="evaluate-right">
+				<view class="evaluate-num">5185</view>
+				<view class="evaluate-num-title">评论数</view>
+			</view>
+		</view>
+		<view class="evaluate-label-box">
+			<view class="evaluate-label-item active">全部 (6440)</view>
+			<view class="evaluate-label-item">好评 (5521)</view>
+			<view class="evaluate-label-item">中评 (457)</view>
+			<view class="evaluate-label-item">差评 (462)</view>
+			<view class="evaluate-label-item">分量足 (1292)</view>
+			<view class="evaluate-label-item">商品新鲜质量优 (1456)</view>
+			<view class="evaluate-label-item negative">质量差 (5521)</view>
+			<view class="evaluate-label-item">好评 (5521)</view>
+			<view class="evaluate-label-item">好评 (5521)</view>
+		</view>
+	</view>
+</view>

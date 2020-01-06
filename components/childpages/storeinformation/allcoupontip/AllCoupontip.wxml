@@ -1,16 +1,79 @@
 <!--components/childpages/storeinformation/allcoupontip/AllCoupontip.wxml-->
 <view class="allcoupontip">
 	<view class="allcoupontip-warp">
-		<view class="allcoupontip-title">店铺优惠</view>
-		<view class="allcoupontip-box">
-			<!-- 1 -->
-
-			<!-- 2 -->
-			<view class="allcoupontip-item" wx:for="{{itemData}}" wx:key="index">
-				<view class="headercoupontips-left-img reduce">运费</view>
-				<view class="headercoupontips-left-text">VIP尊享满89元减4元运费券(每月3张)</view>
+		<!-- 1.叠加红包 -->
+		<view class="superimposed-red-packets">
+			<view class="superimposed-red-packets-title">叠加红包</view>
+			<view class="superimposed-red-packets-desc">红包可与优惠券叠加使用</view>
+			<view class="superimposed-red-packets-box">
+				<view class="superimposed-red-packets-item">
+					<view class="superimposed-red-packets-item-left">
+						<view class="superimposed-red-packets-item-left-price">￥98.9</view>
+						<view class="superimposed-red-packets-item-produce">满199元可用</view>
+					</view>
+					<view class="superimposed-red-packets-item-center">
+						<view class="superimposed-red-packets-item-name">永辉（绿标）兑换红包</view>
+						<view class="superimposed-red-packets-item-time">有效期至2020.01.12</view>
+					</view>
+					<view class="superimposed-red-packets-item-right">
+						<view class="superimposed-red-packets-item-cash">兑换</view>
+					</view>
+				</view>
 			</view>
+		</view>
+		<!-- 2.店铺优惠券 -->
+		<view class="shop-coupon" style="display: none;">
+			<view class="shop-coupon-title">店铺优惠券</view>
+			<view class="superimposed-red-packets-box">
+				<view class="superimposed-red-packets-item use">
+					<view class="superimposed-red-packets-item-left">
+						<view class="superimposed-red-packets-item-left-price">￥98.9</view>
+						<view class="superimposed-red-packets-item-produce">满199元可用</view>
+					</view>
+					<view class="superimposed-red-packets-item-center">
+						<view class="superimposed-red-packets-item-name">永辉（绿标）兑换红包</view>
+						<view class="superimposed-red-packets-item-time">有效期至2020.01.12</view>
+					</view>
+					<view class="superimposed-red-packets-item-right">
+						<view class="superimposed-red-packets-item-cash">兑换</view>
+						<image class="superimposed-red-packets-item-cash-logo" src="https://img30.360buyimg.com/mobilecms/jfs/t1/77725/29/1071/2166/5cf50ddeEe70234ca/c502906f301e6454.png"></image>
+					</view>
+				</view>
+				<!-- 2 -->
+				<view class="superimposed-red-packets-item use">
+					<view class="superimposed-red-packets-item-left">
+						<view class="superimposed-red-packets-item-left-price">￥98.9</view>
+						<view class="superimposed-red-packets-item-produce">满199元可用</view>
+					</view>
+					<view class="superimposed-red-packets-item-center">
+						<view class="superimposed-red-packets-item-name">永辉（绿标）兑换红包</view>
+						<view class="superimposed-red-packets-item-time">有效期至2020.01.12</view>
+					</view>
+					<view class="superimposed-red-packets-item-right">
+						<view class="superimposed-red-packets-item-cash use">兑换</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!--3. 店铺优惠 -->
+		<view class="shop-preferences" style="display: none;">
+			<view class="allcoupontip-title">店铺优惠</view>
+			<view class="allcoupontip-box">
+				<!-- 1 -->
 			
+				<!-- 2 -->
+				<view class="allcoupontip-item" wx:for="{{itemData}}" wx:key="index">
+					<view class="headercoupontips-left-img reduce">运费</view>
+					<view class="headercoupontips-left-text">VIP尊享满89元减4元运费券(每月3张)</view>
+				</view>
+				
+			</view>
+			<view class="">查看更多</view>
+		</view>
+		<!--  -->
+		<!-- 公告文本部分 -->
+		<view class="notice-warp">
+			<notice-com></notice-com>
 		</view>
 	</view>
 </view>

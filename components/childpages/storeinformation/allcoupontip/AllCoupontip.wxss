@@ -5,11 +5,17 @@
 	margin-top: 20rpx;
 	padding-bottom: 80rpx;
 }
-.allcoupontip-title{
+.superimposed-red-packets-title, .shop-coupon-title{
 	font-size: 31rpx;
 	color: #000;
 	font-weight: bold;
 	margin-bottom: 20rpx;
+}
+.allcoupontip-title{
+	font-size: 31rpx;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 25rpx;
 }
 .allcoupontip-item{
 	display: flex;
@@ -47,3 +53,95 @@
 .allcoupontip-item{
 	margin: 8rpx 0;
 }
+/*  */
+.superimposed-red-packets-desc{
+	font-size: 24rpx;
+	color: #999;
+	margin-bottom: 20rpx;
+}
+.superimposed-red-packets-item{
+	width: 711rpx;
+	height: 162rpx;
+	border-radius: 5rpx;
+	/* border: 1rpx solid rgb(255, 221, 221); */
+	/* background: rgb(255, 236, 236); */
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.0588235) 1rpx 2rpx 3rpx;
+	margin: 18rpx 0;
+	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/43065/22/5826/3280/5cf50e62E58d5eec5/986da35b148d813b.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.superimposed-red-packets-item.use{
+	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/64440/2/1245/3576/5cf75336Eddd90add/5f20e25a881b4615.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.superimposed-red-packets-box{
+	margin-top: 10rpx;
+}
+.superimposed-red-packets-item-left{
+	width: 202rpx;
+	height: 162rpx;
+}
+.superimposed-red-packets-item-left-price{
+	font-size: 40rpx;
+	color: rgb(255, 87, 87);
+	font-weight: bold;
+	text-align: center;
+	margin-top: 40rpx;
+}
+.superimposed-red-packets-item-produce{
+	font-size:25rpx;
+	color: #000;
+	text-align: center;
+	margin-top: 10rpx;
+}
+.superimposed-red-packets-item-center{
+	width: 340rpx;
+	height: 162rpx;
+}
+.superimposed-red-packets-item-name{
+	margin-top: 40rpx;
+	font-size:28rpx;
+	color: #000;
+	font-weight: bold;
+}
+.superimposed-red-packets-item-time{
+	margin-top: 10rpx;
+	font-size:21rpx;
+	color: #666666;
+
+}
+.superimposed-red-packets-item-right{
+	width: 170rpx;
+	height: 162rpx;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.superimposed-red-packets-item-cash{
+	width: 112rpx;
+	height: 48rpx;
+	line-height: 48rpx;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(135deg, rgb(255, 125, 125) 0%, rgb(255, 81, 56) 100%);
+	border-radius: 24rpx;
+	font-size: 24rpx;
+	margin-top: 57rpx;
+}
+.superimposed-red-packets-item-cash.use{
+	background:#fff;
+	color: rgb(255, 87, 87);
+	border: 1rpx solid rgb(255, 87, 87);
+}
+.superimposed-red-packets-item-cash-logo{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 88rpx;
+	height: 88rpx;
+}
+
+

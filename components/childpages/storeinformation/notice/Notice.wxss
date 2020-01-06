@@ -1,0 +1,66 @@
+/* components/childpages/storeinformation/notice/Notice.wxss */
+.notice-title{
+	font-size: 32rpx;
+	color: #000;
+	font-weight: bold;
+}
+.notice-text{
+	font-size: 24rpx;
+	color: #666666;
+	margin-top: 20rpx;
+}
+.notice-box{
+	margin-top: 30rpx;
+}
+.notice-evaluate{
+	font-size: 32rpx;
+	color: #000;
+	font-weight: bold;
+	margin-top: 30rpx;
+}
+.evaluate-box{
+	display: flex;
+	justify-content: space-around;
+	height: 106rpx;
+	margin-top: 50rpx;
+}
+.evaluate-score-num, .evaluate-num{
+	font-size: 46rpx;
+	font-weight: bold;
+	text-align: center;
+}
+.evaluate-score-title, .evaluate-num-title{
+	font-size:23rpx;
+	text-align: center;
+}
+.see-more-evaluate{
+	display: flex;
+	justify-content: center;
+	height: 32rpx;
+}
+.see-more-title{
+	font-size: 28rpx;
+}
+.see-more-icon{
+	width: 28rpx;
+	height: 28rpx;
+	margin: 6rpx 0 0 2rpx;
+}
+.commodity-box{
+	display: flex;
+	margin-top: 20rpx;
+	justify-content: flex-start;
+	padding: 10rpx 20rpx 30rpx 20rpx;
+	border-bottom: 1rpx solid #f5f5f5;
+}
+.commodity-title{
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+.commodity-num{
+	font-size: 28rpx;
+	margin-left: 20rpx;
+}
+.commodity-num.active{
+	color: #2486ff;
+}

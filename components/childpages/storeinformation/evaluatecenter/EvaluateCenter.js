@@ -1,4 +1,4 @@
-// components/childpages/storeinformation/allcoupontip/AllCoupontip.js
+// components/childpages/storeinformation/evaluatecenter/EvaluateCenter.js
 Component({
   /**
    * 组件的属性列表
@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-	itemData:10
+
   },
 
   /**

@@ -11,9 +11,9 @@
 			<!-- 优惠券展示部分 -->
 		<view class="coupon-warp">
 			<!-- 部分优惠券 -->
-			<header-coupontips-com></header-coupontips-com>
+				<header-coupontips-com style="display: {{couponShow==true?'block':'none'}}"></header-coupontips-com>
 			<!-- 全部优惠券 -->
-			<allcoupontip-com></allcoupontip-com>
+				<allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com>
 		</view>
 		</view>
 		<!-- 商家页面底部结算框 -->
@@ -22,8 +22,9 @@
 		<view class="retract-box">
 			<view class="retract-warp">
 				<image class="retract-icon" src="../../../static/images/home/up_icon.png"></image>
-				<view class="retract-text">点击收起</view>
+				<view class="retract-text" bindtap="retract">点击收起</view>
 			</view>
 		</view>
+		
 	</view>
 </view>

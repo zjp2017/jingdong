@@ -1,0 +1,75 @@
+<!--components/childpages/storeinformation/evaluatecenter/EvaluateCenter.wxml-->
+<view  class="evaluatecenter">
+	<view class="evaluatecenter-box">
+		<!-- 1 -->
+		<view class="evaluatecenter-item">
+			<view class="evaluatecenter-item-left">
+				<image class="evaluatecenter-item-leftf-logo" src="/static/images/other/evaluateHeader.jpg"></image>
+			</view>
+			<view class="evaluatecenter-item-right">
+				<view class="evaluatecenter-item-right-top">
+					<view class="evaluatecenter-item-right-top-left">
+						<view class="evaluatecenter-item-nickName">p***9</view>
+						<view class="evaluatecenter-item-score">4.5分</view>
+					</view>
+					<view class="evaluatecenter-item-right-top-right">
+						<view class="evaluatecenter-item-time">2020-01-05 17:29:48</view>
+					</view>
+				</view>
+				<!-- 推荐部分 -->
+				<view class="evaluatecenter-item-right-bottom">
+					<image class="evaluatecenter-item-right-bottom-icon" src="/static/images/other/recommend.png"></image>
+					<view class="evaluatecenter-item-right-bottom-item">洁霸无磷洗衣粉 2500g</view>
+					<view class="evaluatecenter-item-right-bottom-item">进口香蕉 约600g</view>
+					<view class="evaluatecenter-item-right-bottom-item">永辉优选馋大狮100%芒果汁 1L</view>
+					<view class="evaluatecenter-item-right-bottom-item">简单白全脂牛奶 1L</view>
+				</view>
+			</view>
+		</view>
+		<!-- 2 -->
+		<view class="evaluatecenter-item">
+			<view class="evaluatecenter-item-left">
+				<image class="evaluatecenter-item-leftf-logo" src="/static/images/other/evaluateHeader.jpg"></image>
+			</view>
+			<view class="evaluatecenter-item-right">
+				<view class="evaluatecenter-item-right-top">
+					<view class="evaluatecenter-item-right-top-left">
+						<view class="evaluatecenter-item-nickName">p***9</view>
+						<view class="evaluatecenter-item-score">4.5分</view>
+					</view>
+					<view class="evaluatecenter-item-right-top-right">
+						<view class="evaluatecenter-item-time">2020-01-05 17:29:48</view>
+					</view>
+				</view>
+				<!-- 用户输入的评价 -->
+				<view class="evaluatecenter-input">
+					冬瓜有点坏了，其他还可以,冬瓜有点坏了，其他还可以,冬瓜有点坏了，其他还可以，冬瓜有点坏了，其他还可以，冬瓜有点坏了，其他还可以
+				</view>
+				<!-- 用户选择的标签进行评价 -->
+				<view class="evaluatecenter-label">
+					<image class="evaluatecenter-label-right-bottom-icon" src="/static/images/other/label.png"></image>
+					<view class="evaluatecenter-label-right-bottom-item">价格实惠</view>
+					<view class="evaluatecenter-label-right-bottom-item">pieceFont</view>
+					<view class="evaluatecenter-label-right-bottom-item">服务态度好</view>
+					<view class="evaluatecenter-label-right-bottom-item">口味佳</view>
+					<view class="evaluatecenter-label-right-bottom-item">价格实惠</view>
+					<view class="evaluatecenter-label-right-bottom-item">pieceFont</view>
+					<view class="evaluatecenter-label-right-bottom-item">服务态度好</view>
+					<view class="evaluatecenter-label-right-bottom-item">口味佳</view>
+				</view>
+				<!-- 推荐部分 -->
+				<view class="evaluatecenter-item-right-bottom">
+					<image class="evaluatecenter-item-right-bottom-icon" src="/static/images/other/recommend.png"></image>
+					<view class="evaluatecenter-item-right-bottom-item">洁霸无磷洗衣粉 2500g</view>
+					<view class="evaluatecenter-item-right-bottom-item">进口香蕉 约600g</view>
+					<view class="evaluatecenter-item-right-bottom-item">永辉优选馋大狮100%芒果汁 1L</view>
+					<view class="evaluatecenter-item-right-bottom-item">简单白全脂牛奶 1L</view>
+					<view class="evaluatecenter-item-right-bottom-item">洁霸无磷洗衣粉 2500g</view>
+					<view class="evaluatecenter-item-right-bottom-item">进口香蕉 约600g</view>
+					<view class="evaluatecenter-item-right-bottom-item">永辉优选馋大狮100%芒果汁 1L</view>
+					<view class="evaluatecenter-item-right-bottom-item">简单白全脂牛奶 1L</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "EevaluateCenter-com":"/components/childpages/storeinformation/evaluatecenter/EvaluateCenter"
+  }
+}

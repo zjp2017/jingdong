@@ -1,18 +1,18 @@
-// pages/childpages/storeinformation/storeinformation.js
+// pages/childpages/allevaluate/allevaluate.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-	couponShow:false
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-	console.log(options.bsId);//商家id
+
   },
 
   /**
@@ -62,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  // 点击收起
-  retract(){
-	  this.setData({
-		  couponShow:true
-	  })
   }
 })

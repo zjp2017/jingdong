@@ -15,7 +15,8 @@
     "pages/childpages/homefashion/homefashion",
     "pages/childpages/bakecake/bakecake",
     "pages/childpages/storeinformation/storeinformation",
-    "components/childpages/storeinformation/settlementbox/SettlementBox"
+    "components/childpages/storeinformation/settlementbox/SettlementBox",
+    "pages/childpages/allevaluate/allevaluate"
   ],
   "window": {
     "backgroundTextStyle": "light",

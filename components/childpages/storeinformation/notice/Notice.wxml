@@ -1,0 +1,62 @@
+<!--components/childpages/storeinformation/notice/Notice.wxml-->
+<view class="notice-box">
+	<view class="notice-title">公告</view>
+	<view class="notice-text">民生超市，百姓永辉</view>
+	<view class="notice-evaluate">店铺评价</view>
+	<view class="evaluate-box">
+		<view class="evaluate-left">
+			<view class="evaluate-score-num">4.6</view>
+			<view class="evaluate-score-title">综合评分</view>
+		</view>
+		<view class="evaluate-right">
+			<view class="evaluate-num">5185</view>
+			<view class="evaluate-num-title">评论数</view>
+		</view>
+	</view>
+	<!-- 展示1条评价 -->
+	<view class="evaluate-content">
+		<view class="evaluate-item">
+			<EevaluateCenter-com></EevaluateCenter-com>
+		</view>
+		<view class="see-more-evaluate" bindtap="seeAllEvaluate">
+			<view class="see-more-title">查看全部评价</view>
+			<image class="see-more-icon" src="../../../../static/images/other/right_icon.png"></image>
+		</view>
+	</view>
+	<!--  -->
+	<view class="notice-title">店铺信息</view>
+	<view class="commodity-box">
+		<view class="commodity-title">商品数量</view>
+		<view class="commodity-num">3185件</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">月单销量</view>
+		<view class="commodity-num">4千+</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">关注人数</view>
+		<view class="commodity-num">9761人</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">营业时间</view>
+		<view class="commodity-num">09：00-21:00</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">门店地址</view>
+		<view class="commodity-num">广东省深圳市南山区海德二道288号茂业百货南山店B1层(距您1.84km)</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">门店电话</view>
+		<view class="commodity-num active" bindtap="makePhone">13691832815</view>
+	</view>
+	<!--  -->
+	<view class="commodity-box">
+		<view class="commodity-title">商家资质</view>
+		<view class="commodity-num active">去看看</view>
+	</view>
+</view>

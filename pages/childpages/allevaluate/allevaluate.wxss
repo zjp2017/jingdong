@@ -1,0 +1,52 @@
+/* pages/childpages/allevaluate/allevaluate.wxss */
+.allevaluate-title{
+	color: #000000;
+	font-size: 32rpx;
+	text-align: center;
+	margin-top: 15rpx;
+}
+.evaluate-box{
+	display: flex;
+	justify-content: space-around;
+	height: 106rpx;
+	margin-top: 50rpx;
+	border-bottom: 20rpx solid #f4f4f4;
+	
+}
+.evaluate-score-num, .evaluate-num{
+	font-size: 46rpx;
+	font-weight: bold;
+	text-align: center;
+}
+.evaluate-score-num{
+	color: #ff5757;
+}
+.evaluate-score-title, .evaluate-num-title{
+	font-size:23rpx;
+	text-align: center;
+}
+/*  */
+.evaluate-label-box{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 10rpx 20rpx;
+}
+.evaluate-label-item{
+	height: 55rpx;
+	background: #e8e8e8;
+	border-radius: 8rpx;
+	color: #939393;
+	font-size: 26rpx;
+	line-height: 55rpx;
+	text-align: center;
+	padding: 0 15rpx;
+	margin: 20rpx 10rpx;
+}
+.evaluate-label-item.active{
+	color: #fff;
+	background: #47b34f;
+}
+.evaluate-label-item.negative{
+	opacity: 0.6;
+}
