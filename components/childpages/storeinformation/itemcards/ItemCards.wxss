@@ -1,7 +1,7 @@
 /* components/childpages/storeinformation/itemcards/ItemCards.wxss */
 .itemcards{
-	border-bottom: 1rpx solid #e8e8e8;
-	padding-bottom: 30rpx 0;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 30rpx 0;
 }
 .itemcards-box{
 	display: flex;
@@ -19,6 +19,7 @@
 	width: 524rpx;
 	padding-left: 20rpx;
 	box-sizing: border-box;
+	position: relative;
 }
 .itemcards-right-sale-box{
 	display: flex;
@@ -80,4 +81,18 @@
 	text-decoration: line-through;
 	font-size: 19rpx;
 	color: #999999;
+}
+.addCarts{
+	width: 100%;
+	height: 100%;
+	margin: 0 5rpx 5rpx 0;
+}
+.addCarts-box{
+	width: 50rpx;
+	height: 50rpx;
+	position: absolute;
+	right: 10rpx;
+	bottom: 15rpx;
+	border-radius: 50%;
+	background: #00c725;
 }

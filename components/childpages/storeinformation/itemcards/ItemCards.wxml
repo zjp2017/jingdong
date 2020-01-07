@@ -14,6 +14,9 @@
 			<view class="itemcards-right-sale-discount">直降2.7折</view>
 			<view class="itemcards-right-sale-price">99.9</view>
 			<view class="itemcards-right-sale-origin-price">199.9</view>
+			<view class="addCarts-box">
+				<image class="addCarts" src="../../../../static/images/other/add_icon.png"></image>
+			</view>
 		</view>
 	</view>
 </view>

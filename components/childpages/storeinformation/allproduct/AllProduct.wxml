@@ -15,8 +15,16 @@
 			</view>
 			<!-- 列表部分 -->
 			<view class="list-warp">
-				<view class="item-title">赠品区</view>
-				<itemcards-com></itemcards-com>
+				<view wx:for="{{20}}" wx:key="index">
+					<view class="item-title">赠品区</view>
+					<view>
+						<itemcards-com></itemcards-com>
+						<itemcards-com></itemcards-com>
+						<itemcards-com></itemcards-com>
+						<itemcards-com></itemcards-com>
+						<itemcards-com></itemcards-com>
+					</view>
+				</view>
 			</view>
 		</scroll-view>
 	</view>
