@@ -1,0 +1,65 @@
+/* components/childpages/storeinformation/allproduct/AllProduct.wxss */
+.allproduct{
+	background: #fff;
+}
+.allproduct-title{
+	height: 74rpx;
+	line-height: 74rpx;
+	font-size: 36rpx;
+	font-weight: bold;
+	text-indent: 20rpx;
+}
+.allproduct-box{
+	display: flex;
+	padding-bottom: 80rpx;
+}
+.allproduct-box-left{
+	width: 158rpx;
+	
+	height:1100rpx;
+	overflow: hidden;
+	/* overflow-y: auto; */
+}
+.allproduct-box-right{
+	height:1100rpx;
+	overflow: hidden;
+	background: #fff;
+}
+.allproduct-box-right{
+	width: 574rpx;
+	padding: 0 18rpx;
+	box-sizing: border-box;
+}
+.allproduct-box-left-item{
+	display: -webkit-box;
+	display: -moz-box;
+	width: auto;
+	height: 46px;
+	padding: 2px 12px;
+	line-height: 21px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #666;
+	font-size: 14px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-moz-line-clamp: 2;
+	-moz-box-orient: vertical;
+	-webkit-box-pack: center;
+	background: #f8f8f8;
+}
+.allproduct-box-left-item.active{
+	color: #000;
+	background: #fff;
+}
+/* 去掉滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+/*  */
+.allproduct-box-right-img{
+	width: 100%;
+	margin: 6rpx 0px;
+}

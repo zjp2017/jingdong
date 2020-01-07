@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+	  "itemcards-com":"/components/childpages/storeinformation/itemcards/ItemCards"
+  }
+}

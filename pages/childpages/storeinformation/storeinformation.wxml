@@ -9,13 +9,16 @@
 				<shop-header></shop-header>
 			</view>
 			<!-- 优惠券展示部分 -->
-		<view class="coupon-warp">
-			<!-- 部分优惠券 -->
-				<header-coupontips-com style="display: {{couponShow==true?'block':'none'}}"></header-coupontips-com>
-			<!-- 全部优惠券 -->
-				<allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com>
+			<view class="coupon-warp">
+				<!-- 部分优惠券 -->
+					<header-coupontips-com style="display: {{couponShow==true?'block':'none'}}"></header-coupontips-com>
+				<!-- 全部优惠券 -->
+					<!-- <allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com> -->
+			</view>
+			<!-- 商家店铺页面中的所有产品组件 -->
+			<allproduct-com></allproduct-com>
 		</view>
-		</view>
+		<!--  -->
 		<!-- 商家页面底部结算框 -->
 		<!-- <settlementbox-com></settlementbox-com> -->
 		<!-- 点击收起固定栏 -->

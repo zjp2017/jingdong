@@ -3,6 +3,7 @@
 	  "settlementbox-com":"/components/childpages/storeinformation/settlementbox/SettlementBox",
 	  "shop-header":"/components/childpages/storeinformation/shopheader/ShopHeader",
 	  "header-coupontips-com":"/components/childpages/storeinformation/headercoupontips/HeaderCouponTips",
-	  "allcoupontip-com":"/components/childpages/storeinformation/allcoupontip/AllCoupontip"
+	  "allcoupontip-com":"/components/childpages/storeinformation/allcoupontip/AllCoupontip",
+	  "allproduct-com":"/components/childpages/storeinformation/allproduct/AllProduct"
   }
 }
