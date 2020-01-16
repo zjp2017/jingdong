@@ -1,0 +1,55 @@
+/* pages/childpages/commodityIntroduction/commodityIntroduction.wxss */
+page{
+	height: 100%;
+	width: 100%;
+	background: #F6F6F6;
+}
+.commodity-header-box{
+	height: 930rpx;
+	width: 100%;
+	background: #fff;
+	border-radius: 0 0 20rpx 20rpx;
+}
+.commodity-header-swiper{
+	height: 750rpx;
+}
+.commodity-header-swiper-item image{
+	width: 100%;
+}
+.commodity-header-title{
+	margin-top: 25rpx;
+	font-size: 36rpx;
+	font-weight: bold;
+	text-indent: 20px;
+}
+.commodity-price-box{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35rpx 0 15rpx;
+	box-sizing: border-box;
+	margin-top: 10rpx;
+}
+.commodity-price-box-left{
+	display: flex;
+}
+.commodity-price-now{
+	font-size: 50rpx;
+	color: rgb(255, 30, 25);
+	font-weight: bold;
+}
+.commodity-price-orgin{
+	font-size: 25rpx;
+	color: rgb(153, 153, 153);
+	text-decoration: line-through;
+	margin: 28rpx 0 0 10rpx;
+}
+.commodity-price-box-right{
+	border-radius: 35rpx 35rpx;
+	color: #fff;
+	height: 70rpx;
+	width: 170rpx;
+	text-align: center;
+	line-height: 70rpx;
+	background: linear-gradient(270deg,#00be34,#00cb1e);
+	font-size: 28rpx;
+}

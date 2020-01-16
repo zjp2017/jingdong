@@ -1,0 +1,27 @@
+<!--pages/childpages/commodityIntroduction/commodityIntroduction.wxml-->
+<!-- 商品详情页 -->
+<view class="commodityIntroduction">
+	<!-- 头部-图片部分 -->
+	<view class="commodity-header-box">
+		<view class="commodity-header-swiper-box">
+			<swiper class="commodity-header-swiper"  autoplay="true" circular="true" indicator-dots="true" indicator-active-color="#39ac69" indicator-color="#ffffff" >
+				<swiper-item class="commodity-header-swiper-item">
+					<image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/105230/31/8786/83919/5e08a456E7bd02c20/65d961ac85939605.jpg"></image>
+				</swiper-item>
+				<swiper-item class="commodity-header-swiper-item">
+					<image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/106131/6/8736/66632/5e08a457Ebe1a3f6b/3f92224969a80e59.jpg"></image>
+				</swiper-item>
+			</swiper>
+		</view>
+		<view class="commodity-header-title">
+			GD砂糖桔 约500g
+		</view>
+		<view class="commodity-price-box">
+			<view class="commodity-price-box-left">
+				<view class="commodity-price-now">￥3.9</view>
+				<view class="commodity-price-orgin">￥5.9</view>
+			</view>
+			<view class="commodity-price-box-right">加入购物车</view>
+		</view>
+	</view>
+</view>

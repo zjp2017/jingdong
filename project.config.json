@@ -211,6 +211,13 @@
 					"id": -1,
 					"name": "pages/childpages/storeinformation/storeinformation",
 					"pathName": "pages/childpages/storeinformation/storeinformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/commodityIntroduction/commodityIntroduction",
+					"pathName": "pages/childpages/commodityIntroduction/commodityIntroduction",
 					"scene": null
 				}
 			]

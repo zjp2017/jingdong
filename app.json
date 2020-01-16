@@ -16,7 +16,8 @@
     "pages/childpages/bakecake/bakecake",
     "pages/childpages/storeinformation/storeinformation",
     "components/childpages/storeinformation/settlementbox/SettlementBox",
-    "pages/childpages/allevaluate/allevaluate"
+    "pages/childpages/allevaluate/allevaluate",
+    "pages/childpages/commodityIntroduction/commodityIntroduction"
   ],
   "window": {
     "backgroundTextStyle": "light",
