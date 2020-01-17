@@ -1,0 +1,11 @@
+<!--components/childpages/commodityIntroduction/ScrollItem/ScrollItem.wxml-->
+<!-- 产品详情页的滚动项 -->
+<view class="ScrollItem">
+	<view class="ScrollItem-img-box">
+		<image class="ScrollItem-img" mode="widthFix" src="https://img30.360buyimg.com/n2//jfs/t1/108550/12/3948/113367/5e169a0dE6febcfbe/a2bfa4f8386ebd44.jpg"></image>
+		<view class="ScrollItem-img-label reduction">直降6.6折</view>
+	</view>
+	<view class="ScrollItem-title">
+		维达 抽取式纸面巾 自然无香 133*195mm/张*3层 10包 126抽/包
+	</view>
+</view>

@@ -53,3 +53,25 @@ page{
 	background: linear-gradient(270deg,#00be34,#00cb1e);
 	font-size: 28rpx;
 }
+.collocation-purchase-warp{
+	border-radius:20rpx 20rpx;
+	height: 442rpx;
+	width: 100%;
+	background: #fff;
+	margin-top: 20rpx;
+	overflow: hidden;
+}
+.collocation-purchase-title{
+	font-size: 32rpx;
+	font-weight: bold;
+	text-indent: 20rpx;
+	margin-top: 20rpx;
+}
+.collocation-purchase-box{
+	margin-top: 10rpx;
+}
+.collocation-purchase-scroll{
+	height: 400rpx;
+	white-space: nowrap;
+	display: flex;
+}

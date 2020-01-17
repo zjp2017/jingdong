@@ -218,6 +218,13 @@
 					"id": -1,
 					"name": "pages/childpages/commodityIntroduction/commodityIntroduction",
 					"pathName": "pages/childpages/commodityIntroduction/commodityIntroduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/commodityIntroduction/commodityIntroduction",
+					"pathName": "pages/childpages/commodityIntroduction/commodityIntroduction",
 					"scene": null
 				}
 			]

@@ -6,10 +6,10 @@
 		<view class="commodity-header-swiper-box">
 			<swiper class="commodity-header-swiper"  autoplay="true" circular="true" indicator-dots="true" indicator-active-color="#39ac69" indicator-color="#ffffff" >
 				<swiper-item class="commodity-header-swiper-item">
-					<image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/105230/31/8786/83919/5e08a456E7bd02c20/65d961ac85939605.jpg"></image>
+					<!-- <image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/105230/31/8786/83919/5e08a456E7bd02c20/65d961ac85939605.jpg"></image> -->
 				</swiper-item>
 				<swiper-item class="commodity-header-swiper-item">
-					<image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/106131/6/8736/66632/5e08a457Ebe1a3f6b/3f92224969a80e59.jpg"></image>
+					<!-- <image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/106131/6/8736/66632/5e08a457Ebe1a3f6b/3f92224969a80e59.jpg"></image> -->
 				</swiper-item>
 			</swiper>
 		</view>
@@ -22,6 +22,19 @@
 				<view class="commodity-price-orgin">￥5.9</view>
 			</view>
 			<view class="commodity-price-box-right">加入购物车</view>
+		</view>
+	</view>
+	<!-- 搭配购买 -->
+	<view class="collocation-purchase-warp">
+		<view class="collocation-purchase-title">搭配购买</view>
+		<view class="collocation-purchase-box">
+			<scroll-view class="collocation-purchase-scroll" scroll-x="true">
+				<scroll-item></scroll-item>
+				<scroll-item></scroll-item>
+				<scroll-item></scroll-item>
+				<scroll-item></scroll-item>
+				<scroll-item></scroll-item>
+			</scroll-view>
 		</view>
 	</view>
 </view>
