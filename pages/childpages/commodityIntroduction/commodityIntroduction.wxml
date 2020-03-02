@@ -12,9 +12,20 @@
 					<!-- <image mode="widthFix" src="https://img30.360buyimg.com/o2o/s550x550_jfs/t1/106131/6/8736/66632/5e08a457Ebe1a3f6b/3f92224969a80e59.jpg"></image> -->
 				</swiper-item>
 			</swiper>
+			<!-- 秒杀提示 -->
+			<view class="time-buy">
+				<text  class="time-buy-title">秒杀</text>
+				<text  class="time-buy-time">23</text>
+				<text  class="time-buy-icon">:</text>
+				<text  class="time-buy-time">32</text>
+				<text  class="time-buy-icon">:</text>
+				<text  class="time-buy-time">50</text>
+				
+				<text class="time-buy-title">结束</text>
+			</view>
 		</view>
 		<view class="commodity-header-title">
-			GD砂糖桔 约500g
+			GD砂糖桔 约5001g
 		</view>
 		<view class="commodity-price-box">
 			<view class="commodity-price-box-left">
@@ -22,6 +33,23 @@
 				<view class="commodity-price-orgin">￥5.9</view>
 			</view>
 			<view class="commodity-price-box-right">加入购物车</view>
+		</view>
+	</view>
+	<!-- 联系商家 -->
+	<view class="contact-merchant">
+		<view class="contact-merchant-top">
+			<view class="contact-merchant-top-left">
+				<image src="../../../static/images/other/saller.png" class="merchant-icon"></image>
+				<text class="merchant-name">永辉</text>
+			
+			</view>
+			<view class="contact-merchant-top-right">
+				<image src="../../../static/images/other/tel.png" class="contact-merchant-telphone-icon"></image>
+				<text class="contact-merchant-telphone">18565757065</text>
+			</view>
+		</view>
+		<view class="contact-merchant-bottom">
+			
 		</view>
 	</view>
 	<!-- 搭配购买 -->

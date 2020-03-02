@@ -5,10 +5,11 @@ page{
 	background: #F6F6F6;
 }
 .commodity-header-box{
-	height: 930rpx;
+	min-height: 930rpx;
 	width: 100%;
 	background: #fff;
 	border-radius: 0 0 20rpx 20rpx;
+	padding-bottom: 23rpx;
 }
 .commodity-header-swiper{
 	height: 750rpx;
@@ -74,4 +75,48 @@ page{
 	height: 400rpx;
 	white-space: nowrap;
 	display: flex;
+}
+.time-buy{
+	height: 80rpx;
+	background: #FFEAEA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.time-buy-title{
+	font-size: 26rpx;
+	margin:0 8rpx;
+}
+.time-buy-time{
+	font-size: 26rpx;
+	text-align: center;
+	width: 38rpx;
+	height: 44rpx;
+	line-height: 44rpx;
+	color: #fff;
+	background: rgb(255, 52, 52);
+	border-radius: 8rpx;
+	margin: 0 8rpx;
+}
+.contact-merchant{
+	border-radius: 20rpx;
+	margin: 12rpx 0;
+	background: #fff;
+	height: 200rpx;
+}
+.contact-merchant-top{
+	display: flex;
+	justify-content: space-between;
+}
+.merchant-icon{
+	width: 32rpx;
+	height: 32rpx;
+}
+.contact-merchant-telphone-icon{
+	width: 32rpx;
+	height: 32rpx;
+}
+.contact-merchant-top-right{
+	width: 270rpx;
+	
 }
