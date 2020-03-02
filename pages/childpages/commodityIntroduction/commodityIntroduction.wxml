@@ -40,7 +40,7 @@
 		<view class="contact-merchant-top">
 			<view class="contact-merchant-top-left">
 				<image src="../../../static/images/other/saller.png" class="merchant-icon"></image>
-				<text class="merchant-name">永辉</text>
+				<view class="merchant-name">永辉</view>
 			
 			</view>
 			<view class="contact-merchant-top-right">
@@ -49,7 +49,13 @@
 			</view>
 		</view>
 		<view class="contact-merchant-bottom">
-			
+			<view class="contact-merchant-bottom-left">
+				<view class="merchant-evaluate">商品评价</view>
+				<view class="merchant-evaluate-num">共5人评价</view>
+			</view>
+			<view class="contact-merchant-bottom-right">
+				好评 100%
+			</view>
 		</view>
 	</view>
 	<!-- 搭配购买 -->
@@ -63,6 +69,26 @@
 				<scroll-item></scroll-item>
 				<scroll-item></scroll-item>
 			</scroll-view>
+		</view>
+	</view>
+	<!-- 商品详情 -->
+	<view class="commodity-details">
+		<view class="commodity-details-title">商品详情</view>
+		<view class="commodity-details-image-box">
+			<!-- <image src=""></image> -->
+		</view>
+	</view>
+	<!-- 价格说明 -->
+	<view class="price-des-box">
+		<view class="price-des">价格说明</view>
+		<view  class="price-des-content">
+			<text class="price-des-content-bold">划线价格：</text>
+			<text>划线的价格并非《中华人民共和国价格法》及《禁止价格欺诈行为的规定》等相关法律法规中所指商品“原价”的含义，仅为到家平台商家处商品的供应商指导价或建议零售价，</text>
+			<text class="price-des-content-bold">并非商品原价。</text>
+		</view>
+		<view class="price-des-content">
+			<text class="price-des-content-bold">未划线价格：</text>
+			<text>未划线的价格指该商家处商品在京东到家平台实时标价，具体成交价格根据商品参加的活动，或者您使用优惠券等发生变化，最终以订单结算页面价格为准。</text>
 		</view>
 	</view>
 </view>

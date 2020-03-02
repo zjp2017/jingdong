@@ -107,16 +107,82 @@ page{
 .contact-merchant-top{
 	display: flex;
 	justify-content: space-between;
+	height: 100rpx;
+	align-items: center;
+	border-bottom: 2rpx solid #F4F4F4;
 }
 .merchant-icon{
 	width: 32rpx;
 	height: 32rpx;
+	margin: 6rpx 6rpx 0 20rpx;
 }
 .contact-merchant-telphone-icon{
 	width: 32rpx;
 	height: 32rpx;
+	margin-top: 6rpx;
 }
 .contact-merchant-top-right{
 	width: 270rpx;
+	display: flex;
+	overflow: hidden;
+	height: 50rpx;
+}
+.contact-merchant-top-left{
+	width: 480rpx;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	height: 50rpx;
+	display: flex;
+}
+.contact-merchant-bottom{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20rpx;
+	align-items: center;
+	height: 100rpx;
+}
+.contact-merchant-bottom-left{
+	display: flex;
+	overflow: hidden;
 	
+}
+.merchant-evaluate{
+	font-size: 32rpx;
+}
+.merchant-evaluate-num{
+	font-size: 24rpx;
+	color: rgb(153, 153, 153);
+	margin-top: 10rpx;
+	margin-left: 25rpx;
+}
+.contact-merchant-bottom-right{
+	font-size: 24rpx;
+	color: rgb(153, 153, 153);
+}
+.price-des{
+	font-size: 30rpx;
+	color: #333333;
+}
+.price-des-content{
+	font-size: 24rpx;
+	color: #666666;
+	margin: 10rpx 0;
+}
+.price-des-content-bold{
+	font-weight: bold;
+}
+.commodity-details{
+	padding: 20rpx 20rpx;
+	box-sizing: border-box;
+	background: #ffffff;
+	border-radius: 20rpx;
+	margin-top: 15rpx;
+}
+.price-des-box{
+	padding: 20rpx 20rpx;
+	box-sizing: border-box;
+	background: #ffffff;
+	border-radius: 20rpx 20rpx 0 0;
+	margin-top: 15rpx;
 }
