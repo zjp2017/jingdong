@@ -1,2 +1,45 @@
 <!--pages/shoppingCart/shoppingCart.wxml-->
-<text>pages/shoppingCart/shoppingCart.wxml</text>
+<!-- 购物车 -->
+<view class="shopping-cart-box">
+	<view class="shopping-cart-item">
+		
+		<view class="shopping-cart-item-top">
+			<view class="shopping-merchant-name">大润发</view>
+			<image class="look-more-detail" src="../../static/images/other/right_icon.png"></image>
+			
+		</view>
+		<view class="shopping-cart-item-bottom">
+			<view class="shopping-cart-item-bottom-item">
+				<image class="shopping-cart-item-bottom-item-img" src="https://img10.360buyimg.com/n7//jfs/t21886/180/109930561/150298/ad4e0f23/5afc0f33Ncd14fbc4.jpg"></image>
+				<view class="shopping-cart-item-bottom-item-price">￥88.88</view>
+			</view>
+
+			<!-- 更多设置 -->
+			<view class="shopping-cart-item-bottom-item-tips">
+				<image class="shopping-cart-item-bottom-item-tips-icon" src="../../static/images/home/more_icon.png"></image>
+				<view class="shopping-cart-item-bottom-item-tips-num">共30件</view>
+			</view>
+		</view>
+	</view>
+	<!-- 2 -->
+	<view class="shopping-cart-item">
+		
+		<view class="shopping-cart-item-top">
+			<view class="shopping-merchant-name">大润发</view>
+			<image class="look-more-detail" src="../../static/images/other/right_icon.png"></image>
+		</view>
+		<view class="shopping-cart-item-bottom">
+			<view class="shopping-cart-item-bottom-item">
+				<image class="shopping-cart-item-bottom-item-img" src="https://img10.360buyimg.com/n7//jfs/t21886/180/109930561/150298/ad4e0f23/5afc0f33Ncd14fbc4.jpg"></image>
+				<view class="shopping-cart-item-bottom-item-price">￥88.88</view>
+				<!--  -->
+			</view>
+	
+			<!-- 更多设置 -->
+			<view class="shopping-cart-item-bottom-item-tips">
+				<image class="shopping-cart-item-bottom-item-tips-icon" src="../../static/images/home/more_icon.png"></image>
+				<view class="shopping-cart-item-bottom-item-tips-num">共30件</view>
+			</view>
+		</view>
+	</view>
+</view>

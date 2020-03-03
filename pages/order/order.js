@@ -1,4 +1,7 @@
 // pages/order/order.js
+// var app=getApp();
+import {getAjax} from '../../utils/ajaxRequest.js';
+
 Page({
 
   /**
@@ -12,7 +15,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+	  
+	  // wx.showLoading({
+	  //   title: '数据加载中...',
+	  // });
+	  getAjax().then(function(res){
+		  console.log(res);
+	  })
   },
 
   /**

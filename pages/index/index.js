@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
@@ -14,6 +14,30 @@ Page({
    
   },
   onLoad: function () {
+	wx.getSetting({
+	  success(res) {		
+	    if (!res.authSetting['scope.userLocation']) {
+	      wx.authorize({
+	        scope: 'scope.userLocation',
+	        success () {
+	          // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+			  wx.getStorage({
+			    key: 'location',
+			    success (res) {
+					if(res.data){
+						wx.setStorage({
+						  key: 'location',
+						  data:JSON.stringify({"lat":res.data.lat,"lng":res.data.lng})
+						})
+					}
+			    }
+			  })
+				
+	        }
+	      })
+	    }
+	  }
+	});  
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
