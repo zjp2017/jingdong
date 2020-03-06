@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+	searchWord:{
+		type:'String',
+		value:'搜索你想要的商品'
+	}
   },
 
   /**

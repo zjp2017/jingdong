@@ -1,7 +1,7 @@
 /**index.wxss**/
 .home-header{
 	height:200rpx;
-	background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/96417/23/8188/14668/5e023426Ec2404fec/0d48fd7370486aed.jpg');
+	/* background: url('https://img30.360buyimg.com/mobilecms/jfs/t1/96417/23/8188/14668/5e023426Ec2404fec/0d48fd7370486aed.jpg'); */
 	background-size: 100% 100%;
 	padding-top: 26rpx;
 	box-sizing: border-box;

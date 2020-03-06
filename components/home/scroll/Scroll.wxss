@@ -14,7 +14,7 @@
 }
 .home-scroll-box{	
 	overflow: hidden;
-	width: 900rpx;
+	min-width: 900rpx;
 	height: 315rpx;
 }
 .scroll-item-img{

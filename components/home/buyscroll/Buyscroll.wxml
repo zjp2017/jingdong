@@ -1,11 +1,32 @@
 <!--components/home/buyscroll/Buyscroll.wxml-->
 <view class="buy-scroll-box">
 	<scroll-view scroll-x="true" class="buy-scroll-warp">
+		<!-- <scrollitem-com class="buy-scroll-warp-style" wx:for="{{limitedTimeArrTwo}}" wx:key="index" data-value="{{item}}"></scrollitem-com> -->
+		<!-- <scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
 		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
 		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
-		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
-		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
-		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com>
+		<scrollitem-com class="buy-scroll-warp-style"></scrollitem-com> -->
+		<view class="buy-scroll-warp-style" wx:for="{{limitedTimeArrTwo}}" wx:key="index" >
+			<view class="scroll-box-item">
+				<view class="scroll-box-item-top">
+					<image class="scroll-box-item-top-img" src="{{item.floorCellData.grabSku.imageurl}}"></image>
+					<view class="item-top-tips">{{item.floorCellData.grabSku.tags[0].iconText}}</view>
+					<image src="{{item.floorCellData.grabSku.storeLogo}}" class="scroll-box-item-logo"></image>
+				</view>
+				<view class="scroll-box-item-bottom">
+					<view class="scroll-box-item-bottom-title">{{item.floorCellData.grabSku.name}}</view>
+					<view class="scroll-box-item-bottom-content">
+						<view class="scroll-box-item-bottom-left">
+							<view class="scroll-discount-price">￥{{item.floorCellData.grabSku.miaoShaPrice}}</view>
+							<view class="scroll-origin-price">￥{{item.floorCellData.grabSku.minorPrice.price}}</view>
+						</view>
+						<view class="scroll-box-item-bottom-right">
+							<image class="scroll-box-item-bottom-right-img" src="https://static-o2o.360buyimg.com/daojia/react/images/seckillQiang.3882994a.png"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
 	</scroll-view>
 	
 </view>

@@ -20,7 +20,7 @@ Page({
 	  //   title: '数据加载中...',
 	  // });
 	  getAjax().then(function(res){
-		  console.log(res);
+		  // console.log(res);
 	  })
   },
 

@@ -1,9 +1,9 @@
 <!--components/home/scroll/Scroll.wxml-->
 <view class="home-scroll-warp">
 	<view class="home-scroll-box" > 
-		<view class="scroll-item" wx:for="{{contentData}}" wx:key="index" bindtap="enterDetail" data-index="{{item.id}}" data-url="{{item.url}}">
-			<image class="scroll-item-img" src="{{item.img}}" ></image>
-			<view class="scroll-item-text">{{item.title}}</view>
+		<view class="scroll-item" wx:for="{{bannerList}}" wx:key="index" bindtap="enterDetail" data-index="{{item.floorCellData.params.channelId}}" data-url="{{item.floorCellData.url}}">
+			<image class="scroll-item-img" src="{{item.floorCellData.imgUrl}}" ></image>
+			<view class="scroll-item-text">{{item.floorCellData.title}}</view>
 		</view>
 	</view>
 </view>

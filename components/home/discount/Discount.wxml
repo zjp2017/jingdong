@@ -1,37 +1,16 @@
 <!--components/home/discount/Discount.wxml-->
 <view class="discount-cover">
-	<view class="discount-title">优惠专区</view>
+	<view class="discount-title">{{discountArr[0].floorTitle.floorName}}</view>
 	<view class="discount-header">
-		<image class="discount-header-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/95977/8/7862/104601/5e01a563Ec43a969f/40b4a0a746b5ee48.png"></image>
-		<image class="discount-header-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/100841/15/8040/110900/5e018747E433300f4/090afd1761047f69.png"></image>
+		<image class="discount-header-img" wx:for="{{discountArr[0].data}}" wx:key="index" src="{{item.floorCellData.imgUrl}}" data-id="{{item.floorCellData.params.activityId}}"></image>
+		
 	</view>
 	<view class="discount-bottom">
-		<view class="discount-bottom-item">
-			<view class="discount-bottom-item-title">抢20元劵</view>
-			<view class="discount-bottom-item-desc">生鲜免费</view>
+		<view class="discount-bottom-item" wx:for="{{discountArr[1].data}}" wx:key="index" data-id="{{item.floorCellData.params.activityId}}" style="background: {{item.floorCellData.bgColourValue}};">
+			<view class="discount-bottom-item-title">{{item.floorCellData.title}}</view>
+			<view class="discount-bottom-item-desc">{{item.floorCellData.title}}</view>
 			<view class="discount-bottom-item-img">
-				<image class="discount-bottom-item-png" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/85471/36/3500/26982/5de0814fEac53b73d/8d7a21a280e89b30.png"></image>
-			</view>
-		</view>
-		<view class="discount-bottom-item">
-			<view class="discount-bottom-item-title">抢21元劵</view>
-			<view class="discount-bottom-item-desc">生鲜免费</view>
-			<view class="discount-bottom-item-img">
-				<image class="discount-bottom-item-png" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/85471/36/3500/26982/5de0814fEac53b73d/8d7a21a280e89b30.png"></image>
-			</view>
-		</view>
-		<view class="discount-bottom-item">
-			<view class="discount-bottom-item-title">抢22元劵</view>
-			<view class="discount-bottom-item-desc">生鲜免费</view>
-			<view class="discount-bottom-item-img">
-				<image class="discount-bottom-item-png" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/85471/36/3500/26982/5de0814fEac53b73d/8d7a21a280e89b30.png"></image>
-			</view>
-		</view>
-		<view class="discount-bottom-item">
-			<view class="discount-bottom-item-title">抢23元劵</view>
-			<view class="discount-bottom-item-desc">生鲜免费</view>
-			<view class="discount-bottom-item-img">
-				<image class="discount-bottom-item-png" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/85471/36/3500/26982/5de0814fEac53b73d/8d7a21a280e89b30.png"></image>
+				<image class="discount-bottom-item-png" mode="widthFix" src="{{item.floorCellData.imgUrl}}"></image>
 			</view>
 		</view>
 	</view>
