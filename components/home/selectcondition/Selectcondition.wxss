@@ -2,12 +2,15 @@
 .selectcondition-warp, .selectcondition-warp-box{
 	height: 64rpx;
 }
+.selectcondition-warp{
+	overflow-x: scroll;
+}
 .selectcondition-warp-box{
 	display: flex;
 }
 .selectcondition-item{
 	height:64rpx;
-	width: 169rpx;
+	/* width: 169rpx; */
 	margin: 0 5rpx;
 	display: flex;
 	text-align: center;
@@ -16,6 +19,8 @@
 	background: #f8f8f8;
 	color: #333;
 	font-size: 26rpx;
+	padding: 0 15rpx;
+	flex-shrink: 0;
 }
 .selectcondition-item-title{
 	flex: 1;

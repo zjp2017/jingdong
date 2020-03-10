@@ -2,7 +2,7 @@
 <view class="selectcondition-warp">
 	<view class="selectcondition-warp-box">
 		<view wx:for="{{itemList}}" wx:key="index" class="selectcondition-item">
-			<view class="selectcondition-item-title {{item.val==3?'down-awg-t-title':''}}">{{item.title}}</view>
+			<view class="selectcondition-item-title {{item.val==3?'down-awg-t-title':''}}">{{item.name}}</view>
 			<image wx:if="{{item.val==3}}" class="down-awg-t" src="../../../static/images/home/down_icon2.png"></image>
 		</view>
 	</view>

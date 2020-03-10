@@ -1,14 +1,18 @@
 <!--components/home/store/StoreList.wxml-->
 <view class="store-list-warp">
-	<view class="store-list-title">附近店铺</view>
+	<view class="store-list-title">{{searchCondition.title}}</view>
 	<!-- 排序 -->
-	<sort-tag></sort-tag>
+	<sort-tag sortArr="{{sortArr}}"></sort-tag>
 	<!-- 筛选条件 -->
-	<selectcondition-com></selectcondition-com>
+	<selectcondition-com selectContion="{{selectContion}}"></selectcondition-com>
 	<!-- 店铺列表 -->
-	<itemlist-com>
-		<view slot="shop-list-item" class="shop-list-item">
-			<horizontalgoods-com></horizontalgoods-com>	
-		</view>
-	</itemlist-com>
+	
+	<view class="list-box" wx:for="{{itemListArr}}" wx:key="index">
+		<itemlist-com itemListArr="{{item}}" >
+			<view slot="shop-list-item" class="shop-list-item" >
+				<horizontalgoods-com itemListArr="{{item}}"></horizontalgoods-com>	
+			</view>
+		</itemlist-com>
+	</view>
+	
 </view>

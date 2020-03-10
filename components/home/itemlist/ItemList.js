@@ -7,7 +7,17 @@ Component({
 	  multipleSlots:true
   },
   properties: {
-
+	itemListArr:{
+		type:Object,
+		value:{},
+		observer:function(newVal){
+			if(JSON.stringify(newVal) != "{}"){
+				this.setData({
+					listItem:newVal
+				})
+			}
+		}
+	}
   },
 
   /**
@@ -15,7 +25,8 @@ Component({
    */
   data: {
 	direFlg:0,
-	showGift:true
+	showGift:true,
+	listItem:{}
   },
 
   /**

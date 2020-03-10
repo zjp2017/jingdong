@@ -54,7 +54,12 @@ let nearShops={
 		'appName':'paidaojia',
 		'appVersion':'7.5.0',
 		'functionId':encodeURI('zone/recommendStoreList'),
-		'body':bodyContent2	
+		'body':bodyContent2,
+		'signKey':'aac85cb1c0535591004aa94bda37a642',
+		'city_id':1607,
+		'poi':'%E6%B7%B1%E5%9C%B3%E5%B8%82%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0',
+		'traceId':'H5_DEV_DFCD7890-0B62-416E-97F6-2DFDB8236F571583810456702',
+		'jda':'76161171.1876201136.1559192773.1578967802.1581850119.30'
 	}	
 }
 

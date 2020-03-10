@@ -27,7 +27,7 @@
 		<!-- 8.中间banner -->
 		<banner-com centerBanner="{{bootomBanner}}"></banner-com>
 		<!-- 9.附近店铺 -->
-		<store-com ></store-com>
+		<store-com searchCondition="{{searchCondition}}" nearShopDataArr="{{nearShopDataArr}}"></store-com>
 		
 	</view>
 

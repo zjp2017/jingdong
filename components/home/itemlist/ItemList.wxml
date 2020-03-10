@@ -1,29 +1,29 @@
 <!--components/home/itemlist/ItemList.wxml-->
 <view class="list-warp" bindtap="enterStore">
 	<view class="item-left">
-		<image class="item-left-logo" src="https://img30.360buyimg.com/vendersettle/s120x120_jfs/t1/28439/30/9372/12503/5c7e4be9E765cc841/d1f3e78254d4488f.png"></image>
+		<image class="item-left-logo" src="{{listItem.floorCellData.imgUrl}}"></image>
 	</view>
 	<view class="item-right">
-		<view class="store-name">沃尔玛惠选-南山华夏路店</view>
+		<view class="store-name">{{listItem.floorCellData.name}}</view>
 		<view class="store-content">
 			<view class="store-content-left">
 				<view class="">
 					<!-- <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAAATCAMAAADBCCHQAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACNUExURUdwTNjY2P+0KdjY2Pm2SeHbxNjY2NjY2NjY2P+3K//JNtbW1v+vLv+oFf+VFNjY2NbW1tfX1//ENP/KOP+uJf/HN/+iHf+eHNfX19fX1/+9Jf/Qa/+6FP/gnNjY2P+kIv+WGP/JOf/JNdjY2NjY2P+8L/+1Kv+kHv+qIv+fHP/DM/+vJv+7IP+aGf+QEhWBieEAAAAkdFJOUwCyE0oHC4EhnyGxRUezo8gV8INbf++YxTZaM0ZQgHBwOp/NXUgFLq0AAAF5SURBVDjLvdTZcoMgFAbgo6JI4pbd7El7jEui7/94NWoRjjMdetFy5zf8v6AowD8NsRIm9MkpcSOC1WZlQos9pb0RsVk1YwaEFiXLhOBUVdnJgBAdnRw0IQirLAsNCNHSycKfiYEtDsfzK8sexfl4EDYwlbx5yl1lVhvVCVEll6dzTyUQ99nH5vXuejzyvNiFW6ES4iK2fC6py6qEOBL3rXiBqBLY96p9zu+q57Mo8ryMbJW6mX4i6TssSda1lPioDz9pd7DMxvqyXING3VYVGoIjya6OPK3e61/Bclx8vSZEZ02CpMub1gOsn6R+JDprEqRd3rQeRN9e1rWghMg16pIqDWWSuOwf/xFBv/i6bgJKypcS9PtBnYYyR/24CMG1X3zdNFdKiBeNuqRKQ5mki+yXxLZtMAqipmm2jFB7xlyV5u8jqBL6GrndhUZg78rwxoDdwmZnE7IwTjRyU51SV6MkRosQiCjob8WCSBByHZ//hrjvUPrT8QWt3GBv5Zq9iAAAAABJRU5ErkJggg=="></image> -->
 				</view>
-				<view class="score-num">4.6分</view>
-				<view class="sale-num">月销8千件+</view>
+				<view class="score-num">{{listItem.floorCellData.scoreAvg}}分</view>
+				<view class="sale-num">{{listItem.floorCellData.monthSale}}</view>
 			</view>
 			<view class="store-content-right">
-				<view class="store-content-right-time">51分钟</view>
+				<view class="store-content-right-time">{{listItem.floorCellData.deliveryFirst}}</view>
 				<view class="store-content-right-Division">|</view>
-				<view class="store-content-right-range">4.8km</view>
+				<view class="store-content-right-range">{{listItem.floorCellData.distance}}</view>
 			</view>
 		</view>
 		<view class="store-content-info">
 			<view class="store-content-info-left">
 				<view class="store-send-condition">起送￥0</view>
 				<view class="store-content-right-Division">|</view>
-				<view class="store-send-free">基础运费￥8</view>
+				<view class="store-send-free">{{listItem.floorCellData.freightDescForLine}}</view>
 			</view>
 			<view>
 				<view class="store-send-brand">达达专送</view>
@@ -32,15 +32,20 @@
 		<!--优惠券  -->
 		<view class="coupon-warp">
 			<view class="coupon-box" style="height:{{direFlg==0?'32rpx':'auto'}}">
-				<view class="coupon-item">领25元券</view>
-				<view class="coupon-item">兑5元红包</view>
+				<!-- coupons -->
+				<view class="coupon-item"  wx:for="{{listItem.floorCellData.coupons}}" wx:key="index" data-id="{{item.activityCode}}" style="color: {{item.frontColor}};border-color: {{item.outLineColor}};">{{item.words}}</view>
+				<!-- <view class="coupon-item">兑5元红包</view>
 				<view class="coupon-item">兑5元红包</view>
 				<view class="coupon-item">领10元叠加券</view>
 				<view class="coupon-item">领10元叠加券</view>
 				<view class="coupon-item">领4元券</view>
 				<view class="coupon-item">领4元券</view>
-				<view class="coupon-item">领4元券</view>
-				<view class="gift-warp-main" >
+				<view class="coupon-item">领4元券</view> -->
+				<view class="gift-warp-main"  wx:for="{{listItem.floorCellData.tags}}" wx:key="index" >
+					<view class="gift-warp-title" style="background: linear-gradient(135deg, {{item.startColorCode}} 0%, {{item.endColorCode}} 100%);">{{item.iconText}}</view>
+					<view class="gift-warp-content">{{item.words}}</view>
+				</view>
+				<!-- <view class="gift-warp-main" >
 					<view class="gift-warp-title">返礼</view>
 					<view class="gift-warp-content">买车厘子送由集蛋糕券，适用范围见券说明</view>
 				</view>
@@ -55,7 +60,7 @@
 				<view class="gift-warp-main">
 					<view class="gift-warp-title">返礼</view>
 					<view class="gift-warp-content">买车厘子送由集蛋糕券，适用范围见券说明</view>
-				</view>
+				</view> -->
 			</view>
 			<!--  -->
 			
