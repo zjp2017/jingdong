@@ -71,8 +71,15 @@ Page({
 		   }
 		 });
 		 function getLocationFn(){
+			 console.log(3);
 			wx.getLocation({
 				success:function(result){
+					// app.globalData.location = {
+					// 	lat:'',
+					// 	lng:'',
+					// 	locationName:'深圳市'
+					// };
+					console.log(4);
 					nearShopData.data.body.latitude=JSON.parse(res.data).lat;
 					nearShopData.data.body.longitude=JSON.parse(res.data).lng;
 					nearShopData.data.lat=JSON.parse(res.data).lat;
@@ -160,8 +167,12 @@ Page({
 		}
   },
   getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    app.globalData.userInfo = e.detail.userInfo;
+    app.globalData.location = {
+		lat:22.52483,
+		lng:113.9387,
+		locationName:'深圳市'
+	};
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true

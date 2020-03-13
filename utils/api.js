@@ -29,7 +29,9 @@ let bodyContent2={
 	"lastStoreId":"",
 	"coordType":"2",
 	"platform":"1"
-}
+};
+
+// 1.首页第一个的参数
 let homeAllApiObj={
 	url:domain+'/client',
 	data:{
@@ -46,6 +48,7 @@ let homeAllApiObj={
 let moreMiaoSha={
 	
 };
+// 2.首页附近店铺的参数
 let nearShops={
 	url:domain+'/client',
 	data:{
@@ -62,8 +65,26 @@ let nearShops={
 		'jda':'76161171.1876201136.1559192773.1578967802.1581850119.30'
 	}	
 }
+// 4.超市页面的参数
+let supermarket={
+	url:domain+'/client',
+	data:{
+		'_jdrandom':(new Date()).getTime(),
+		'platCode':'h5',
+		'appName':'paidaojia',
+		'appVersion':'7.5.0',
+		'functionId':encodeURI('channel/getChannelDetail'),
+		'body':bodyContent2,
+		'signKey':'25ced87ebab181d136813d4e494380ce',
+		'city_id':1607,
+		'poi':'%E6%B7%B1%E5%9C%B3%E5%B8%82%E8%BD%AF%E4%BB%B6%E4%BA%A7%E4%B8%9A%E5%9F%BA%E5%9C%B0',
+		'traceId':'H5_DEV_DFCD7890-0B62-416E-97F6-2DFDB8236F571583975669089',
+		'jda':'76161171.1876201136.1559192773.1578967802.1581850119.30'
+	}	
+}
 
 module.exports={
 	homeAllApiObj:homeAllApiObj,
-	nearShops:nearShops
+	nearShops:nearShops,
+	supermarket:supermarket
 };

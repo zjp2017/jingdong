@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+	searchKeyWord:{
+		type:String,
+		value:'初冬御寒'
+	}
   },
 
   /**

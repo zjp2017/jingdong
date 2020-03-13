@@ -21,7 +21,6 @@ Component({
 		value:{},
 		observer:function(newVal){
 			if(JSON.stringify(newVal) != "{}"){
-				console.log(newVal);
 				this.setData({
 					sortArr:newVal.storeTags.sortList,
 					selectContion:newVal.storeTags.storeFilterTags,

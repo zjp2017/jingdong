@@ -8,7 +8,8 @@
 	  "suepermarrketscroll-com":"/components/childpages/supermarket/suepermarrketscroll/SuepermarrketScroll",
 	  "medicalhealth-active-com":"/components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem",
 	  "homefashion-active-com":"/components/childpages/homefashion/homefashionactive/HomeFashionActive",
-	  "hotstyle-com":"/components/childpages/homefashion/hotstyle/HotStyle"
+	  "hotstyle-com":"/components/childpages/homefashion/hotstyle/HotStyle",
+	   "fruitshopbanner-com":"/components/childpages/fruitshop/fruitshopbanner/FruitShopBanner"
 	 
   }
 }

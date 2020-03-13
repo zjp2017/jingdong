@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
@@ -285,6 +285,49 @@
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 33,
+					"name": "pages/childpages/supermarket/supermarket",
+					"pathName": "pages/childpages/supermarket/supermarket",
+					"query": "id=3983",
+					"scene": null
+				},
+				{
+					"id": 34,
+					"name": "pages/childpages/foodmarket/foodmarket",
+					"pathName": "pages/childpages/foodmarket/foodmarket",
+					"query": "id=4307",
+					"scene": null
+				},
+				{
+					"id": 35,
+					"name": "pages/childpages/fruitshop/fruitshop",
+					"pathName": "pages/childpages/fruitshop/fruitshop",
+					"query": "id=4016",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/flowersandplants/flowersandplants",
+					"pathName": "pages/childpages/flowersandplants/flowersandplants",
+					"query": "id=4016",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/medicalhealth/medicalhealth",
+					"pathName": "pages/childpages/medicalhealth/medicalhealth",
+					"query": "id=7",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/homefashion/homefashion",
+					"pathName": "pages/childpages/homefashion/homefashion",
+					"query": "id=4036",
 					"scene": null
 				}
 			]

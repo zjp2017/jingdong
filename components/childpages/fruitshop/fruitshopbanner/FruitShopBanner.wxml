@@ -1,36 +1,15 @@
 <!--components/childpages/fruitshop/fruitshopbanner/FruitShopBanner.wxml-->
 <view class="fruitshopbanner">
 	<view class="fruitshopbanner-box">
-		<view class="fruitshopbanner-item">
-			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
-			<view class="fruitshopbanner-item-text">今日秒杀</view>
+		<view class="fruitshopbanner-item" wx:for="{{scrollArr}}" wx:key="index" data-activityId="{{item.floorCellData.params.activityId}}">
+			<image class="fruitshopbanner-item-img" src="{{item.floorCellData.imgUrl}}"></image>
+			<view class="fruitshopbanner-item-text">{{item.floorCellData.title}}</view>
 		</view>
 		<!--2 -->
-		<view class="fruitshopbanner-item">
+		<!-- <view class="fruitshopbanner-item">
 			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
 			<view class="fruitshopbanner-item-text">今日秒杀</view>
-		</view>
-		<!-- 3 -->
-		<view class="fruitshopbanner-item">
-			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
-			<view class="fruitshopbanner-item-text">今日秒杀</view>
-		</view>
-		<!-- 4 -->
-		<view class="fruitshopbanner-item">
-			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
-			<view class="fruitshopbanner-item-text">今日秒杀</view>
-		</view>
-		<!-- 5 -->
-		<view class="fruitshopbanner-item">
-			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
-			<view class="fruitshopbanner-item-text">今日秒杀</view>
-		</view>
-		<!-- 6 -->
-		<view class="fruitshopbanner-item">
-			<image class="fruitshopbanner-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/43117/23/12506/5999/5d5e3cbfE74313751/0df995335bc46b68.png"></image>
-			<view class="fruitshopbanner-item-text">今日秒杀</view>
-		</view>
-		<!-- 6 -->
+		</view> -->
 		
 	</view>
 </view>

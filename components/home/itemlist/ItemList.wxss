@@ -11,7 +11,7 @@
 .item-right{
 	width: 588rpx;
 	margin-top: 36rpx;
-	border-bottom: 1rpx solid #f0f0f0;
+	/* border-bottom: 1rpx solid #f0f0f0; */
 	padding-left: 20rpx;
 	box-sizing: border-box;
 }

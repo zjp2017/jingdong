@@ -2,21 +2,21 @@
 <!-- 医药健康页面 -->
 <view class="medicalhealth">
 	<!-- 1.搜索框 -->
-	<searchinput-com></searchinput-com>
+	<searchinput-com searchKeyWord="{{searchAndConfig.searchWords}}"></searchinput-com>
 	<!-- 2.关键字 -->
-	<keyword-com></keyword-com>
+	<keyword-com recommnKeyWord="{{searchAndConfig.recommendKeyList}}"></keyword-com>
 	<!-- 3.bannerr -->
-	<banner-com></banner-com>
+	<banner-com centerBanner="{{bannerAndChannel[0].data[0].data}}"></banner-com>
 	<!-- 4.中间滚动部分 -->
-	<scroll-com class="medicalhealth-scroll"></scroll-com>
+	<fruitshopbanner-com scrollBanner="{{bannerAndChannel[0].data[1].data}}"></fruitshopbanner-com>
 	<!-- 5.中间盒子部分 -->
 	<view class="medicalhealth-center-warp">
 		<view class="medicalhealth-center-box">
 			<view class="fruitshop-banner-images">
-				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
-				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+				<image class="fruitshop-banner-left-img" wx:for="{{bannerAndChannel[1].data[0].data}}" wx:key="index" src="{{item.floorCellData.imgUrl}}"></image>
+				<!-- <image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image> -->
 			</view>
-			<medicalhealth-active-com></medicalhealth-active-com>
+			<medicalhealth-active-com  listArr="{{bannerAndChannel[1].data[1].data}}"></medicalhealth-active-com>
 		</view>
 		
 	</view>
@@ -24,7 +24,7 @@
 	<view class="scrollitemdetail-content">
 		<!-- 2.附近店铺 -->
 		<view class="nearb-shops">
-			<store-com></store-com>
+			<store-com searchCondition="{{searchCondition}}" nearShopDataArr="{{nearShopDataArr}}"></store-com>
 		</view>
 	</view>
 </view>

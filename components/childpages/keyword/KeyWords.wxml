@@ -1,4 +1,4 @@
 <!--components/childpages/keyword/KeyWords.wxml-->
 <view class="keywords">
-	<view class="keywords-item" wx:for="{{keyData}}" wx:key="index" data-index="{{item.id}}">{{item.title}}</view>
+	<view class="keywords-item" wx:for="{{recommnKeyWord}}" wx:key="index"  style="color:{{item.fontColor}}">{{item.recommendKey}}</view>
 </view>

@@ -1,28 +1,9 @@
 <!--components/childpages/supermarket/suepermarrketscroll/SuepermarrketScroll.wxml-->
 <view class="suepermarrketscroll">
-	<view class="suepermarrketscroll-item">
-		<image class="suepermarrketscroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/52524/24/10504/11103/5d79d9dfEd7ccc547/6890c9b8640e94bd.jpg"></image>
-		<view class="suepermarrketscroll-item-text">可口蔬菜</view>
-		<view class="shop-list-box-item-desc-tips">抢秒杀</view>
+	<view class="suepermarrketscroll-item" wx:for="{{scrollArr}}" wx:key="index">
+		<image class="suepermarrketscroll-item-img" src="{{item.floorCellData.imgUrl}}"></image>
+		<view class="suepermarrketscroll-item-text">{{item.floorCellData.title}}</view>
+		<view class="shop-list-box-item-desc-tips" wx:if="{{item.floorCellData.words}}">{{item.floorCellData.words}}</view>
 	</view>
-	<view class="suepermarrketscroll-item">
-		<image class="suepermarrketscroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/52524/24/10504/11103/5d79d9dfEd7ccc547/6890c9b8640e94bd.jpg"></image>
-		<view class="suepermarrketscroll-item-text">可口蔬菜</view>
-		<view class="shop-list-box-item-desc-tips">抢秒杀</view>
-	</view>
-	<view class="suepermarrketscroll-item">
-		<image class="suepermarrketscroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/52524/24/10504/11103/5d79d9dfEd7ccc547/6890c9b8640e94bd.jpg"></image>
-		<view class="suepermarrketscroll-item-text">可口蔬菜</view>
-		<view class="shop-list-box-item-desc-tips">抢秒杀</view>
-	</view>
-	<view class="suepermarrketscroll-item">
-		<image class="suepermarrketscroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/52524/24/10504/11103/5d79d9dfEd7ccc547/6890c9b8640e94bd.jpg"></image>
-		<view class="suepermarrketscroll-item-text">可口蔬菜</view>
-		<view class="shop-list-box-item-desc-tips">抢秒杀</view>
-	</view>
-	<view class="suepermarrketscroll-item">
-		<image class="suepermarrketscroll-item-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/52524/24/10504/11103/5d79d9dfEd7ccc547/6890c9b8640e94bd.jpg"></image>
-		<view class="suepermarrketscroll-item-text">可口蔬菜</view>
-		<view class="shop-list-box-item-desc-tips">抢秒杀</view>
-	</view>
+	
 </view>

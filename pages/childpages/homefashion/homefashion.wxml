@@ -3,32 +3,42 @@
 <import src="/templates/titleandicon/titleandicon.wxml"/>
 <view class="homefashion">
 	<!-- 1.搜索框 -->
-	<searchinput-com></searchinput-com>
+	<searchinput-com searchKeyWord="{{searchAndConfig.searchWords}}"></searchinput-com>
 	<!-- 2.关键字 -->
-	<keyword-com></keyword-com>
+	<keyword-com recommnKeyWord="{{searchAndConfig.recommendKeyList}}"></keyword-com>
 	<!-- 3.bannerr -->
-	<banner-com></banner-com>
-	<!-- 4.中间滚动部分 -->
-	<suepermarrketscroll-com></suepermarrketscroll-com>
-	<!-- 5.中间盒子部分 -->
-	<view class="medicalhealth-center-warp">
-		<view class="medicalhealth-center-box">
-			<view class="fruitshop-banner-images">
-				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
-				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+	<block wx:for="{{bannerAndChannel}}" wx:key="index">
+		<block wx:if="{{item.groupId==3}}" wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+			<banner-com wx:if="{{item1.floorStyle=='banner'}}" centerBanner="{{item1.data}}"></banner-com>
+			<!-- 4.中间滚动部分 -->
+			<fruitshopbanner-com wx:elif="{{item1.floorStyle=='act5'}}" scrollBanner="{{item1.data}}"></fruitshopbanner-com>
+		</block>
+		<!-- <suepermarrketscroll-com ></suepermarrketscroll-com> -->
+		<!-- 5.中间盒子部分 -->
+		<block wx:elif="{{item.groupId==2}}">
+			<view class="medicalhealth-center-warp">
+				<view class="medicalhealth-center-box" wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+					<view class="fruitshop-banner-images" wx:if="{{item1.floorStyle=='act2'}}">
+						<image wx:for="{{item1.data}}" wx:for-item="item1" wx:for-key="index2" src="{{item1.floorCellData.imgUrl}}" class="{{item1==0?'fruitshop-banner-left-img':'fruitshop-banner-right-img'}}" ></image>
+						<!-- <image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image> -->
+					</view>
+					<!-- 3列 -->
+					<!-- <homefashion-active-com></homefashion-active-com> -->
+					<!-- 4列 -->
+					<medicalhealth-active-com wx:elif="{{item1.floorStyle=='act4'}}" listArr="{{item1.data}}"></medicalhealth-active-com>
+				</view>
+				
 			</view>
-			<!-- 3列 -->
-			<homefashion-active-com></homefashion-active-com>
-			<!-- 4列 -->
-			<medicalhealth-active-com></medicalhealth-active-com>
-		</view>
-		
-	</view>
-	<!-- 6 主推爆款-->
-	<view class="home-flower">
-		<template is="titleandicon" data="{{title:'主推爆款'}}"></template>
-		<hotstyle-com></hotstyle-com>
-	</view>
+			
+		</block>
+		<block wx:elif="{{item.groupId==410539}}">
+			<!-- 6 主推爆款-->
+			<view class="home-flower" wx:for="{{item.data}}" wx:key="index1" wx:for-index="index1" wx:for-item="item1">
+				<template is="titleandicon" data="{{title:item1.floorTitle.floorName}}"></template>
+				<hotstyle-com wx:for="{{item1}}" wx:for-index="index2" wx:for-item="item2" wx:for-key="index2" data-listArr="{{item2.data}}"></hotstyle-com>
+			</view>
+		</block>
+	</block>
 	<!-- 7.列表部分 -->
 	<view class="scrollitemdetail-content">
 		<!-- 2.附近店铺 -->

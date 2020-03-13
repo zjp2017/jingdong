@@ -2,7 +2,7 @@
   "usingComponents": {
 	  "searchinput-com":"/components/childpages/scrollitemdetail/ScrollItemDetailInput",
 	  "keyword-com":"/components/childpages/keyword/KeyWords",
-	  "store-com":"/components/home/store/StoreList",
+	  "store-com":"/components/home/store/StoreList",	  
 	  "fruitshopbanner-com":"/components/childpages/fruitshop/fruitshopbanner/FruitShopBanner",
 	  "banner-com":"/components/home/banner/Banner",
 	  "activeitem-com":"/components/childpages/flowersandplants/activeitem/ActiveItem"

@@ -10,7 +10,7 @@
 	<view class="list-box" wx:for="{{itemListArr}}" wx:key="index">
 		<itemlist-com itemListArr="{{item}}" >
 			<view slot="shop-list-item" class="shop-list-item" >
-				<horizontalgoods-com itemListArr="{{item}}"></horizontalgoods-com>	
+				<horizontalgoods-com itemListArr="{{item.floorCellData.skus}}"></horizontalgoods-com>	
 			</view>
 		</itemlist-com>
 	</view>

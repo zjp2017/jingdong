@@ -1,13 +1,13 @@
 <!--components/childpages/flowersandplants/activeitem/ActiveItem.wxml-->
 <view class="activeitem">
-	<view class="activeitem-item">
-		<image class="activeitem-item-img" src="https://img30.360buyimg.com/n6/jfs/t1/99691/21/8650/147266/5e06c263Ea34e52d8/ddc443a590df2676.jpg"></image>
-		<view class="activeitem-item-introduce">『以花之名』33支精选红粉香槟玫瑰混搭花束，适量配花搭配</view>
-		<view class="activeitem-item-discount-price">￥138rpx</view>
-		<view class="activeitem-item-rigin-price">￥118rpx</view>
-		<view class="activeitem-item-discount-tips">直降9.8折</view>
+	<view class="activeitem-item" wx:for="{{listArr}}" wx:key="index">
+		<image class="activeitem-item-img" src="{{item.imgUrl}}"></image>
+		<view class="activeitem-item-introduce">{{item.skuName}}</view>
+		<view class="activeitem-item-discount-price">￥{{item.minorPrice.price}}</view>
+		<view class="activeitem-item-rigin-price">￥{{item.majorPrice.price}}</view>
+		<view class="activeitem-item-discount-tips" wx:if="{{item.tags[0].iconText}}">{{item.tags[0].iconText}}</view>
     </view>
-	<view class="activeitem-item">
+<!-- 	<view class="activeitem-item">
 		<image class="activeitem-item-img" src="https://img30.360buyimg.com/n6/jfs/t1/99691/21/8650/147266/5e06c263Ea34e52d8/ddc443a590df2676.jpg"></image>
 		<view class="activeitem-item-introduce">『以花之名』33支精选红粉香槟玫瑰混搭花束，适量配花搭配</view>
 		<view class="activeitem-item-discount-price">￥138</view>
@@ -37,5 +37,5 @@
 		<view class="activeitem-item-introduce">『以花之名』33支精选红粉香槟玫瑰混搭花束，适量配花搭配</view>
 		<view class="activeitem-item-discount-price">￥138rpx</view>
 		<view class="activeitem-item-rigin-price">￥118rpx</view>
-	</view>
+	</view> -->
 </view>

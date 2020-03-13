@@ -2,44 +2,47 @@
 <import src="/templates/titleandicon/titleandicon.wxml"/>
 <view class="flowersandplants">
 	<!-- 1.搜索框 -->
-	<searchinput-com></searchinput-com>
+	<searchinput-com searchKeyWord="{{searchAndConfig.searchWords}}"></searchinput-com>
 	<!-- 2.关键字 -->
-	<keyword-com></keyword-com>
+	<keyword-com recommnKeyWord="{{searchAndConfig.recommendKeyList}}"></keyword-com>
 	<!-- 3.bannerr -->
-	<banner-com></banner-com>
+	<banner-com centerBanner="{{bannerAndChannel[0].data[0].data}}"></banner-com>
 	<!-- 4.2行图标 -->
 	<view class="fruitshop-banner-warp">
 		<view class="fruitshop-banner-box">
-			<fruitshopbanner-com></fruitshopbanner-com>
+			<fruitshopbanner-com scrollBanner="{{bannerAndChannel[0].data[1].data}}"></fruitshopbanner-com>
 			<!-- 下方2个图片 -->
 			<view class="fruitshop-banner-images">
-				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
-				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+				<image class="fruitshop-banner-left-img" wx:for="{{bannerAndChannel[0].data[2].data}}" wx:key="index" data-activityId="{{item.floorCellData.params.activityId}}"  src="{{item.floorCellData.imgUrl}}"></image>
+				<!-- <image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image> -->
 			</view>
 		</view>	
 	</view>
 	<view class="specia-area">
 		<!-- 1.限时抢购 -->
-	
-		<view class="flash-sale">
-			<template is="titleandicon" data="{{title:'限时抢购'}}"></template>
-			<activeitem-com></activeitem-com>
+		
+		<view class="flash-sale"  wx:for="{{bannerAndChannel}}" wx:key="index">
+			<block wx:if="{{index!=0}}">
+				<template is="titleandicon" data="{{title:item.data[0].floorTitle.floorName}}"></template>
+				<activeitem-com dataArr="{{item.data[0].data}}"></activeitem-com>
+			</block>
 		</view>
 		<!-- 2.绿植多肉 -->
-		<view class="greener-and-meat">
+		<!-- <view class="greener-and-meat">
 			<template is="titleandicon" data="{{title:'绿植多肉'}}"></template>
 			<activeitem-com></activeitem-com>
-		</view>
+		</view> -->
 		<!-- 3.家居花 -->
-		<view class="home-flower">
+		<!-- <view class="home-flower">
 			<template is="titleandicon" data="{{title:'家居花'}}"></template>
 			<activeitem-com></activeitem-com>
-		</view>
+		</view> -->
 	</view>
 	<view class="scrollitemdetail-content">
 		<!-- 2.附近店铺 -->
-		<view class="nearb-shops">
+		<store-com searchCondition="{{searchCondition}}" nearShopDataArr="{{nearShopDataArr}}"></store-com>
+		<!-- <view class="nearb-shops">
 			<store-com></store-com>
-		</view>
+		</view> -->
 	</view>
 </view>

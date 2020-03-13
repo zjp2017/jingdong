@@ -4,6 +4,7 @@
 	  "keyword-com":"/components/childpages/keyword/KeyWords",
 	  "store-com":"/components/home/store/StoreList",
 	  "banner-com":"/components/home/banner/Banner",
-	   "medicalhealth-active-com":"/components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem"
+	  "medicalhealth-active-com":"/components/childpages/medicalhealth/medactiveitem/MedicalhealthActiveItem",
+	  "fruitshopbanner-com":"/components/childpages/fruitshop/fruitshopbanner/FruitShopBanner"
   }
 }

@@ -1,6 +1,7 @@
 /* components/home/store/StoreList.wxss */
 .store-list-warp{
 	padding: 0 19rpx;
+	background: #ffffff;
 }
 .store-list-title{
 	font-size: 40rpx;
