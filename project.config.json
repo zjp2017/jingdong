@@ -329,6 +329,13 @@
 					"pathName": "pages/childpages/homefashion/homefashion",
 					"query": "id=4036",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/childpages/bakecake/bakecake",
+					"pathName": "pages/childpages/bakecake/bakecake",
+					"query": "id=4017",
+					"scene": null
 				}
 			]
 		}

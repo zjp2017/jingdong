@@ -8,10 +8,11 @@
 	<keyword-com recommnKeyWord="{{searchAndConfig.recommendKeyList}}"></keyword-com>
 	<!-- 3.bannerr -->
 	<block wx:for="{{bannerAndChannel}}" wx:key="index">
-		<block wx:if="{{item.groupId==3}}" wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
-			<banner-com wx:if="{{item1.floorStyle=='banner'}}" centerBanner="{{item1.data}}"></banner-com>
-			<!-- 4.中间滚动部分 -->
-			<fruitshopbanner-com wx:elif="{{item1.floorStyle=='act5'}}" scrollBanner="{{item1.data}}"></fruitshopbanner-com>
+		<block wx:if="{{item.groupId==3}}"  >
+			<block wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+				<banner-com wx:if="{{item1.floorStyle=='banner'}}" centerBanner="{{item1.data}}"></banner-com>
+				<fruitshopbanner-com wx:elif="{{item1.floorStyle=='act5'}}" scrollBanner="{{item1.data}}"></fruitshopbanner-com>
+			</block>
 		</block>
 		<!-- <suepermarrketscroll-com ></suepermarrketscroll-com> -->
 		<!-- 5.中间盒子部分 -->
@@ -19,7 +20,7 @@
 			<view class="medicalhealth-center-warp">
 				<view class="medicalhealth-center-box" wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
 					<view class="fruitshop-banner-images" wx:if="{{item1.floorStyle=='act2'}}">
-						<image wx:for="{{item1.data}}" wx:for-item="item1" wx:for-key="index2" src="{{item1.floorCellData.imgUrl}}" class="{{item1==0?'fruitshop-banner-left-img':'fruitshop-banner-right-img'}}" ></image>
+						<image wx:for="{{item1.data}}" wx:for-item="item1" wx:key="index2" src="{{item1.floorCellData.imgUrl}}" class="{{item1==0?'fruitshop-banner-left-img':'fruitshop-banner-right-img'}}" ></image>
 						<!-- <image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image> -->
 					</view>
 					<!-- 3列 -->
@@ -35,7 +36,7 @@
 			<!-- 6 主推爆款-->
 			<view class="home-flower" wx:for="{{item.data}}" wx:key="index1" wx:for-index="index1" wx:for-item="item1">
 				<template is="titleandicon" data="{{title:item1.floorTitle.floorName}}"></template>
-				<hotstyle-com wx:for="{{item1}}" wx:for-index="index2" wx:for-item="item2" wx:for-key="index2" data-listArr="{{item2.data}}"></hotstyle-com>
+				<hotstyle-com  listArr="{{item1.data}}"></hotstyle-com>
 			</view>
 		</block>
 	</block>
@@ -43,7 +44,7 @@
 	<view class="scrollitemdetail-content">
 		<!-- 2.附近店铺 -->
 		<view class="nearb-shops">
-			<store-com></store-com>
+			<store-com searchCondition="{{searchCondition}}" nearShopDataArr="{{nearShopDataArr}}"></store-com>
 		</view>
 	</view>
 </view>

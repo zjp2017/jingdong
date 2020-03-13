@@ -2,28 +2,41 @@
 <!-- 烘焙蛋糕 -->
 <view class="bakecake">
 	<!-- 1.搜索框 -->
-	<searchinput-com></searchinput-com>
+	<searchinput-com searchKeyWord="{{searchAndConfig.searchWords}}"></searchinput-com>
 	<!-- 2.关键字 -->
-	<keyword-com></keyword-com>
-	<!-- 3.bannerr -->
-	<banner-com></banner-com>
-	<!-- 4.中间滚动部分 -->
-	<fruitshopbanner-com></fruitshopbanner-com>
-	<!-- 5.中间盒子部分 -->
-	<view class="medicalhealth-center-warp">
-		<view class="medicalhealth-center-box">
-			<view class="fruitshop-banner-images">
-				<image class="fruitshop-banner-left-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/102253/29/8753/98350/5e08b0aeE3cd61f09/930ea41b5f294b8f.png"></image>
-				<image class="fruitshop-banner-right-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/97623/4/8905/94368/5e08b122Ead55933e/01b957fb36fcc12d.png"></image>
+	<keyword-com recommnKeyWord="{{searchAndConfig.recommendKeyList}}"></keyword-com>
+	<block wx:for="{{bannerAndChannel}}" wx:key="index">
+		<block wx:if="{{item.groupId==3}}">
+			<block wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+				<!-- 3.bannerr -->				
+					<block wx:if="{{item1.floorStyle=='banner'}}">
+						<banner-com  centerBanner="{{item1.data}}"></banner-com>
+					</block>
+					<!-- 4.中间滚动部分 -->
+					<block wx:elif="{{item1.floorStyle=='act10'}}">
+						<fruitshopbanner-com  scrollBanner="{{item1.data}}"></fruitshopbanner-com>
+					</block>
+				</block>
+			</block>
+		<block wx:elif="{{item.groupId==2}}">
+			<!-- 5.中间盒子部分 -->
+			<view class="medicalhealth-center-warp" wx:for="{{item.data}}" wx:for-item="item1" wx:for-index="index1" wx:key="index1">
+				<view class="medicalhealth-center-box" wx:if="{{item1.floorStyle=='act2'}}">
+					<view class="fruitshop-banner-images" >
+						<image wx:for="{{item1.data}}" wx:for-item="item2" wx:for-index="index2" wx:key="index2" class="{{index2%2!=0?'fruitshop-banner-left-img':'fruitshop-banner-right-img'}}" src="{{item2.floorCellData.imgUrl}}"></image>
+					</view>
+				</view>
 			</view>
-		</view>
-	</view>
+		</block>
+		
+	</block>
+	
 
 	<!-- 7.列表部分 -->
 	<view class="scrollitemdetail-content">
 		<!-- 2.附近店铺 -->
 		<view class="nearb-shops">
-			<store-com></store-com>
+			<store-com searchCondition="{{searchCondition}}" nearShopDataArr="{{nearShopDataArr}}"></store-com>
 		</view>
 	</view>
 </view>

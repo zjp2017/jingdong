@@ -6,7 +6,10 @@ Component({
   properties: {
 	centerBanner:{
 		type:Array,
-		value:[]
+		value:[],
+		observer:function(val){
+			console.log(val);
+		}
 	}
   },
 
