@@ -17,20 +17,20 @@
     "pages/childpages/storeinformation/storeinformation",
     "components/childpages/storeinformation/settlementbox/SettlementBox",
     "pages/childpages/allevaluate/allevaluate",
-    "pages/childpages/commodityIntroduction/commodityIntroduction"
+    "pages/childpages/commodityIntroduction/commodityIntroduction",
+    "pages/scrollItemPagesDetail/scrollItemPagesDetail"
   ],
   "permission": {
-      "scope.userLocation": {
-        "desc": "你的位置信息将用于小程序位置接口的效果展示" 
-      }
-   },
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#54d85e",
     "navigationBarTitleText": "仿京东到家",
     "navigationBarTextStyle": "white"
   },
-  
   "tabBar": {
     "list": [
       {
