@@ -1,17 +1,20 @@
 <!--components/find/cookbook/CookBook.wxml-->
 <view class="cookbook-warp">
 	<!-- 搜索框 引入首页中的 -->
-	<search-com class="search-com"></search-com>
+	<search-com class="search-com" searchWord="{{searchTex}}"></search-com>
 	<!-- banner列表项 -->
-	<cookbookbanner-com class="cookbookbanner-com"></cookbookbanner-com>
+	<cookbookbanner-com class="cookbookbanner-com" resultDataBanner="{{resultDataBanner}}"></cookbookbanner-com>
 	<!--  -->
-	<view class="hot-cookbook">热门食谱</view>
+	<view class="hot-cookbook">{{mainTitle}}</view>
 	<!-- 食谱卡片1 -->
 	<view class="cookbookbanner-lists">
-		<cookbookcard-com class="cookbookcard-com"></cookbookcard-com>
-		<cookbookcard-com class="cookbookcard-com"></cookbookcard-com>
-		<!-- 食谱列表1 -->
-		<cookbooklist-com class="cookbooklist-com"></cookbooklist-com>
-		<cookbooklist-com class="cookbooklist-com"></cookbooklist-com>
+		<block wx:for="{{resultDataContent}}" wx:key="index">
+			<block wx:if="{{item.itemStyle=='tpl5'}}" >
+				<cookbookcard-com class="cookbookcard-com" resultDataContentItem="{{item}}"></cookbookcard-com>
+			</block>
+			<block wx:elif="{{item.itemStyle=='tpl7'}}">
+				<cookbooklist-com class="cookbooklist-com" resultDataContentItem="{{item}}"></cookbooklist-com>
+			</block>			
+		</block>
 	</view>
 </view>

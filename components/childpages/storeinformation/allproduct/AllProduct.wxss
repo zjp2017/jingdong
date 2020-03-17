@@ -35,7 +35,7 @@
 	display: -moz-box;
 	width: auto;
 	height: 46px;
-	padding: 2px 12px;
+	padding: 2px 10px;
 	line-height: 21px;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -47,6 +47,7 @@
 	-moz-box-orient: vertical;
 	-webkit-box-pack: center;
 	background: #f8f8f8;
+	text-align: center;
 }
 .allproduct-box-left-item.active{
 	color: #000;

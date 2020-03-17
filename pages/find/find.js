@@ -5,14 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+	tabs:[{title:'附近'},{title:'食谱'},{title:'种草社'}],
+	showIndex:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+	wx.setNavigationBarTitle({
+		title:"发现"
+	});
   },
 
   /**
@@ -62,5 +65,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  switchTab(options){
+	  this.setData({
+		  showIndex:options.currentTarget.dataset.index
+	  })
   }
 })

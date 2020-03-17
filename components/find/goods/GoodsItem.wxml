@@ -1,21 +1,28 @@
 <!--components/find/goods/GoodsItem.wxml-->
 <view class="goods-item">
- <image class="goods-item-img" src="https://img30.360buyimg.com/mobilecms//s220x220_jfs/t1/16590/39/11550/79817/5c90968eE655d7e12/af44912da790b448.jpg"></image>
+ <image class="goods-item-img" src="{{itemData.imgUrl}}"></image>
 <!-- 秒杀 红色-->
- <view class="goods-item-discount">秒杀5.7折</view>
+ 
+ <block wx:if="{{itemData.labelCode==9}}">
+ 	<view class="goods-item-discount" wx:if="{{itemData.labelText}}">{{itemData.labelText}}</view>
+ </block>
  <!--直降 橙色  -->
  <!-- <view class="goods-item-reduction">2件99</view> -->
+ <block wx:if="{{itemData.labelCode==1}}">
+ 	<view class="goods-item-reduction" wx:if="{{itemData.labelText}}">{{itemData.labelText}}</view>
+ </block>
  <!--满减 橙色  -->
- <!-- <view class="goods-item-reduce">满99件20</view> -->
+ <block wx:if="{{itemData.labelCode==6}}">
+	 <view class="goods-item-reduce" wx:if="{{itemData.labelText}}">{{itemData.labelText}}</view>
+ </block>
+ 
  <!-- 2 -->
  <view class="goods-item-discount-price-box">
-	 <view class="goods-item-discount-price">￥19.9</view>
-	 <!-- <view class="goods-item-origin-price">￥29.9</view> -->
-	 <image class="goods-item-origin-vip" src="https://img30.360buyimg.com/mobilecms/jfs/t20686/164/1675043590/5045/91f83656/5b31d61cN8a5bff81.png"></image>
+	 <view class="goods-item-discount-price">￥{{(itemData.realPrice)/100}}</view>
+	 <view class="goods-item-origin-price">￥{{(itemData.basicePrice)/100}}</view>
  </view>
  <!-- 抢光 -->
- <view class="goods-item-sale-out-box">
+ <view class="goods-item-sale-out-box" wx:if="{{itemData.status==1}}">
 	 已抢光
-	 <!-- <view class="goods-item-sale-out">已抢光</view> -->
  </view>
 </view>

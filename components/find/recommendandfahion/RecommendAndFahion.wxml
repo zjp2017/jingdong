@@ -2,7 +2,34 @@
 <view class="recommend-warp">
 	<view class="recommend-box">
 		<!-- 列表一 -->
-		<view class="recommend-list-transversal">
+		<block wx:for="{{resultData}}" wx:key="index" >
+			<block wx:if="{{item.itemStyle=='tpl6'}}">
+				<view class="recommend-list-transversal" data-resourceId="{{item.data.id}}">
+					<view class="recommend-list-transversal-title">{{item.data.name}}</view>
+					<view class="recommend-list-transversal-introduce">{{item.data.subName}}</view>
+					<image mode="widthFix" class="recommend-list-transversal-img" src="{{item.data.img}}"></image>
+					<view class="recommend-list-transversal-user">
+						<image class="recommend-list-transversal-user-img" src="{{item.data.authorIcon}}"></image>
+						<view class="recommend-list-transversal-user-name">{{item.data.author}}</view>
+					</view>
+				</view>
+			</block>
+			<block wx:elif="{{item.itemStyle=='tpl7'}}">
+				<view class="recommend-list-portrait" data-resourceId="{{item.data.id}}">
+					<image lazy-load="true" class="recommend-list-portrait-img" src="{{item.data.img}}"></image>
+					<view class="recommend-list-portrait-right">
+						<view class="recommend-list-portrait-title">{{item.data.name}}</view>
+						<view class="recommend-list-portrait-introduce">{{item.data.subName}}</view>
+						<view class="recommend-list-transversal-user">
+							<image class="recommend-list-transversal-user-img" src="{{item.data.authorIcon}}"></image>
+							<view class="recommend-list-transversal-user-name">{{item.data.author}}</view>
+						</view>
+					</view>
+				</view>
+			</block>
+			
+		</block>
+		<!-- <view class="recommend-list-transversal">
 			<view class="recommend-list-transversal-title">【美食测评】新加坡顶级猫山王榴莲，味道这么苦！不过吃700人民竟Get5个新知识点新加坡大吃特吃币也不腻~味道这么苦！不过吃700人民币也不腻~</view>
 			<view class="recommend-list-transversal-introduce">新加坡大吃特吃【猫山王】，竟Get5个新知识点新加坡大吃特吃竟Get5个新知识点新加坡大吃特吃【猫山王】，竟Get5个新知识点</view>
 			<image mode="widthFix" class="recommend-list-transversal-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/83918/40/12917/130570/5da3e0b1E2457ef74/5e148417199586b2.jpg"></image>
@@ -10,9 +37,9 @@
 				<image class="recommend-list-transversal-user-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/54568/27/13338/4157/5da3e16aE8ebf0531/e8b9c7ea82553cd7.jpg"></image>
 				<view class="recommend-list-transversal-user-name">小团团</view>
 			</view>
-		</view>
+		</view> -->
 		<!-- 列表二-->
-		<view class="recommend-list-portrait">
+		<!-- <view class="recommend-list-portrait">
 			<image lazy-load="true" class="recommend-list-portrait-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/54685/18/11345/30890/5d848b99E0bf90edd/0d14b7a4e95c54b7.jpg"></image>
 			<view class="recommend-list-portrait-right">
 				<view class="recommend-list-portrait-title">【食材说】：洋丝瓜/佛手瓜这样吃：可以吃一盆！</view>
@@ -22,18 +49,8 @@
 					<view class="recommend-list-transversal-user-name">小团团</view>
 				</view>
 			</view>
-		</view>
-		<view class="recommend-list-portrait">
-			<image lazy-load="true" class="recommend-list-portrait-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/54685/18/11345/30890/5d848b99E0bf90edd/0d14b7a4e95c54b7.jpg"></image>
-			<view class="recommend-list-portrait-right">
-				<view class="recommend-list-portrait-title">【食材说】：洋丝瓜/佛手瓜这样吃：可以吃一盆！</view>
-				<view class="recommend-list-portrait-introduce">它比南瓜更像是植物大战僵尸游戏里的“倭瓜”原型，只是看起来战斗力略弱一些。</view>
-				<view class="recommend-list-transversal-user">
-					<image class="recommend-list-transversal-user-img" src="https://img30.360buyimg.com/mobilecms/jfs/t1/54568/27/13338/4157/5da3e16aE8ebf0531/e8b9c7ea82553cd7.jpg"></image>
-					<view class="recommend-list-transversal-user-name">小团团</view>
-				</view>
-			</view>
-		</view>
+		</view> -->
+		
 	</view>
 	
 </view>

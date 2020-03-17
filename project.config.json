@@ -336,6 +336,27 @@
 					"pathName": "pages/childpages/bakecake/bakecake",
 					"query": "id=4017",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/find/find",
+					"pathName": "pages/find/find",
+					"query": "id=7",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "id=7",
+					"scene": null
+				},
+				{
+					"id": 42,
+					"name": "pages/childpages/storeinformation/storeinformation",
+					"pathName": "pages/childpages/storeinformation/storeinformation",
+					"query": "storeId=11647242&orgCode=81372",
+					"scene": null
 				}
 			]
 		}

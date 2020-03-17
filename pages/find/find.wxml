@@ -1,6 +1,20 @@
 <!--pages/find/find.wxml-->
 <view class="discover">
+	<view class="switch-tab">
+		<view class="switch-tab-item {{index==showIndex?'active':''}}" wx:for="{{tabs}}" data-index="{{index}}" wx:key="index" bindtap="switchTab">{{item.title}}</view>
+		
+	</view>
 	<!-- 1.发现组件 -->
+	<!-- showIndex -->
+	<block wx:if="{{showIndex==0}}">
+		<attention-com ></attention-com >
+	</block>
+	<block wx:elif="{{showIndex==1}}">
+		<cookbook-com></cookbook-com>
+	</block>
+	<block wx:elif="{{showIndex==2}}">
+		 <recommend-com></recommend-com>
+	</block>
   <!-- <attention-com ></attention-com > -->
   <!-- 2.食谱组件 -->
   <!-- <cookbook-com></cookbook-com> -->
@@ -8,5 +22,5 @@
   <!-- <recommend-com></recommend-com> -->
   <!--4. 时尚美妆 -->
   <!-- <fashion-com></fashion-com> -->
-  <life-com></life-com>
+  <!-- <life-com></life-com> -->
 </view>

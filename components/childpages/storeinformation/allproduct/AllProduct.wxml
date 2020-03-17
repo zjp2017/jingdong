@@ -4,7 +4,7 @@
 	<view class="allproduct-title">全部商品</view>
 	<view class="allproduct-box">
 		<scroll-view class="allproduct-box-left" scroll-y="true" scroll-with-animation="true">
-			<view class="allproduct-box-left-item {{index==activeIndex?'active':''}}" wx:for="{{leftData}}" wx:key="index" data-index="{{index}}" bindtap="leftBarClick">{{item}}</view>
+			<view class="allproduct-box-left-item {{index==activeIndex?'active':''}}" wx:for="{{leftData}}" wx:key="index" data-index="{{index}}" data-catId="{{item.catId?item.catId:item.type}}" bindtap="leftBarClick">{{item.title}}</view>
 		</scroll-view>
 		
 		<scroll-view class="allproduct-box-right" scroll-y="true" scroll-with-animation="true">

@@ -7,7 +7,7 @@
 }
 .goods-item{
 	height: 218rpx;
-	width: 218rpx;
+	width: 217rpx;
 	border: 1rpx solid #f8f8f8;	
 	border-radius: 8rpx;
 	position: relative;

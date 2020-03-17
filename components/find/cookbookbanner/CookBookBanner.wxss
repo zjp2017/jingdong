@@ -12,7 +12,7 @@
 .cookbookbanner-item{
 	width: 90rpx;
 	height: 160rpx;
-	margin: 0 26rpx;
+	margin: 0 25rpx;
 }
 .cookbookbanner-item:nth-child(5n-4){
 	margin-left: 0;

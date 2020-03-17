@@ -65,7 +65,7 @@ let nearShops={
 		'jda':'76161171.1876201136.1559192773.1578967802.1581850119.30'
 	}	
 }
-// 4.超市页面的参数
+// 3.超市页面的参数
 let supermarket={
 	url:domain+'/client',
 	data:{
@@ -82,9 +82,28 @@ let supermarket={
 		'jda':'76161171.1876201136.1559192773.1578967802.1581850119.30'
 	}	
 }
-
+// 4.商家详情页面
+let storeInfor={
+	url:domain+'/client',
+	data:{
+		'_jdrandom':(new Date()).getTime(),
+		'platCode':'h5',
+		'appName':'paidaojia',
+		'appVersion':'7.5.0',
+		'functionId':"storeIndexSearch/searchByCategoryPost",
+		'body':'{"catIds":[{"catId":"3","type":4,"catName":"秒杀","skuList":[]}],"storeId":"11801247","orgCode":"81372","industryTag":"1","showSoldOutSkus":true}',
+		'signKey':'b43388f55414eb035f514a4efdc56b91',
+		'city_id':1607,
+		'lng':113.94276,
+		'lat':22.524586,
+		'poi':'深圳百度国际大厦',
+		'traceId':'H5_DEV_7D87288D-A7B8-4603-9E2E-1F209A9C38131584344059700',
+		'jda':'123.659084102.1584070463.1584070463.1584070466.2'
+	}	
+}
 module.exports={
 	homeAllApiObj:homeAllApiObj,
 	nearShops:nearShops,
-	supermarket:supermarket
+	supermarket:supermarket,
+	storeInfor:storeInfor
 };

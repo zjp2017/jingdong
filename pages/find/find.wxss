@@ -7,3 +7,19 @@ page{
 .discover{
 	padding: 0 18rpx;
 }
+.switch-tab{
+	display: flex;
+	justify-content: center;
+	height: 55rpx;
+	line-height: 55rpx;
+}
+.switch-tab-item{
+	padding: 0 10rpx;
+	height: 55rpx;
+	line-height: 55rpx;
+	margin: 0 5rpx;
+}
+.switch-tab-item.active{
+	color: #47b34f;
+	border-bottom: 2rpx solid #47b34f;
+}

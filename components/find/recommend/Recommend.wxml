@@ -1,5 +1,4 @@
 <!--components/find/recommend/Recommend.wxml-->
 <view>
-	<finditem-com></finditem-com>
-	
+	<finditem-com resultData="{{resultData}}"></finditem-com>	
 </view>

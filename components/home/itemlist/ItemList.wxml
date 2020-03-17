@@ -1,5 +1,5 @@
 <!--components/home/itemlist/ItemList.wxml-->
-<view class="list-warp" bindtap="enterStore">
+<view class="list-warp" bindtap="enterStore" data-storeId="{{listItem.floorCellData.storeId}}" data-orgCode="{{listItem.floorCellData.params.orgCode}}">
 	<view class="item-left">
 		<image class="item-left-logo" src="{{listItem.floorCellData.imgUrl}}"></image>
 	</view>

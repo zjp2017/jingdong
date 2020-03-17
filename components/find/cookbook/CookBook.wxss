@@ -22,10 +22,12 @@
 }
 .cookbookcard-com{
 	margin-top: 20rpx;
+	display: block;
 }
 .cookbookbanner-lists{	
 	overflow: hidden;
 }
 .cookbooklist-com{
 	margin-top: 20rpx;
+	display: block;
 }

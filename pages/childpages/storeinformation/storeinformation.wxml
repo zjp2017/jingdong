@@ -6,17 +6,17 @@
 		<view class="storeinformation-header">
 			<!-- 商家店铺头部log部分组件 -->
 			<view class="storeinformation-header-box">
-				<shop-header></shop-header>
+				<shop-header resultHeader="{{resultData1.storeInfo}}"></shop-header>
 			</view>
 			<!-- 优惠券展示部分 -->
 			<view class="coupon-warp">
 				<!-- 部分优惠券 -->
-					<header-coupontips-com style="display: {{couponShow==true?'block':'none'}}"></header-coupontips-com>
+					<header-coupontips-com style="display: {{couponShow==true?'block':'none'}}" resultConpon="{{resultData1.storeInfo.tags[0]}}" arrLength="{{resultData1.storeInfo.tags.length}}"></header-coupontips-com>
 				<!-- 全部优惠券 -->
-					<!-- <allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com> -->
+					<allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com>
 			</view>
 			<!-- 商家店铺页面中的所有产品组件 -->
-			<allproduct-com></allproduct-com>
+			<allproduct-com dataList="{{resultData1.cateList}}" requestParmas="{{requestParmas}}"></allproduct-com>
 		</view>
 		<!--  -->
 		<!-- 商家页面底部结算框 -->

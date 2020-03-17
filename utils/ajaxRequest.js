@@ -36,7 +36,7 @@ const getAjax=(parmas)=>{
 		
 	})
 };
-const postAjax=()=>{
+const postAjax=(url,data)=>{
 	wx.hideLoading();
 	wx.showLoading({
 	  title: '加载中...',
@@ -44,10 +44,18 @@ const postAjax=()=>{
 	return new Promise((resolve, reject)=>{
 		wx.request({
 			method:'POST',
-			url:homeAllApi,
+			url:url,
+			header: {'content-type': 'application/x-www-form-urlencoded'},
 			data:data,
 			success:function(res){
-				
+				if(Number(res.data.code)!=0){
+					wx.showToast({
+					  title: '数据请求失败',
+					  duration: 2000
+					});
+				}else{
+					resolve(res);
+				}
 			},
 			fail:function(){
 				wx.showToast({
