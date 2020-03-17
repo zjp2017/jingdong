@@ -16,7 +16,7 @@
 					<allcoupontip-com style="display: {{couponShow==true?'none':'block'}}"></allcoupontip-com>
 			</view>
 			<!-- 商家店铺页面中的所有产品组件 -->
-			<allproduct-com dataList="{{resultData1.cateList}}" requestParmas="{{requestParmas}}"></allproduct-com>
+			<allproduct-com dataList="{{resultData1.cateList}}" requestParmas="{{requestParmas}}" bind:getItemList="getItemAjax" rightArr="{{rightArr}}"></allproduct-com>
 		</view>
 		<!--  -->
 		<!-- 商家页面底部结算框 -->

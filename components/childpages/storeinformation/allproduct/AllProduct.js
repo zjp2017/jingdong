@@ -9,6 +9,7 @@ Component({
 	dataList:{
 		type:Array,
 		observer:function(newVal){
+			console.log(newVal);
 			if(newVal.length>0){
 				this.setData({
 					leftData:newVal
@@ -23,6 +24,14 @@ Component({
 				urlParmas:newVal
 			})
 		}
+	},
+	rightArr:{
+		type:Array,
+		observer:function(newVal){
+			this.setData({
+				rightArr:newVal
+			})
+		}
 	}
   },
 
@@ -30,9 +39,11 @@ Component({
    * 组件的初始数据
    */
   data: {
-	leftData:['秒杀','直降','年货一条街','火锅季','新鲜水果','时令蔬菜','肉蛋家禽','肉蛋家禽','肉蛋家禽','肉蛋家禽','肉蛋家禽','母婴呵护','个护美妆','文娱用品','服装家纺','服装家纺','服装家纺'],
+	leftData:[],
 	activeIndex:0,
-	urlParmas:{}
+	urlParmas:{},
+	rightArr:[],
+	clickIndexs:0
 	
   },
 
@@ -42,10 +53,12 @@ Component({
   methods: {
 	  // 左侧点击
 	leftBarClick(e){
-		console.log(e.currentTarget.dataset);
 		this.setData({
-			activeIndex:e.currentTarget.dataset.index
+			activeIndex:e.currentTarget.dataset.index,
+			dataListArr:this.data.leftData[e.currentTarget.dataset.index].childCategoryList
 		});
+		
+		this.triggerEvent("getItemList",e.currentTarget.dataset);
 	},
 	// 请求
 	getAjaxRequest(parmas){
@@ -54,16 +67,20 @@ Component({
 		 let tempBody=JSON.parse(reqData.body);
 		 tempBody.storeId=this.data.urlParmas.orgCode;
 		 tempBody.storeId=this.data.urlParmas.storeId;
-		 // tempBody.storeId=urlParmas.catIds[0].storeId=this.data.urlParmas.storeId;
-		 // console.log(JSON.parse(reqData.body));
 		 reqData.body=JSON.stringify(tempBody);
 		 console.log(reqData);
 		 postAjax(storeInfor.url,reqData).then(function(res){
-			 // let result=res.data.result;
-			  console.log(res);
-		    
+			  console.log(res);    
 		 });
 		 // 2.附近的店铺	 
+	},
+	// 每个标签的点击
+	labelClick(e){
+		console.log(e.currentTarget.dataset);
+		this.setData({
+			clickIndexs:e.currentTarget.dataset.index
+		});
+		this.triggerEvent("getItemList",e.currentTarget.dataset);
 	}
   },
   ready:function(){
@@ -74,7 +91,7 @@ Component({
 	   success (res) {
 		   console.log(res.data);
 	 		if(res.data){
-	 			that.getAjaxRequest(1);
+	 			// that.getAjaxRequest(1);
 	 		}
 	   }
 	 });

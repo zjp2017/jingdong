@@ -2,18 +2,18 @@
 <view class="itemcards">
 	<view class="itemcards-box">
 		<view class="itemcards-left">
-			<image class="itemcards-left-img" mode="widthFix" src="https://img30.360buyimg.com/n1//jfs/t1/104157/29/7174/250355/5dfa0023Eef5419c3/501e901568be31bb.jpg" ></image>
+			<image class="itemcards-left-img" mode="widthFix" src="{{itemData.imgUrl}}" ></image>
 		</view>
 		<view class="itemcards-right">
-			<view class="itemcards-right-title">山姆 智利进口 JJ车厘子箱装礼盒 5kg山姆 智利进口 JJ车厘子箱装礼盒 5kg</view>
-			<view class="itemcards-right-gift">赠品，先拍2份,赠品，先拍2份,赠品，先拍2份,赠品，先拍2份,赠品，先拍2份</view>
+			<view class="itemcards-right-title">{{itemData.skuName}}</view>
+			<view class="itemcards-right-gift" wx:if="{{itemData.skuDesc}}">{{itemData.skuDesc}}</view>
 			<view class="itemcards-right-sale-box">
-				<view class="itemcards-right-sale-num">271</view>
-				<view class="itemcards-right-sale-eveat">好评100%</view>
+				<view class="itemcards-right-sale-num">月销：{{itemData.monthSales}}</view>
+				<view class="itemcards-right-sale-eveat">{{itemData.highOpinion}}</view>
 			</view>
-			<view class="itemcards-right-sale-discount">直降2.7折</view>
-			<view class="itemcards-right-sale-price">99.9</view>
-			<view class="itemcards-right-sale-origin-price">199.9</view>
+			<view class="itemcards-right-sale-discount">{{itemData.tags[0].iconText}}</view>
+			<view class="itemcards-right-sale-price">￥{{itemData.majorPrice.price}}</view>
+			<view class="itemcards-right-sale-origin-price">￥{{itemData.minorPrice.price}}</view>
 			<view class="addCarts-box">
 				<image class="addCarts" src="../../../../static/images/other/add_icon.png"></image>
 			</view>

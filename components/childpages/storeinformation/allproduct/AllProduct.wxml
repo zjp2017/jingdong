@@ -4,27 +4,29 @@
 	<view class="allproduct-title">全部商品</view>
 	<view class="allproduct-box">
 		<scroll-view class="allproduct-box-left" scroll-y="true" scroll-with-animation="true">
-			<view class="allproduct-box-left-item {{index==activeIndex?'active':''}}" wx:for="{{leftData}}" wx:key="index" data-index="{{index}}" data-catId="{{item.catId?item.catId:item.type}}" bindtap="leftBarClick">{{item.title}}</view>
+			<view class="allproduct-box-left-item {{index==activeIndex?'active':''}}" wx:for="{{leftData}}" wx:key="index" data-title="{{item.title}}" data-index="{{index}}" data-catId="{{item.catId?item.catId:item.type}}" bindtap="leftBarClick">{{item.title}}</view>
 		</scroll-view>
 		
 		<scroll-view class="allproduct-box-right" scroll-y="true" scroll-with-animation="true">
 			<!-- 只有图片部分 -->
-			<view class="allproduct-box-right-top-box">
+			<!-- <view class="allproduct-box-right-top-box">
 				<image class="allproduct-box-right-img" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/65370/16/12615/94330/5d9fead7E7e6d3ab2/2e60580035b90574.jpg"></image>
 				<image class="allproduct-box-right-img" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/101450/21/9433/368778/5e0dbf7eEccfd659a/4ad1d971c766dff4.png"></image>
-			</view>
+			</view> -->
 			<!-- 列表部分 -->
 			<view class="list-warp">
-				<view wx:for="{{20}}" wx:key="index">
-					<view class="item-title">赠品区</view>
-					<view>
-						<itemcards-com></itemcards-com>
-						<itemcards-com></itemcards-com>
-						<itemcards-com></itemcards-com>
-						<itemcards-com></itemcards-com>
-						<itemcards-com></itemcards-com>
+				<view class="secondary-title-warp">
+					<view class="secondary-title-box">
+						<view class="secondary-title {{clickIndexs==index?'active':''}}" bindtap="labelClick" data-index="{{index}}" wx:for="{{dataListArr}}" wx:key="index" data-catId="{{item.catId}}" data-title="{{item.title}}">{{item.title}}</view>
+					
 					</view>
 				</view>
+				<view class="list-warp-box">
+					<view wx:for="{{rightArr}}" wx:key="index">
+						<itemcards-com itemData="{{item}}"></itemcards-com>
+					</view>
+				</view>
+				
 			</view>
 		</scroll-view>
 	</view>

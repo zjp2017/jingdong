@@ -12,6 +12,7 @@
 .allproduct-box{
 	display: flex;
 	padding-bottom: 80rpx;
+	border-top: 1rpx solid #eeeeee;
 }
 .allproduct-box-left{
 	width: 158rpx;
@@ -70,4 +71,34 @@
 	font-weight: bold;
 	line-height: 66rpx;
 	text-indent: 10rpx;
+}
+.list-warp{
+	position: relative;
+}
+.secondary-title-warp{
+	height: 60rpx;
+	width: 560rpx;
+	background: #ffffff;
+	border-bottom: 1rpx solid #eeeeee;
+	z-index: 300;
+}
+.secondary-title-box{
+	display: flex;
+	height: 60rpx;
+	
+	overflow-x: scroll;
+}
+.secondary-title{
+	height: 60rpx;
+	padding: 0 10rpx;
+	line-height: 60rpx;
+	flex-shrink: 0;
+	font-size: 23rpx;
+}
+.secondary-title.active{
+	color: #47b34f;
+}
+.list-warp-box{
+	height: 1100rpx;
+	overflow-y: scroll;
 }
