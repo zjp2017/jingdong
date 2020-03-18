@@ -101,7 +101,15 @@ Page({
 		  if(res.data.result.cateList.length>0){
 			  let ajaxParmasId=res.data.result.cateList[0].catId?res.data.result.cateList[0].catId:res.data.result.cateList[0].type;
 			  let ajaxTitle=res.data.result.cateList[0].title;
-			  that.getRightResult(ajaxParmasId,ajaxTitle);
+			  let dataType=4;
+			  if(res.data.result.cateList[0].catId==""){
+				  dataType=4;
+			  }else if(res.data.result.cateList[0].catId!=""&&res.data.result.cateList[0].childCategoryList.length==0){
+				  dataType=1;
+			  }else if(res.data.result.cateList[0].childCategoryList.length>0){
+				  dataType=2;
+			  };
+			  that.getRightResult(ajaxParmasId,ajaxTitle,dataType);
 		  }  
 	  }); 
   },
@@ -113,18 +121,18 @@ Page({
 	  });	 
 	})
   },
-  getRightResult(parmas1,parmas2){
+  getRightResult(parmas1,parmas2,reqType){
 	  let that=this;
 	  let reqData=storeInfor.data;
 	  let tempBody=JSON.parse(reqData.body);
 	  tempBody.catIds[0].catId=parmas1;
 	  tempBody.catIds[0].catName=parmas2;
+	  tempBody.catIds[0].type=reqType;
 	  tempBody.orgCode=this.data.requestParmas.orgCode;
 	  tempBody.storeId=this.data.requestParmas.storeId;
 	  reqData.body=JSON.stringify(tempBody);
 	  postAjax(storeInfor.url,reqData).then(function(res){
-
-		 if(res.data.result.searchCatResultVOList.length>0){
+		 if(res.data.result&&res.data.result.searchCatResultVOList.length>0){
 			 that.setData({
 				 rightArr:res.data.result.searchCatResultVOList[0].searchResultVOList
 			 });
@@ -133,6 +141,6 @@ Page({
 	  });
   },
   getItemAjax(parmas){
-  		this.getRightResult(parmas.detail.catid,parmas.detail.title);	
+  	  this.getRightResult(parmas.detail.catid,parmas.detail.title,parmas.detail.type);	
   }
 })

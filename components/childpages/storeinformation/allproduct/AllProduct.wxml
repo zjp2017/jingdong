@@ -14,7 +14,7 @@
 				<image class="allproduct-box-right-img" mode="widthFix" src="https://img30.360buyimg.com/mobilecms/jfs/t1/101450/21/9433/368778/5e0dbf7eEccfd659a/4ad1d971c766dff4.png"></image>
 			</view> -->
 			<!-- 列表部分 -->
-			<view class="list-warp">
+			<scroll-view class="list-warp" scroll-y="true">
 				<view class="secondary-title-warp">
 					<view class="secondary-title-box">
 						<view class="secondary-title {{clickIndexs==index?'active':''}}" bindtap="labelClick" data-index="{{index}}" wx:for="{{dataListArr}}" wx:key="index" data-catId="{{item.catId}}" data-title="{{item.title}}">{{item.title}}</view>
@@ -27,7 +27,7 @@
 					</view>
 				</view>
 				
-			</view>
+			</scroll-view>
 		</scroll-view>
 	</view>
 </view>

@@ -9,7 +9,6 @@ Component({
 	dataList:{
 		type:Array,
 		observer:function(newVal){
-			console.log(newVal);
 			if(newVal.length>0){
 				this.setData({
 					leftData:newVal
@@ -57,7 +56,25 @@ Component({
 			activeIndex:e.currentTarget.dataset.index,
 			dataListArr:this.data.leftData[e.currentTarget.dataset.index].childCategoryList
 		});
-		
+		let reqType=4;
+		if(this.data.leftData[e.currentTarget.dataset.index].catId==""){
+			reqType=4;
+		}else if(this.data.leftData[e.currentTarget.dataset.index].catId&&this.data.leftData[e.currentTarget.dataset.index].childCategoryList.length==0){
+			reqType=1;
+		}else if(this.data.leftData[e.currentTarget.dataset.index].catId&&this.data.leftData[e.currentTarget.dataset.index].childCategoryList.length>0){
+			reqType=2;
+		};
+		if(this.data.leftData[e.currentTarget.dataset.index].catId==''){
+			e.currentTarget.dataset.catid=this.data.leftData[e.currentTarget.dataset.index].type;
+			e.currentTarget.dataset.title=this.data.leftData[e.currentTarget.dataset.index].title;
+		}else if(this.data.leftData[e.currentTarget.dataset.index].childCategoryList.length==0){
+			e.currentTarget.dataset.catid=this.data.leftData[e.currentTarget.dataset.index].catId;
+			e.currentTarget.dataset.title=this.data.leftData[e.currentTarget.dataset.index].title;
+		}else if(this.data.leftData[e.currentTarget.dataset.index].childCategoryList.length>=0){
+			e.currentTarget.dataset.catid=this.data.leftData[e.currentTarget.dataset.index].childCategoryList[0].catId;
+			e.currentTarget.dataset.title=this.data.leftData[e.currentTarget.dataset.index].childCategoryList[0].title;
+		}
+		e.currentTarget.dataset.type=reqType;
 		this.triggerEvent("getItemList",e.currentTarget.dataset);
 	},
 	// 请求
@@ -76,20 +93,19 @@ Component({
 	},
 	// 每个标签的点击
 	labelClick(e){
-		console.log(e.currentTarget.dataset);
 		this.setData({
 			clickIndexs:e.currentTarget.dataset.index
 		});
+		e.currentTarget.dataset.type=2;
 		this.triggerEvent("getItemList",e.currentTarget.dataset);
 	}
   },
   ready:function(){
 	  // 请求
-	  let that=this;
+	 let that=this;
 	 wx.getStorage({
 	   key: 'location',
 	   success (res) {
-		   console.log(res.data);
 	 		if(res.data){
 	 			// that.getAjaxRequest(1);
 	 		}
