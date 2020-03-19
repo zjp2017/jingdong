@@ -13,7 +13,7 @@
 			</view>
 			<view class="itemcards-right-sale-discount">{{itemData.tags[0].iconText}}</view>
 			<view class="itemcards-right-sale-price">￥{{itemData.majorPrice.price}}</view>
-			<view class="itemcards-right-sale-origin-price">￥{{itemData.minorPrice.price}}</view>
+			<view class="itemcards-right-sale-origin-price" wx:if="{{itemData.minorPrice.price}}">￥{{itemData.minorPrice.price}}</view>
 			<view class="addCarts-box">
 				<image class="addCarts" src="../../../../static/images/other/add_icon.png" lazy-load="true"></image>
 			</view>
