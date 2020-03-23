@@ -5,7 +5,7 @@
 		<!-- 1.头部位置部分 -->
 		<view class="home-header" style="background: url({{backgroundImg.topImg}});">
 			<!-- 定位部分 -->
-			<header-com></header-com>
+			<header-com addressName="{{addressName}}"></header-com>
 			<!-- 搜索部分 -->
 			<search-com  class="search-component" searchWord="{{responseData.config.searchConfig.searchWords}}"></search-com>
 		</view>

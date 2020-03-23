@@ -2,7 +2,7 @@
 <import src="/templates/home/location.wxml"/>
 <view class="header-location-warp">
 	<block class="location-icon-block"><template is="location-icon"></template></block>
-	<view class="location-title">百度国际大厦</view>
+	<view class="location-title">{{addressName.address}}</view>
 	<image src="../../../static/images/home/down_icon.png" class="down-awg"></image>
 	
 </view>
