@@ -6,6 +6,7 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -21,7 +22,8 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
@@ -356,6 +358,13 @@
 					"name": "pages/childpages/storeinformation/storeinformation",
 					"pathName": "pages/childpages/storeinformation/storeinformation",
 					"query": "storeId=11647242&orgCode=81372",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "id=7",
 					"scene": null
 				}
 			]
