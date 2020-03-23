@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp();
+var bmap = require('../../libs/bmap-wx.js'); 
 import {homeAllApiObj,nearShops} from '../../utils/api.js';
 import {getAjax} from '../../utils/ajaxRequest.js';
 Page({
@@ -23,17 +24,22 @@ Page({
    
   },
   onLoad: function () {
-	  let that=this;
+	 
 		wx.getSetting({
-		  success(res) {		
+		  success(res) {	
+			console.log(res);  
 			if (!res.authSetting['scope.userLocation']) {
+				console.log(res);  
 			  wx.authorize({
 				scope: 'scope.userLocation',
-				success () {
+				success (res) {
+					console.log(res);
 				  // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
 				  wx.getStorage({
 					key: 'location',
 					success (res) {
+						
+						console.log(res);
 						if(res.data){
 							wx.setStorage({
 							  key: 'location',
@@ -165,6 +171,39 @@ Page({
 			}
 		  })
 		}
+  },
+  onReady:function(){
+	  
+	 wx.getSetting({
+	   success(res) {	
+	 	console.log(res);  
+	 	if (!res.authSetting['scope.userLocation']) {
+	 		console.log(res); 
+
+	 	  wx.authorize({
+	 		scope: 'scope.userLocation',
+	 		success (res) {
+	 			console.log(res);
+	 		  // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+	 		  wx.getStorage({
+	 			key: 'location',
+	 			success (res) {
+	 				
+	 				console.log(res);
+	 				if(res.data){
+	 					wx.setStorage({
+	 					  key: 'location',
+	 					  data:JSON.stringify({"lat":res.data.lat,"lng":res.data.lng})
+	 					})
+	 				}
+	 			}
+	 		  })
+	 		 
+	 		}
+	 	  })
+	 	}
+	   }
+	 }); 
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo;
