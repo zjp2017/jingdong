@@ -6,7 +6,8 @@
 	  "banner-com":"/components/home/banner/Banner",
 	  "discount-com":"/components/home/discount/Discount",
 	  "limitbuy-com":"/components/home/limitbuy/Limitbuy",
-	  "store-com":"/components/home/store/StoreList"
+	  "store-com":"/components/home/store/StoreList",
+	  "i-toast": "../../dist/toast/index"
 	  
 	 
 		

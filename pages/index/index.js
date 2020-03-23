@@ -4,7 +4,7 @@ const app = getApp();
 import {homeAllApiObj,nearShops} from '../../utils/api.js';
 import {getAjax} from '../../utils/ajaxRequest.js';
 var bmap = require('../../libs/bmap-wx.min.js');
-
+const { $Toast } = require('../../dist/base/index');
 Page({
   data: {
 	backgroundImg:{'topImg':'','borderImg':''},
