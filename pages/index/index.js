@@ -4,6 +4,10 @@ const app = getApp();
 import {homeAllApiObj,nearShops} from '../../utils/api.js';
 import {getAjax} from '../../utils/ajaxRequest.js';
 var bmap = require('../../libs/bmap-wx.min.js');
+var bmap = require('../../libs/bmap-wx.min.js');
+var bmap = require('../../libs/bmap-wx.min.js');
+var bmap = require('../../libs/bmap-wx.min.js');
+var bmap = require('../../libs/bmap-wx.min.js');
 
 Page({
   data: {
