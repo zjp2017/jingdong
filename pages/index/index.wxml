@@ -1,5 +1,6 @@
  <!--index.wxml-->
 <view class="container">
+
 	<view class="home-header-warp">
 		<!-- 1.头部位置部分 -->
 		<view class="home-header" style="background: url({{backgroundImg.topImg}});">

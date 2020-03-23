@@ -4,6 +4,8 @@ const app = getApp();
 var bmap = require('../../libs/bmap-wx.js'); 
 import {homeAllApiObj,nearShops} from '../../utils/api.js';
 import {getAjax} from '../../utils/ajaxRequest.js';
+var bmap = require('../../libs/bmap-wx.min.js');
+const { $Toast } = require('../../dist/base/index');
 Page({
   data: {
 	backgroundImg:{'topImg':'','borderImg':''},
@@ -24,17 +26,16 @@ Page({
    
   },
   onLoad: function () {
-	 
+
+	  let that=this;
 		wx.getSetting({
-		  success(res) {	
-			console.log(res);  
+		  success(res) {
+			  console.log(res);
 			if (!res.authSetting['scope.userLocation']) {
-				console.log(res);  
+				// 发起授权
 			  wx.authorize({
 				scope: 'scope.userLocation',
 				success (res) {
-					console.log(res);
-				  // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
 				  wx.getStorage({
 					key: 'location',
 					success (res) {
@@ -51,9 +52,11 @@ Page({
 				 
 				}
 			  })
+			}else{
+				that.getAddress();    
 			}
 		  }
-		}); 
+		});
 	 // 请求数据
 		 let requestData=homeAllApiObj;
 		 let nearShopData=nearShops;
@@ -76,6 +79,7 @@ Page({
 			}
 		   }
 		 });
+		 
 		 function getLocationFn(){
 			 console.log(3);
 			wx.getLocation({
@@ -206,6 +210,7 @@ Page({
 	 }); 
   },
   getUserInfo: function(e) {
+	  console.log(e);
     app.globalData.userInfo = e.detail.userInfo;
     app.globalData.location = {
 		lat:22.52483,
@@ -216,5 +221,25 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  getAddress:function(){
+	  var BMap = new bmap.BMapWX({
+	       ak: '4OHrnndmXKzOiuTFav7QGBX8On4SAY9G' 
+	   }); 
+	   var fail = function(data) { 
+	       console.log(data) 
+		  
+	   }; 
+	   var success = function(data) {
+		  
+			wx.setStorage({
+			  key: 'location',
+			  data:JSON.stringify({"lat":data.originalData.result.location.lat,"lng":data.originalData.result.location.lng,address:data.originalData.result.formatted_address})
+			});
+	   }; 
+	   BMap.regeocoding({ 
+	       fail: fail, 
+	       success: success
+	   });
   }
 })
