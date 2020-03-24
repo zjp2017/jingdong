@@ -7,7 +7,7 @@ let domain='https://daojia.jd.com';
 
 // 首页 附近店铺
 //https://daojia.jd.com/client?_jdrandom=1583476176034&platCode=h5&appName=paidaojia&channel=&appVersion=7.5.0&jdDevice=&functionId=zone%2FrecommendStoreList&body=%7B%22channelId%22:%22%22,%22city%22:%22%E6%B7%B1%E5%9C%B3%E5%B8%82%22,%22longitude%22:113.94276,%22latitude%22:22.524586,%22currentPage%22:1,%22pageSize%22:10,%22rankType%22:0,%22filterTagIds%22:%22%22,%22lastStoreId%22:%22%22,%22coordType%22:%222%22,%22platform%22:%221%22%7D&signKey=ed7540154f55e774fffcfbfa19a38150&lng=113.94276&lat=22.524586&city_id=1607&poi=%E6%B7%B1%E5%9C%B3%E7%99%BE%E5%BA%A6%E5%9B%BD%E9%99%85%E5%A4%A7%E5%8E%A6&traceId=H5_DEV_7D87288D-A7B8-4603-9E2E-1F209A9C38131583476176033
-let bodyContent=encodeURI({
+let bodyContent1=({
     "coordType": "2",
     "currentPage": "",
     "storeId": "",
@@ -40,8 +40,10 @@ let homeAllApiObj={
 		'appName':'paidaojia',
 		'appVersion':'7.4.5',
 		'functionId':encodeURI('indexh5/getIndex'),
-		'body':bodyContent,
-		
+		'body':bodyContent1,
+		'poi':'',
+		'lat':'',
+		'lng':'',
 		'city_id':1607		
 	}	
 };
