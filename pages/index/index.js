@@ -124,41 +124,87 @@ Page({
   },
  
   getAllData:function(parmas){
-	   let that=this;
+	let that=this;
   	getAjax(parmas).then(function(res){
-  			let temBannerList=res.data.result.data[1].data[0].data;
-  			for(let i=0;i<temBannerList.length;i++){
-  				if(temBannerList[i].floorCellData.title.indexOf("超")>-1){
-  					temBannerList[i].floorCellData["url"]="supermarket/supermarket";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("菜")>-1){
-  					temBannerList[i].floorCellData["url"]="foodmarket/foodmarket";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("果")>-1){
-  					temBannerList[i].floorCellData["url"]="fruitshop/fruitshop";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("花")>-1){
-  					temBannerList[i].floorCellData["url"]="flowersandplants/flowersandplants";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("药")>-1){
-  					temBannerList[i].floorCellData["url"]="medicalhealth/medicalhealth";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("家居")>-1){
-  					temBannerList[i].floorCellData["url"]="homefashion/homefashion";
-  				}else if(temBannerList[i].floorCellData.title.indexOf("蛋糕")>-1){
-  					temBannerList[i].floorCellData["url"]="bakecake/bakecake";
-  				}else{
-  					temBannerList[i].floorCellData["url"]="";
-  				}
-  			};
+		 let resultData=res.data.result;
+		   if(resultData&&resultData.data.length>0){
+			   let responseData=resultData;
+			   let backgroundImg={};
+			   let bannerImg="";
+			   let bannerList=[];
+			   let centerBanner=[];//第一个banner
+			   let discountArr=[]; //优惠专区的上2个
+			   let limitedTime=[]; //限时抢购
+			   let limitedTimeTitle="" //限时抢购标题
+			   let bootomBanner=[]; //底部的banner
+			   for(let i=0;i<resultData.data.length;i++){
+				   if(resultData.data[i].data.length>0){
+					 for(let j=0;j<resultData.data[i].data.length;j++){
+					   if(resultData.data[i].data[j].floorStyle=='ball'){//小图滚动部分
+							console.log(resultData.data[i].data[j].data);
+						     bannerList=resultData.data[i].data[j].data;
+					   }else if(resultData.data[i].data[j].floorStyle=='marketing'){//弹框
+							console.log(resultData.data[i].data[j].data);
+					   }else if(resultData.data[i].data[j].floorStyle=='banner'){  //第一个banner
+								centerBanner=resultData.data[i].data[j].data;		   
+					   }else if(resultData.data[i].data[j].floorStyle=='act2'){ //优惠专区的上2个
+								console.log(resultData.data[i].data[j].data);		   
+					   }else if(resultData.data[i].data[j].floorStyle=='act4'){ //优惠专区的下4个
+						    console.log(resultData.data[i].data[j].data);
+					   }else if(resultData.data[i].data[j].floorStyle=='seckill'){//限时抢购
+						     console.log(resultData.data[i].data[j].data);
+					   }else if(resultData.data[i].data[j].floorStyle=='floorBanner'){//底部的banner
+						   bootomBanner=resultData.data[i].data[j].data;
+					   }
+					 }  
+				   }
+				   
+			   };
+			  
+			    that.setData({
+					responseData:responseData,
+					bannerList:bannerList,
+					centerBanner:centerBanner,
+					discountArr:discountArr,
+					limitedTime:limitedTime,
+					limitedTimeTitle:"ss",
+					bootomBanner:bootomBanner
+				});
+		   }
+  			// let temBannerList=res.data.result.data[1].data[0].data;
+  		// 	for(let i=0;i<temBannerList.length;i++){
+				// console.log(temBannerList[i].floorCellData);
+  		// 		if(temBannerList[i].floorCellData.title.indexOf("超")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="supermarket/supermarket";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("菜")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="foodmarket/foodmarket";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("果")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="fruitshop/fruitshop";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("花")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="flowersandplants/flowersandplants";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("药")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="medicalhealth/medicalhealth";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("家居")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="homefashion/homefashion";
+  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("蛋糕")>-1){
+  		// 			temBannerList[i].floorCellData["url"]="bakecake/bakecake";
+  		// 		}else{
+  		// 			temBannerList[i].floorCellData["url"]="";
+  		// 		}
+  		// 	};
   	
-  	   that.setData({
-  				responseData:res.data.result,
-  				backgroundImg:{'topImg':res.data.result.config.searchConfig.topImg,'borderImg':res.data.result.config.searchConfig.borderImg},
-  				bannerImg:res.data.result.data[0].data[0].data[0].floorCellData.imgUrl,
-  				bannerList:temBannerList,
-  				centerBanner:res.data.result.data[2].data[0].data,
-  				discountArr:res.data.result.data[3].data,
-  				limitedTime:res.data.result.data[4].data[0].data,
-  				limitedTimeTitle:res.data.result.data[4].data[0].floorTitle.floorName,
-  				bootomBanner:res.data.result.data[5].data[0].data
+  	  //  that.setData({
+  			// 	responseData:res.data.result,
+  			// 	backgroundImg:{'topImg':res.data.result.config.searchConfig.topImg,'borderImg':res.data.result.config.searchConfig.borderImg},
+  			// 	bannerImg:res.data.result.data[0].data[0].data[0].floorCellData.imgUrl,
+  			// 	bannerList:temBannerList,
+  			// 	centerBanner:res.data.result.data[2].data[0].data,
+  			// 	discountArr:res.data.result.data[3].data,
+  			// 	limitedTime:res.data.result.data[4].data[0].data,
+  			// 	limitedTimeTitle:res.data.result.data[4].data[0].floorTitle.floorName,
+  			// 	bootomBanner:res.data.result.data[5].data[0].data
   				
-  			});
+  			// });
   	});
   },
   // 2.首页附近店铺数据
