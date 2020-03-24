@@ -1,11 +1,15 @@
  <!--index.wxml-->
 <view class="container">
+<<<<<<< HEAD
 	<van-button type="primary">按钮</van-button>
+=======
+
+>>>>>>> 9604bad2f08150966cafa8a64e008637071b6363
 	<view class="home-header-warp">
 		<!-- 1.头部位置部分 -->
 		<view class="home-header" style="background: url({{backgroundImg.topImg}});">
 			<!-- 定位部分 -->
-			<header-com></header-com>
+			<header-com addressName="{{addressName}}"></header-com>
 			<!-- 搜索部分 -->
 			<search-com  class="search-component" searchWord="{{responseData.config.searchConfig.searchWords}}"></search-com>
 		</view>

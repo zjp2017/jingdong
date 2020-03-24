@@ -13,6 +13,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+	  wx.getLocation({
+	  		 type: 'wgs84',
+	  	success:function(result){
+	  			console.log(result);
+	  		}
+	  });
 	wx.setNavigationBarTitle({
 		title:"发现"
 	});
