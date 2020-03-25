@@ -14,7 +14,7 @@
 			<image mode="widthFix" lazy-load="true" class="fixed-banner-box-img" src="{{bannerImg}}"></image>
 		</view>
 		<!-- 3.中间滑动部分 -->
-		<scroll-com bannerList="{{bannerList}}"></scroll-com>
+		<scroll-com bannerList="{{bannerList}}" backgroundBgImg="{{backgroundBgImg}}"></scroll-com>
 		<!-- 4.新人专享福利 -->
 		<!-- <view class="new-person-welfare">
 			<image class="new-person-welfare-img" mode="widthFix" src="https://imgcps.jd.com/djmarketing/img_717923/img_716748/img_716653/NC4z/NC40/NC44/77-lMS45/77-lMQ/77-lMS4z/77-lMTU/56uL5Y2z6aKG5Y-W/t-5ca3472c2612abcf54f614a2/bef47f04.png"></image>
@@ -22,7 +22,7 @@
 		<!-- 5.banner列表 -->
 		<banner-com centerBanner="{{centerBanner}}"></banner-com>
 		<!-- 6.优惠专区 -->
-		<discount-com discountArr="{{discountArr}}"></discount-com>
+		<discount-com discountArr="{{discountArr}}" discountArrTwo="{{discountArrTwo}}"></discount-com>
 		<!-- 7.限时抢购 -->
 		<limitbuy-com limitedTime="{{limitedTime}}" limitedTimeTitle="{{limitedTimeTitle}}"></limitbuy-com>
 		<!-- 8.中间banner -->

@@ -5,8 +5,18 @@ Component({
    */
   properties: {
 	discountArr:{
+		type:Object,
+		value:{},
+		observer:function(newVal){
+			console.log(newVal);
+		}
+	},
+	discountArrTwo:{
 		type:Array,
-		value:[]
+		value:[],
+		observer:function(newVal){
+			console.log(newVal);
+		}
 	}
   },
 

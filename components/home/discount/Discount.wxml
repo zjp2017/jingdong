@@ -1,12 +1,12 @@
 <!--components/home/discount/Discount.wxml-->
 <view class="discount-cover">
-	<view class="discount-title">{{discountArr[0].floorTitle.floorName}}</view>
+	<view class="discount-title">{{discountArr.floorTitle.floorName}}</view>
 	<view class="discount-header">
-		<image class="discount-header-img" wx:for="{{discountArr[0].data}}" wx:key="index" src="{{item.floorCellData.imgUrl}}" data-id="{{item.floorCellData.params.activityId}}"></image>
+		<image class="discount-header-img" wx:for="{{discountArr.data}}" wx:key="index" src="{{item.floorCellData.imgUrl}}" data-id="{{item.floorCellData.params.activityId}}"></image>
 		
 	</view>
 	<view class="discount-bottom">
-		<view class="discount-bottom-item" wx:for="{{discountArr[1].data}}" wx:key="index" data-id="{{item.floorCellData.params.activityId}}" style="background: {{item.floorCellData.bgColourValue}};">
+		<view class="discount-bottom-item" wx:for="{{discountArrTwo}}" wx:key="index" data-id="{{item.floorCellData.params.activityId}}" style="background: {{item.floorCellData.bgColourValue}};">
 			<view class="discount-bottom-item-title">{{item.floorCellData.title}}</view>
 			<view class="discount-bottom-item-desc">{{item.floorCellData.title}}</view>
 			<view class="discount-bottom-item-img">

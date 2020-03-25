@@ -18,7 +18,9 @@ Page({
 	limitedTime:[] ,//限时抢购
 	limitedTimeTitle:'限时抢购',
 	searchCondition:{}, //排序方式
-	nearShopDataArr:[] //附近的店铺
+	nearShopDataArr:[], //附近的店铺
+	backgroundBgImg:'',
+	discountArrTwo:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -103,7 +105,7 @@ Page({
 		   homeAllApiObj.data.lat=data.originalData.result.location.lat;
 		   homeAllApiObj.data.poi=data.originalData.result.formatted_address;
 		    homeAllApiObj.data.body= JSON.stringify(homeAllApiObj.data.body);
-		    console.log(homeAllApiObj);
+		    // console.log(homeAllApiObj);
 		   that.setData({
 			   addressName:{"lat":data.originalData.result.location.lat,"lng":data.originalData.result.location.lng,address:data.originalData.result.formatted_address}
 		   });
@@ -129,70 +131,60 @@ Page({
 		 let resultData=res.data.result;
 		   if(resultData&&resultData.data.length>0){
 			   let responseData=resultData;
-			   let backgroundImg={};
+			   let backgroundImg={'topImg':res.data.result.config.searchConfig.topImg,'borderImg':res.data.result.config.searchConfig.borderImg};
 			   let bannerImg="";
 			   let bannerList=[];
 			   let centerBanner=[];//第一个banner
 			   let discountArr=[]; //优惠专区的上2个
+			   let discountArrTwo=[];//优惠专区的下4个
 			   let limitedTime=[]; //限时抢购
 			   let limitedTimeTitle="" //限时抢购标题
 			   let bootomBanner=[]; //底部的banner
+			   let backgroundBgImg="";//滚动的底部图
 			   for(let i=0;i<resultData.data.length;i++){
 				   if(resultData.data[i].data.length>0){
 					 for(let j=0;j<resultData.data[i].data.length;j++){
-					   if(resultData.data[i].data[j].floorStyle=='ball'){//小图滚动部分
-							console.log(resultData.data[i].data[j].data);
+					   if(resultData.data[i].data[j].styleTpl=='tpl3'){//小图滚动部分
 						     bannerList=resultData.data[i].data[j].data;
+							 backgroundBgImg=resultData.data[i].data[j].floorBgImg;
 					   }else if(resultData.data[i].data[j].floorStyle=='marketing'){//弹框
-							console.log(resultData.data[i].data[j].data);
+							// console.log(resultData.data[i].data[j].data);
 					   }else if(resultData.data[i].data[j].floorStyle=='banner'){  //第一个banner
-								centerBanner=resultData.data[i].data[j].data;		   
-					   }else if(resultData.data[i].data[j].floorStyle=='act2'){ //优惠专区的上2个
-								console.log(resultData.data[i].data[j].data);		   
-					   }else if(resultData.data[i].data[j].floorStyle=='act4'){ //优惠专区的下4个
-						    console.log(resultData.data[i].data[j].data);
-					   }else if(resultData.data[i].data[j].floorStyle=='seckill'){//限时抢购
-						     console.log(resultData.data[i].data[j].data);
-					   }else if(resultData.data[i].data[j].floorStyle=='floorBanner'){//底部的banner
+							centerBanner=resultData.data[i].data[j].data;		   
+					   }else if(resultData.data[i].data[j].styleTpl=='tpl9'){ //优惠专区的上2个
+								
+							discountArr=resultData.data[i].data[j];
+					   }else if(resultData.data[i].data[j].styleTpl=='tpl8'){ //优惠专区的下4个
+							discountArrTwo=resultData.data[i].data[j].data;
+						    
+					   }else if(resultData.data[i].data[j].styleTpl=='tpl1'){//限时抢购
+							limitedTime=resultData.data[i].data[j].data;
+							limitedTimeTitle=resultData.data[i].data[j].floorTitle.floorName;
+
+					   }else if(resultData.data[i].data[j].styleTpl=='tpl5'){//底部的banner
 						   bootomBanner=resultData.data[i].data[j].data;
+					   }else if(resultData.data[i].data[j].styleTpl=='tpl6'){ //最上面的大图
+						   bannerImg=resultData.data[i].data[j].data[0].floorCellData.imgUrl;
 					   }
 					 }  
 				   }
 				   
 			   };
-			  
 			    that.setData({
 					responseData:responseData,
 					bannerList:bannerList,
+					backgroundImg:backgroundImg,
 					centerBanner:centerBanner,
 					discountArr:discountArr,
 					limitedTime:limitedTime,
-					limitedTimeTitle:"ss",
-					bootomBanner:bootomBanner
+					limitedTimeTitle:limitedTimeTitle,
+					bootomBanner:bootomBanner,
+					bannerImg:bannerImg,
+					backgroundBgImg:backgroundBgImg,
+					discountArrTwo:discountArrTwo
 				});
 		   }
-  			// let temBannerList=res.data.result.data[1].data[0].data;
-  		// 	for(let i=0;i<temBannerList.length;i++){
-				// console.log(temBannerList[i].floorCellData);
-  		// 		if(temBannerList[i].floorCellData.title.indexOf("超")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="supermarket/supermarket";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("菜")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="foodmarket/foodmarket";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("果")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="fruitshop/fruitshop";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("花")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="flowersandplants/flowersandplants";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("药")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="medicalhealth/medicalhealth";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("家居")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="homefashion/homefashion";
-  		// 		}else if(temBannerList[i].floorCellData.title.indexOf("蛋糕")>-1){
-  		// 			temBannerList[i].floorCellData["url"]="bakecake/bakecake";
-  		// 		}else{
-  		// 			temBannerList[i].floorCellData["url"]="";
-  		// 		}
-  		// 	};
-  	
+
   	  //  that.setData({
   			// 	responseData:res.data.result,
   			// 	backgroundImg:{'topImg':res.data.result.config.searchConfig.topImg,'borderImg':res.data.result.config.searchConfig.borderImg},

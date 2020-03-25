@@ -6,7 +6,21 @@ Component({
   properties: {
 	bannerList:{
 		type:Array,
-		value:[]
+		value:[],
+		observer:function(newVal){
+			console.log(newVal);
+		
+		}
+	},
+	backgroundBgImg:{
+		type:String,
+		value:'https://img30.360buyimg.com/mobilecms/jfs/t1/102863/23/15447/30342/5e7079eeEb217c8a4/34eb19942e11feba.jpg',
+		observer:function(newVal){
+			console.log(newVal);
+			this.setData({
+				backgroundBgImg:newVal
+			})
+		}
 	}
   },
 
@@ -14,6 +28,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+	  backgroundBgImg:''
   },
 
   /**
