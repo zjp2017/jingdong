@@ -1,6 +1,6 @@
 <!--components/home/scroll/Scroll.wxml-->
 <view class="home-scroll-warp" style="background: url('{{backgroundBgImg}}');">
-	<view class="home-scroll-box" > 
+	<view class="home-scroll-box" style="width:{{scrollWidth}}"> 
 		<view class="scroll-item" wx:for="{{bannerList}}" wx:key="index" bindtap="enterDetail" data-goto="{{item.floorCellData.to}}" data-title="{{item.floorCellData.title}}" data-index="{{item.floorCellData.params.channelId}}" data-url="{{item.floorCellData.url}}">
 			<image class="scroll-item-img" src="{{item.floorCellData.imgUrl}}" ></image>
 			<view class="scroll-item-text">{{item.floorCellData.title}}</view>

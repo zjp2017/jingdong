@@ -8,15 +8,24 @@ Component({
 		type:Array,
 		value:[],
 		observer:function(newVal){
-			console.log(newVal);
-		
+			if(newVal.length>10){
+				let lineWidth='';
+				if(newVal.length%2==0){
+					lineWidth=(newVal.length/2)*150+'rpx';
+				}else{
+					lineWidth=((newVal.length+1)/2)*150+'rpx';
+				}
+				this.setData({
+					scrollWidth:lineWidth
+				})
+			}
+			
 		}
 	},
 	backgroundBgImg:{
 		type:String,
 		value:'https://img30.360buyimg.com/mobilecms/jfs/t1/102863/23/15447/30342/5e7079eeEb217c8a4/34eb19942e11feba.jpg',
 		observer:function(newVal){
-			console.log(newVal);
 			this.setData({
 				backgroundBgImg:newVal
 			})
@@ -28,7 +37,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-	  backgroundBgImg:''
+	  backgroundBgImg:'',
+	  scrollWidth:'750rpx',	 
   },
 
   /**
