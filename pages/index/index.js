@@ -99,13 +99,28 @@ Page({
 		  
 	   }; 
 	   var success = function(data) {
-		  
+		   console.log(data.originalData.result.addressComponent.city);
+		  //第一部分参数
 		   homeAllApiObj.data.body.currentPage=1;
 		   homeAllApiObj.data.lng=data.originalData.result.location.lng;
 		   homeAllApiObj.data.lat=data.originalData.result.location.lat;
 		   homeAllApiObj.data.poi=data.originalData.result.formatted_address;
-		    homeAllApiObj.data.body= JSON.stringify(homeAllApiObj.data.body);
-		    // console.log(homeAllApiObj);
+		   homeAllApiObj.data.body= JSON.stringify(homeAllApiObj.data.body);
+		   // 附近店铺参数
+		   // nearShops.data.lng=data.originalData.result.location.lng;
+		   // nearShops.data.lng=116.40746;
+		   // nearShops.data.lat=data.originalData.result.location.lat;
+		   // nearShops.data.lat=39.90403;
+		   nearShops.data.poi=data.originalData.result.formatted_address;
+		   // nearShops.data.poi='北京市人民政府港澳事务办公室';
+		   nearShops.data.body.city=data.originalData.result.addressComponent.city;
+		   nearShops.data.body.longitude=data.originalData.result.location.lng;
+		   // nearShops.data.body.longitude=116.40746;
+		   nearShops.data.body.latitude=data.originalData.result.location.lat;
+		   // nearShops.data.body.latitude=39.90403;
+		    nearShops.data.body= JSON.stringify(nearShops.data.body);
+		   console.log(nearShops.data.body);
+		 
 		   that.setData({
 			   addressName:{"lat":data.originalData.result.location.lat,"lng":data.originalData.result.location.lng,address:data.originalData.result.formatted_address}
 		   });
@@ -116,7 +131,7 @@ Page({
 			// that.getAllData(homeAllApiObj.url+'?_jdrandom='+(new Date().getTime())+'&platCode=h5&appName=paidaojia&appVersion=7.4.5&functionId=indexh5%2FgetIndex&body=%7B%22coordType%22:%222%22,%22currentPage%22:%22%22,%22storeId%22:%22%22,%22activityId%22:%22%22,%22h5From%22:%22%22,%22isglb%22:%22%22,%22previewDate%22:null,%22isIndex%22:false%7D&lng='+data.originalData.result.location.lng+'&lat='+data.originalData.result.location.lat+'&city_id=1607')
 			that.getAllData(homeAllApiObj)
 			
-			// that.getNearShop(nearShops.url+'?_jdrandom='+(new Date().getTime())+'&platCode=h5&appName=paidaojia&appVersion=7.4.5&functionId=zone%2FrecommendStoreList&body=%7B%22channelId%22:%22%22,%22city%22:%22%E6%B7%B1%E5%9C%B3%E5%B8%82%22,%22longitude%22:'+data.originalData.result.location.lng+',%22latitude%22:'+data.originalData.result.location.lat+',%22currentPage%22:1,%22pageSize%22:10,%22rankType%22:0,%22filterTagIds%22:%22%22,%22lastStoreId%22:%22%22,%22coordType%22:%222%22,%22platform%22:%221%22%7D&lng='+data.originalData.result.location.lng+'&lat='+data.originalData.result.location.lat+'&city_id=1607&jda='+nearShops.data.jda+'&lat='+data.originalData.result.location.lat+'&lng='+data.originalData.result.location.lng+'&poi='+nearShops.data.poi+'&signKey='+nearShops.data.signKey+'&traceId='+nearShops.data.traceId);
+			that.getNearShop(nearShops);
 	   }; 
 	   BMap.regeocoding({ 
 	       fail: fail, 
@@ -202,6 +217,7 @@ Page({
   // 2.首页附近店铺数据
   getNearShop:function (parmas){
 	let that=this;
+	console.log(1);
   	getAjax(parmas).then(function(res){
   	   that.setData({
   			searchCondition:res.data.result.config,
