@@ -18,6 +18,7 @@
 .item-left-logo{
 	width: 121rpx;
 	height: 121rpx;
+	border-radius: 18rpx;
 }
 .store-content-right{
 	display: flex;
@@ -40,12 +41,12 @@
 	margin-top: 3rpx;
 }
 .sale-num{
-	font-size:28rpx;
+	font-size:23rpx;
 	color: #666;
 	margin-left: 14rpx;
 }
 .store-content-right-time, .store-content-right-range, .store-content-right-Division{
-	font-size:28rpx;
+	font-size:25rpx;
 	color: #666;
 }
 .store-content-right-Division{
@@ -60,7 +61,7 @@
 	margin-top: 5rpx;
 }
 .store-send-condition, .store-send-free{
-	font-size:28rpx;
+	font-size:25rpx;
 	color: #666;
 }
 .store-send-brand{
@@ -103,7 +104,7 @@
 .gift-warp{
 	height: 32rpx;
 	display: flex;
-	margin-top: 20rpx;
+	margin-top: 10rpx;
 }
 .gift-warp-main{
 	float: left;

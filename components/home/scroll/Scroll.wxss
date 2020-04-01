@@ -21,6 +21,7 @@
 	width: 78rpx;
 	height: 78rpx;
 	margin-left: 36rpx;
+	border-radius:50%;
 }
 .scroll-item-text{
 	font-size: 22rpx;

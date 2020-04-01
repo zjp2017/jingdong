@@ -107,20 +107,12 @@ Page({
 		   homeAllApiObj.data.poi=data.originalData.result.formatted_address;
 		   homeAllApiObj.data.body= JSON.stringify(homeAllApiObj.data.body);
 		   // 附近店铺参数
-		   // nearShops.data.lng=data.originalData.result.location.lng;
-		   // nearShops.data.lng=116.40746;
-		   // nearShops.data.lat=data.originalData.result.location.lat;
-		   // nearShops.data.lat=39.90403;
 		   nearShops.data.poi=data.originalData.result.formatted_address;
-		   // nearShops.data.poi='北京市人民政府港澳事务办公室';
 		   nearShops.data.body.city=data.originalData.result.addressComponent.city;
 		   nearShops.data.body.longitude=data.originalData.result.location.lng;
-		   // nearShops.data.body.longitude=116.40746;
 		   nearShops.data.body.latitude=data.originalData.result.location.lat;
-		   // nearShops.data.body.latitude=39.90403;
-		    nearShops.data.body= JSON.stringify(nearShops.data.body);
-		   console.log(nearShops.data.body);
-		 
+		   nearShops.data.body= JSON.stringify(nearShops.data.body);
+		  
 		   that.setData({
 			   addressName:{"lat":data.originalData.result.location.lat,"lng":data.originalData.result.location.lng,address:data.originalData.result.formatted_address}
 		   });

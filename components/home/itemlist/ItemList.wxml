@@ -31,7 +31,7 @@
 		</view>
 		<!--优惠券  -->
 		<view class="coupon-warp">
-			<view class="coupon-box" style="height:{{direFlg==0?'32rpx':'auto'}}">
+			<view class="coupon-box" style="height:{{direFlg==0?'38rpx':'auto'}}">
 				<!-- coupons -->
 				<view class="coupon-item"  wx:for="{{listItem.floorCellData.coupons}}" wx:key="index" data-id="{{item.activityCode}}" style="color: {{item.frontColor}};border-color: {{item.outLineColor}};">{{item.words}}</view>
 				<!-- <view class="coupon-item">兑5元红包</view>
